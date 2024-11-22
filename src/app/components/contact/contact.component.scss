@@ -1,0 +1,146 @@
+.main-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding: 5vh 1.5vw;
+    
+    .inside-container{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient( circle at 90% bottom, #333 1%, #222 25%, #111 60%);
+        border-radius: 30px;
+        padding: 2vw;
+        
+        .child{
+            position: relative;
+            display: flex;
+            width: 50%;
+            height: auto;
+            
+            .image-container{
+                position: relative;
+                display: flex;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                
+                img{
+                    height: 100%;
+                    width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+            }
+            
+            .form-container{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                height: 100%;
+                padding: 5vh 5vw;
+                color: #fff;
+                gap: 10vh;
+                
+                .header{
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    width: 100%;
+                    height: fit-content;
+                    gap: 1vh 0;
+                    
+                    h1{
+                        font-size: 3.5rem;
+                        font-weight: 700;
+                    }
+                    
+                    p{
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: grey;
+                    }
+                }
+                
+                form{
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    width: 100%;
+                    height: fit-content;
+                    gap: 3vh 0;
+                    
+                    .name-input{
+                        position: relative;
+                        display: flex;
+                        width: 100%;
+                        height: fit-content;
+                        gap: 0 1vw;
+                        
+                        input{
+                            width: 50%;
+                        }
+                    }
+                    
+                    input{
+                        background-color: #242424;
+                        border: 1px solid rgba(120, 120, 120, 0.22);
+                        border-radius: 10px;
+                        padding: 15px;
+                        color: #fff;
+                        
+                        &:focus{
+                            border: 1px solid #53e95362;
+                        }
+                    }
+                    
+                    textarea{
+                        background-color: #242424;
+                        border: 1px solid rgba(120, 120, 120, 0.22);
+                        border-radius: 10px;
+                        padding: 15px;
+                        color: #fff;
+                        height: 30vh;
+                        resize: none;
+                        
+                        &:focus{
+                            border: 1px solid #53e95362;
+                        }
+                    }
+                    
+                    button{
+                        background-color: #53E953;
+                        border: 2px solid #53E953;
+                        padding: 14px 15px;
+                        color: #111111;
+                        font-weight: 700;
+                        font-size: 1rem;
+                        border-radius: 10px;
+                        margin-top: 3vh;
+                        cursor: pointer;
+                        transition: all .1s ease-in-out;
+                        
+                        &:hover{
+                            color: #53E953;
+                            background-color: transparent;
+                            border: 2px solid #53E953;
+                            transition: all .1s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

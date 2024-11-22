@@ -1,0 +1,43 @@
+.main-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding: 5vh 1.5vw;
+    
+    h2{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+        height: fit-content;
+        font-size: 3rem;
+        font-weight: 400;
+        color: #111111;
+        margin: 0 auto 4vh auto;
+        
+        &::after{
+            content: '';
+            position: relative;
+            display: flex;
+            width: 70%;
+            height: 4px;
+            margin: .5vh auto 0 auto;
+            background-color: #53E953;
+            transition: all .1s ease-in-out;
+        }
+    }
+    
+    .inside-container{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+        
+        .p-element{
+            width: 100% !important;    
+        }
+    }
+}

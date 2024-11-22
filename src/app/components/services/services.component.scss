@@ -1,0 +1,90 @@
+.main-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding: 5vh 1.5vw;
+    
+    h2{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+        height: fit-content;
+        font-size: 3rem;
+        font-weight: 400;
+        color: #111111;
+        margin: 0 auto 4vh auto;
+        
+        &::after{
+            content: '';
+            position: relative;
+            display: flex;
+            width: 70%;
+            height: 4px;
+            margin: .5vh auto 0 auto;
+            background-color: #53E953;
+            transition: all .1s ease-in-out;
+        }
+    }
+    
+    .inside-container{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+        gap: 3vh 2.5%;
+        
+        .card{
+            position: relative;
+            display: flex;
+            width: calc(95%/3);
+            aspect-ratio: 16 / 9;
+            background-color: #fff;
+            border-radius: 30px;
+            padding: 3% 2.5%;
+            border: 1px solid rgba(17, 17, 17, 0.2196078431);
+            color: #111111;
+            
+            .content-container{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                
+                .icon-container{
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    
+                    span{
+                        font-size: 2.5rem;
+                    }
+                }
+                
+                .info-container{
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    gap: .5vh;
+                    
+                    h5{
+                        font-size: 1.5rem;
+                        color: #43b443;
+                    }
+                    
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
