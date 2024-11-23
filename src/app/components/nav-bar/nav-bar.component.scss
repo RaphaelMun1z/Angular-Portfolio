@@ -7,6 +7,18 @@ header{
     justify-content: center;
     align-items: center;
     z-index: 999;
+    transition: all .1s ease-in-out;
+    
+    &.scrolled{
+        transition: all .1s ease-in-out;
+        position: fixed;
+        padding: 2vh 3vw;
+        
+        .main-container{
+            background-color: #fff;
+            border: 1px solid rgba(17, 17, 17, 0.2196078431);
+        }
+    }
     
     .main-container{
         position: relative;

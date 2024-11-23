@@ -1,14 +1,14 @@
-<header>
+<header [ngClass]="{'scrolled': isScrolled}">
     <div class="main-container">
         <div class="logo-container">
             <span>LOGO</span>
         </div>
         <div class="nav-container">
             <ul>
-                <li class="active" pRipple>Home</li>
-                <li>Sobre Nós</li>
-                <li>Projetos</li>
-                <li>Contato</li>
+                <li pRipple [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</li>
+                <li pRipple [routerLink]="['/about-us']" [routerLinkActive]="['active']">Sobre Nós</li>
+                <li pRipple [routerLink]="['/portfolio']" [routerLinkActive]="['active']">Portfólio</li>
+                <li pRipple [routerLink]="['/contact']" [routerLinkActive]="['active']">Contato</li>
             </ul>
             <div class="profile-container">
                 <button id="register" pRipple>Registrar-se</button>

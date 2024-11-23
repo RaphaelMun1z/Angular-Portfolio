@@ -1,0 +1,14 @@
+.main-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    padding: 5vh 1.5vw;
+
+    &.scrolled{
+        padding-top: 15vh;
+    }
+}
