@@ -13,16 +13,8 @@
                 </div>      
                 <form action="" method="">
                     <div class="name-input">
-                        <p-autoComplete
-                        placeholder="Primeiro nome"
-                        [(ngModel)]="selectedItem"
-                        [suggestions]="suggestions"
-                        (completeMethod)="search($event)" />
-                        <p-autoComplete
-                        placeholder="Sobrenome"
-                        [(ngModel)]="selectedItem"
-                        [suggestions]="suggestions"
-                        (completeMethod)="search($event)" />
+                        <input type="text" placeholder="Primeiro nome">
+                        <input type="text" placeholder="Sobrenome">
                     </div>   
                     <input type="email" placeholder="E-mail">
                     <textarea name=""></textarea>
