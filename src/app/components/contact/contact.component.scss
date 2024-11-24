@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     width: 100%;
     height: fit-content;
-    padding: 5vh 1.5vw;
     
     .inside-container{
         position: relative;
@@ -87,6 +86,7 @@
                         display: flex;
                         width: 100%;
                         height: fit-content;
+                        justify-content: space-between;
                         gap: 0 1vw;
                         
                         input{
@@ -94,11 +94,16 @@
                         }
                     }
                     
-                    input{
+                    ::ng-deep .p-element{
+                        width: 50%;
+                    }
+                    
+                    input,::ng-deep .p-inputtext{
+                        width: fit-content;
                         background-color: #242424;
                         border: 1px solid rgba(120, 120, 120, 0.22);
                         border-radius: 10px;
-                        padding: 15px;
+                        padding: 15px 0 15px 5px;
                         color: #fff;
                         
                         &:focus{

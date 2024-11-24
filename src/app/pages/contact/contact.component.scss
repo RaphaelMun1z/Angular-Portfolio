@@ -1,0 +1,40 @@
+:host{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 0 10.5vw;
+}
+
+.main-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 5vh 0;
+    
+    .title-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        
+        h1{
+            width: 70%;
+            font-size: 3rem;
+            
+            span{
+                color: grey;
+            }
+        }
+    }
+    
+    .container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+}

@@ -61,12 +61,17 @@
         display: flex;
         width: 100%;
         height: fit-content;
+        gap: 0 2vw;
         
         &.t-2{
             flex-direction: row-reverse;
             
-            h1{
-                text-align: right;
+            .topic-container{
+                justify-content: flex-end;
+                
+                h1{
+                    text-align: right;
+                }
             }
         }
         
@@ -82,6 +87,7 @@
                 h1{
                     font-size: 5rem;
                     padding-right: 5vw;
+                    width: min-content;
                 }
             }
             
