@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "bundle-report": "webpack-bundle-analyzer dist/stats.json",
     "build": "ng build --configuration production --source-map=false --base-href=/portfolio/",
     "ghpages": "angular-cli-ghpages --dir=dist/portfolio",
     "deploy": "npm run build & npm run ghpages",
@@ -47,6 +48,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.5.2"
+    "typescript": "~5.5.2",
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }
