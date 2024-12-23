@@ -14,15 +14,15 @@ import { CommonModule } from '@angular/common';
 })
 
 export class AppComponent implements OnInit {
-    title = 'portfolio'; 
+    title = 'portfolio';
     isScrolled: boolean = false;
 
-    constructor(private primengConfig: PrimeNGConfig) {}
-    
+    constructor(private primengConfig: PrimeNGConfig) { }
+
     ngOnInit() {
         this.primengConfig.ripple = true;
     }
-      
+
     @HostListener('window:scroll', [])
     onWindowScroll(): void {
         this.isScrolled = window.scrollY > 100;

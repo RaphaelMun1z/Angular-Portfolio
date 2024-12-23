@@ -1,0 +1,139 @@
+.carousel{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    
+    .swiper-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .cards-column-container{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 1vh 0;
+        padding: 0 .25vw;
+        
+        .card{
+            position: relative;
+            display: flex;
+            width: 100%;
+            aspect-ratio: 16 / 8;
+            background-color: #fff;
+            border-radius: 30px;
+            padding: 1.5vw;
+            border: 1px solid rgba(17, 17, 17, 0.2196078431);
+            color: #111111;
+            
+            .color-1{
+                fill: #f89820 !important;
+                color: #f89820 !important;
+            }
+            
+            .color-2{
+                fill: #6DB33F !important;
+                color: #6DB33F !important;
+            }
+            
+            .color-3{
+                fill: #339933 !important;
+                color: #339933 !important;
+            }
+            
+            .color-4{
+                fill: #007acc !important;
+                color: #007acc !important;
+            }
+            
+            .color-5{
+                fill: #dd1b16 !important;
+                color: #dd1b16 !important;
+            }
+            
+            .color-6{
+                fill: #61DAFB !important;
+                color: #61DAFB !important;
+            }
+
+            .color-7{
+                fill: #0db7ed !important;
+                color: #0db7ed !important;
+            }
+
+            .color-8{
+                fill: #f1502f !important;
+                color: #f1502f !important;
+            }
+
+            .color-9{
+                fill: #0078D4 !important;
+                color: #0078D4 !important;
+            }
+
+            .color-10{
+                fill: #336791 !important;
+                color: #336791 !important;
+            }
+            
+            .content-container{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                
+                .icon-container{
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    
+                    svg{
+                        height: 7vh;
+                        font-size: 2.5rem;
+                    }
+                }
+                
+                .info-container{
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    gap: .5vh;
+                    
+                    h5{
+                        font-size: 1.5rem;
+                        color: #43b443;
+                    }
+                    
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+::ng-deep .swiper-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 150px; 
+    background: linear-gradient(270deg, rgba(22, 22, 22, 0.421) 13.91%, rgba(6, 10, 23, 0) 69.26%);
+    pointer-events: none; 
+    z-index: 10;
+}

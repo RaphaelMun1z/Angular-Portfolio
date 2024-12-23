@@ -1,18 +1,24 @@
 <section class="main-container">
-    <h2>Depoimentos</h2>
-    <div class="inside-container">
-        <p-carousel 
-        [value]="testimonials" 
-        [numVisible]="3" 
-        [numScroll]="3" 
-        [circular]="true" 
-        [responsiveOptions]="responsiveOptions" 
-        autoplayInterval="5000">
-        <ng-template let-testimonial pTemplate="item">
-            <div class="p-1">
-                <app-card [imageUrl]="testimonial.imageUrl" [name]="testimonial.name" [text]="testimonial.text" [position]="testimonial.position"></app-card>
-            </div>
-        </ng-template>
+  <h2>Depoimentos</h2>
+  <div class="inside-container">
+    <p-carousel
+      [value]="testimonials"
+      [numVisible]="3"
+      [numScroll]="3"
+      [circular]="true"
+      [responsiveOptions]="responsiveOptions"
+      autoplayInterval="5000"
+    >
+      <ng-template let-testimonial pTemplate="item">
+        <div class="p-1">
+          <app-card
+            [imageUrl]="testimonial.imageUrl"
+            [name]="testimonial.name"
+            [text]="testimonial.text"
+            [position]="testimonial.position"
+          ></app-card>
+        </div>
+      </ng-template>
     </p-carousel>
-</div>
+  </div>
 </section>
