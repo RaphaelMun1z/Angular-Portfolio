@@ -1,18 +1,32 @@
 <header [ngClass]="{'scrolled': isScrolled}">
     <div class="main-container">
         <div class="logo-container">
-            <span>LOGO</span>
+            <img src="/assets/icon-2.png" alt="Ícone">
         </div>
         <div class="nav-container">
             <ul>
                 <li pRipple [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</li>
-                <li pRipple [routerLink]="['/about-us']" [routerLinkActive]="['active']">Sobre Nós</li>
+                <li pRipple [routerLink]="['/about-us']" [routerLinkActive]="['active']">Sobre</li>
                 <li pRipple [routerLink]="['/portfolio']" [routerLinkActive]="['active']">Portfólio</li>
                 <li pRipple [routerLink]="['/contact']" [routerLinkActive]="['active']">Contato</li>
             </ul>
             <div class="profile-container">
-                <button id="register" pRipple>Iniciar Projeto</button>
-                <button id="profile" pRipple><span class="material-icons">login</span></button>
+                <button id="freelancer" pRipple>
+                    Freelancer
+                    <i class="material-icons">link</i>
+                </button>
+                <div class="social">
+                    <button pRipple>
+                        <span class="material-icons">
+                            <app-icon class="icon" [name]="'github'"></app-icon>
+                        </span>
+                    </button>
+                    <button pRipple>
+                        <span class="material-icons">
+                            <app-icon class="icon" [name]="'linkedin'"></app-icon>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

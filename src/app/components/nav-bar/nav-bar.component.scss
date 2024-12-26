@@ -41,9 +41,11 @@ header{
             height: 100%;
             align-items: center;
             
-            span{
-                font-size: 2rem;
-                font-weight: 900;
+            img{
+                position: relative;
+                display: flex;
+                height: 47px;
+                object-fit: cover;
             }
         }
         
@@ -103,55 +105,66 @@ header{
                 position: relative;
                 display: flex;
                 width: fit-content;
-                height: 100%;
+                height: auto;
                 align-items: center;
                 gap: .5vw .5vw;
                 
-                button{
+                #freelancer{
                     position: relative;
                     display: flex;
-                    height: 80%;
-                    border: none;
-                    justify-content: center;
+                    gap: 0 .5vw;
+                    border-radius: 30px;
+                    width: fit-content;
                     align-items: center;
-                    background-color: transparent;
+                    justify-content: center;
+                    padding: 13px 25px;
+                    background-color: #54E8B8;
+                    border: 2px solid #53E953;
+                    color: #111111;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    transition: all .1s ease-in-out;
+                    border: 1px solid #11111138;
                     cursor: pointer;
                     
-                    &#register{
-                        border-radius: 30px;
-                        width: fit-content;
-                        padding: 13px 25px;
-                        background-color: #53E953;
-                        border: 2px solid #53E953;
-                        color: #111111;
-                        font-weight: 600;
-                        font-size: 1rem;
+                    &:hover{
                         transition: all .1s ease-in-out;
-                        border: 1px solid #11111138;
-                        
-                        &:hover{
-                            transition: all .1s ease-in-out;
-                            background-color: transparent;
-                            color: #53E953;
-                        }
+                        opacity: .5;
                     }
+                }
+                
+                .social{
+                    position: relative;
+                    display: flex;
+                    width: fit-content;
                     
-                    &#profile{
-                        border-radius: 50%;
+                    button{
+                        position: relative;
+                        display: flex;
+                        height: 100%;
+                        border: none;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: transparent;
+                        cursor: pointer;
                         aspect-ratio: 1 / 1;
-                        border: 2px solid #53E953;
                         color: #53E953;
                         padding: 10px;
-                        transition: all .1s ease-in-out;
+                        overflow: visible;
                         
-                        span{
-                            font-size: 1.3rem;
+                        .material-icons{
+                            .icon{
+                                ::ng-deep {
+                                    img{
+                                        height: 30px !important;
+                                    }
+                                }
+                            }
                         }
                         
                         &:hover{
                             transition: all .1s ease-in-out;
-                            background: #53E953;
-                            color: #fff;
+                            opacity: .5;
                         }
                     }
                 }

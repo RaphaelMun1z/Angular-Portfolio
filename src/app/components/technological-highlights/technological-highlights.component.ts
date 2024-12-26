@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon'; 
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+
+import { register as registerSwiperElements } from 'swiper/element/bundle';
+registerSwiperElements();
 
 @Component({
     selector: 'app-technological-highlights',
     standalone: true,
     imports: [MatIconModule],
     templateUrl: './technological-highlights.component.html',
-    styleUrl: './technological-highlights.component.scss'
+    styleUrl: './technological-highlights.component.scss',
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TechnologicalHighlightsComponent {
-    
+
 }
