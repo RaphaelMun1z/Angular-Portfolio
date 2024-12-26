@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="content-container">
+    <div class="icon-container" [ngStyle]="{'fill': color}">
+      <app-icon [name]="logo"></app-icon>
+    </div>
+    <div class="info-container">
+      <h5 [ngStyle]="{'color': color}">{{ title }}</h5>
+      <p>
+        {{ description }}
+      </p>
+    </div>
+  </div>
+</div>

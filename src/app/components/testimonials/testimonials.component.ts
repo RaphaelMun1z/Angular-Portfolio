@@ -1,13 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { CarouselModule } from 'primeng/carousel';
-import { ButtonModule } from 'primeng/button';
-import { TagModule } from 'primeng/tag';
-import { CardComponent } from "./card/card.component";
-import { TestimonialService } from '../../service/testimonialservice';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CarouselComponent } from "../carousel/carousel.component";
+import { CarouselTestimonialCardComponent } from "../carousel/carousel-testimonial-card/carousel-testimonial-card.component";
 
 interface Testimonial {
-    id:string;
-    imageUrl:string;
+    id: string;
+    imageUrl: string;
     name: string;
     text: string;
     position: string;
@@ -16,41 +13,13 @@ interface Testimonial {
 @Component({
     selector: 'app-testimonials',
     standalone: true,
-    imports: [CardComponent, CarouselModule, ButtonModule, TagModule],
-    providers: [TestimonialService],
+    imports: [CarouselComponent, CarouselTestimonialCardComponent],
     host: { ngSkipHydration: 'true' },
     templateUrl: './testimonials.component.html',
-    styleUrl: './testimonials.component.scss'
+    styleUrl: './testimonials.component.scss',
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
-export class TestimonialsComponent implements OnInit {
-    testimonials: Testimonial[] | any;
-    
-    responsiveOptions: any[] | undefined;
-    
-    constructor(private testimonialService: TestimonialService) {}
-    
-    ngOnInit() {  
-        this.testimonialService.getTestimonials().then((testimonials) => {
-            this.testimonials = testimonials;
-        });    
-        
-        this.responsiveOptions = [
-            {
-                breakpoint: '1199px',
-                numVisible: 1,
-                numScroll: 1
-            },
-            {
-                breakpoint: '991px',
-                numVisible: 2,
-                numScroll: 1
-            },
-            {
-                breakpoint: '767px',
-                numVisible: 1,
-                numScroll: 1
-            }
-        ];
-    }
+export class TestimonialsComponent {
+
 }

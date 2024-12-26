@@ -39,5 +39,16 @@
         .p-element{
             width: 100% !important;    
         }
+        
+        .cards-column-container{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 1vh 0;
+            padding: 0 .25vw;
+        }
     }
 }

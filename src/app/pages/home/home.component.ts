@@ -6,7 +6,6 @@ import { RecentProjectsComponent } from "../../components/recent-projects/recent
 import { TechnologicalHighlightsComponent } from '../../components/technological-highlights/technological-highlights.component';
 import { ContactComponent } from "../../components/contact/contact.component";
 import { HeroComponent } from "../../components/hero/hero.component";
-import { DropdownComponent } from "../../components/dropdown/dropdown.component";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

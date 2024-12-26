@@ -28,10 +28,16 @@
             transition: all .1s ease-in-out;
         }
     }
+    
+    .cards-column-container{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 1vh 0;
+        padding: 0 .25vw;
+    }
 }
 
-.carousel{
-    width: 100%;
-    padding: 1vh 0;
-    height: fit-content;
-}
