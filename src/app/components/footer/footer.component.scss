@@ -33,10 +33,12 @@ footer{
                 height: fit-content;
                 gap: 2vh 0;
                 
-                span{
-                    font-size: 2rem;
-                    font-weight: 900;
-                    color: #fff;
+                img{
+                    position: relative;
+                    display: flex;
+                    height: 47px;
+                    width: fit-content;
+                    object-fit: cover;
                 }
                 
                 p{
@@ -116,12 +118,17 @@ footer{
                 ul{
                     position: relative;
                     display: flex;
+                    align-items: center;
                     flex-wrap: wrap;
                     list-style: none;
                     gap: 0 2.3vw;
                     
                     li{
                         a{
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            text-decoration: none;
                             color: rgb(200, 200, 200);
                             font-size: 1rem;
                             cursor: pointer;
@@ -130,6 +137,11 @@ footer{
                             &:hover{
                                 opacity: .5;
                                 transition: all .1s ease-in-out;
+                            }
+
+                            i{
+                                font-size: 30px;
+                                height: 30px;
                             }
                         }
                     }

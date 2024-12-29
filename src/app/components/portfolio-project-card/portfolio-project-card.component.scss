@@ -1,0 +1,138 @@
+:host{
+    position: relative;
+    display: flex;
+    height: fit-content;
+    aspect-ratio: 1 / 1;
+    width: calc(98%/2);
+    background: radial-gradient( circle at 100% bottom, #6B5BE5 10%, #6e62cb 25%, rgb(96, 84, 190) 60%);
+    border-radius: 30px;
+    padding: 3vw;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project-card{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    overflow: visible !important;
+    
+    .intern{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        
+        .header{
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+            height: fit-content;
+            gap: 1vh 0;
+            
+            .left{
+                position: relative;
+                display: flex;
+                width: fit-content;
+                flex-wrap: wrap;
+                flex-direction: column;
+                height: fit-content;
+                gap: 1vh 0;
+                
+                .project-name{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                
+                .project-proposal{
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    color: #fff;
+                    
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+            
+            .right{
+                position: relative;
+                display: flex;
+                width: fit-content;
+                height: fit-content;
+                
+                span{
+                    border-radius: 50%;
+                    padding: 1vw;
+                    aspect-ratio: 1 / 1;
+                    background-color: #fff;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        
+        .stack-container{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: fit-content;
+            align-items: center;
+            gap: .5vw;
+            margin-top: 1vh;
+        }
+        
+        .content{
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 70%;
+            margin-top: auto;
+            justify-content: center;
+            align-items: flex-end;
+            
+            &::after{
+                content: '';
+                position: absolute;
+                width: 150%;
+                height: 30%;
+                z-index: 10;
+                bottom: -3vw;
+                background-image: linear-gradient( 360deg, rgba(0, 0, 0, 0.9) 31.45%, rgba(0, 0, 0, 0.4) 72.5%, rgba(0, 0, 0, 0.1) 93.45%);
+                background-image: linear-gradient( 360deg, #6b5be5 31.45%, #6e62cb94 72.5%, #7b6fd711 93.45%);
+            }
+            
+            .image-container{
+                position: absolute;
+                display: flex;
+                bottom: -3vw;
+                width: 80%;
+                height: 100%;
+                border-radius: 20px 20px 0 0;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                overflow: scroll; 
+                scrollbar-width: none; 
+                -ms-overflow-style: none; 
+                justify-items: center;
+                align-items: flex-start;
+                background-color: #fff;
+                
+                img{
+                    position: relative;
+                    width: 100%;
+                    object-fit: contain;
+                    object-position: top;
+                    text-align: center;
+                    color: rgba(17, 17, 17, 0.2196078431);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

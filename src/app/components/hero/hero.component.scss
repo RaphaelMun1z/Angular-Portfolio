@@ -34,7 +34,7 @@
             &:nth-child(2){
                 justify-content: center;
                 align-items: center;
-
+                
                 .card-container{
                     position: relative;
                     display: flex;
@@ -42,30 +42,15 @@
                     aspect-ratio: 9 / 11;
                     border-radius: 20px;
                     z-index: 2;
-
+                    
                     img{
                         position: relative;
                         display: flex;
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                         border-radius: 20px;
                         z-index: 2;
-                    }
-                    
-                    &::before{
-                        content: '';
-                        position: absolute;
-                        display: flex;
-                        width: 100%;
-                        height: 100%;
-                        background-color: #53E953;
-                        border: 1px solid rgba(17, 17, 17, 0.2196078431);
-                        border-radius: 20px;
-                        transform: rotate(10deg) scale(.95);
-                        bottom: 10px;
-                        left: 30px;
-                        z-index: 1;
                     }
                 }
             }

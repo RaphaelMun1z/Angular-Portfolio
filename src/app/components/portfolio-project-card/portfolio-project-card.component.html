@@ -1,0 +1,22 @@
+<div class="project-card" pRipple>
+    <div class="intern">
+        <div class="header">
+            <div class="left">
+                <h2 class="project-name">{{ name }}</h2>
+                <h2 class="project-proposal"><span>Proposta: </span>{{ proposal }}</h2>
+            </div>
+            <div class="right">
+                <span class="material-icons">call_made</span>
+            </div>                
+        </div>
+        <div class="stack-container">
+            <app-icon [name]="'spring'" [size]="'30px'"></app-icon>
+            <app-icon [name]="'angular'" [size]="'40px'"></app-icon>
+        </div>
+        <div class="content">
+            <div class="image-container">        
+                <img [src]="'/assets/' + image" alt="Imagem representativa do projeto">
+            </div>
+        </div>
+    </div>
+</div>

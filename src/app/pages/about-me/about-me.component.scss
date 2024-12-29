@@ -85,7 +85,7 @@
                 height: auto;
                 
                 h1{
-                    font-size: 5rem;
+                    font-size: 4vw;
                     padding-right: 5vw;
                     width: min-content;
                 }
@@ -112,6 +112,10 @@
                         padding: 0 !important;
                         font-weight: 500;
                     }
+                }
+
+                #merco-logo{
+                    width: 50%;
                 }
             }
         }
