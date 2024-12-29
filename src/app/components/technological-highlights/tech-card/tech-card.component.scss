@@ -1,0 +1,58 @@
+.card{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 5vh 0;
+    
+    .header{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+        
+        i{
+            position: relative;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            color: #222;
+            font-size: 5rem;
+        }
+        
+        .title{
+            position: relative;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            font-size: 2rem;
+            text-align: center;
+            color: #222;
+            font-weight: 800;
+            justify-content: center;
+        }
+    }
+    
+    .text-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        
+        .text{
+            text-align: center;
+            color: #222;
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}

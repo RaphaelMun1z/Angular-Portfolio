@@ -54,6 +54,61 @@
                 aspect-ratio: 1 / 1;
                 border-radius: 30px;
                 cursor: pointer;
+                
+                .project-image-large-box{
+                    position: relative;
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    transform: scale(2) translate(15vw, 25vh); 
+                    filter: drop-shadow(-2mm 3mm 4mm rgb(70, 64, 71));
+                }
+            }
+            
+            .item-li{
+                padding: 0 !important;
+                background-color: transparent !important;
+                border: none !important;
+                height: fit-content !important;
+                border-radius: 0px !important;
+                
+                swiper-slide {
+                    position: relative;
+                    overflow: hidden;
+                    
+                    &.swiper-slide-active{
+                        img{
+                            animation: zoomMove 10s ease-in-out infinite;
+
+                            &:hover{
+                                animation-play-state: paused;
+                            }
+                        }
+                    }
+                }
+                
+                @keyframes zoomMove {
+                    0% {
+                        transform: scale(2) translate(15vw, 25vh);  
+                    }
+                    16% {
+                        transform: scale(2.2) translate(10vw, 12.5vh); 
+                    }
+                    30% {
+                        transform: scale(2.2) translate(0, 0);
+                    }
+                    46% {
+                        transform: scale(.5) translate(0, 0);
+                    }
+                    64% {
+                        transform: scale(2.2) translate(-35vh, 25vh); 
+                    }
+                    100%{
+                        transform: scale(2) translate(15vw, 25vh); 
+                    }
+                }
             }
             
             .large-item-1 {

@@ -1,0 +1,92 @@
+.project-content-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1vh;
+    
+    #name{
+        font-size: 1.5rem;
+    }
+    
+    #idea{
+        font-size: 1rem;
+        text-align: left;
+        color: grey;
+        margin-bottom: 1vh;
+        
+        span{
+            color: #222;
+            margin-right: 5px;
+            font-weight: 700;
+        }
+    }
+    
+    .stack-container{    
+        position: relative;
+        display: flex;
+        gap: 0 .5vw;
+        align-items: center;
+        justify-content: flex-start;
+        
+        .item{
+            height: 20px !important;
+        }
+    }
+    
+    hr{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 2px;
+        border: none;
+        margin: 1vh 0;
+        background-color: rgba(17, 17, 17, 0.2196078431);
+    }
+    
+    .links{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: fit-content;
+        gap: .5vh;
+        
+        p{
+            color: #53E953;
+            background-color: #8e8e8e;
+            width: 100%;
+            height: fit-content;
+            border-radius: 10px;
+            transition: all 0.1s ease-in-out;
+            background: #53E953;
+            border-radius: 5px;
+            border: 1px solid rgba(17, 17, 17, 0.2196078431);
+            transition: all .1s ease-in-out;
+            
+            a{
+                padding: 5px 25px 5px 10px;
+                display: flex;
+                align-items: center;
+                color: #111111;
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 600;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+            
+            &:hover{
+                transition: all .1s ease-in-out;
+                opacity: .8;
+            }
+        }
+    }
+}
