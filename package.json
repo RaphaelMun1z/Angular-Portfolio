@@ -5,9 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "bundle-report": "webpack-bundle-analyzer dist/stats.json",
-    "build": "ng build --configuration production --source-map=false --base-href=/portfolio/",
     "ghpages": "angular-cli-ghpages --dir=dist/portfolio",
-    "deploy:ghdocs": "ng build --configuration production --output-path docs --base-href /mercosul/",
+    "deploy:ghdocs": "ng build --configuration production --output-path docs --base-href /Angular-Portfolio/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs"
