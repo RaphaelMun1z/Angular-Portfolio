@@ -63,7 +63,8 @@
                     h5{
                         width: fit-content;
                         font-size: 1.2rem;
-                        font-weight: 600;
+                        font-weight: 500;
+                        color: rgba(128, 128, 128, 0.464);
                         
                         span{
                             position: relative;
@@ -85,7 +86,8 @@
                         max-width: 40%;
                         font-size: 2rem;
                         text-align: right;
-                        font-weight: 600;
+                        font-weight: 500;
+                        color: grey;
                     }
                 }
             }

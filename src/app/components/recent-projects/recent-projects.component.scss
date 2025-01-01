@@ -80,6 +80,7 @@
                     
                     &.swiper-slide-active{
                         img{
+                            background-color: grey;
                             animation: zoomMove 10s ease-in-out infinite;
 
                             &:hover{

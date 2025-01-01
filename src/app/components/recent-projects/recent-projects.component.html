@@ -3,12 +3,22 @@
 	<div class="inside-container">
 		<div class="grid-container">
 			<div class="item card-1">
-				<app-project-card-small></app-project-card-small>
+				<app-project-card-small 
+				[name]="projects[0].name" 
+				[proposal]="projects[0].proposal" 
+				[stack]="projects[0].stack"
+				[repositoryUrl]="projects[0].repositoryUrl"
+				[projectUrl]="projects[0].projectUrl"></app-project-card-small>
 			</div>
-			<div pRipple class="item card-2">
-				<app-project-card-small></app-project-card-small>
+			<div  class="item card-2">
+				<app-project-card-small 
+				[name]="projects[1].name" 
+				[proposal]="projects[1].proposal" 
+				[stack]="projects[1].stack"
+				[repositoryUrl]="projects[1].repositoryUrl"
+				[projectUrl]="projects[1].projectUrl"></app-project-card-small>
 			</div>
-			<div pRipple class="item item-li large-item-1">
+			<div  class="item item-li large-item-1">
 				<app-vertical-carousel>
 					<swiper-slide>
 						<img class="project-image-large-box" src="/assets/netflix-1.png" alt="Imagem de projeto">
@@ -21,7 +31,7 @@
 					</swiper-slide>
 				</app-vertical-carousel>
 			</div>
-			<div pRipple class="item item-li large-item-2">
+			<div  class="item item-li large-item-2">
 				<app-vertical-carousel>
 					<swiper-slide>
 						<img class="project-image-large-box" src="/assets/netflix-2.png" alt="Imagem de projeto">
@@ -34,11 +44,21 @@
 					</swiper-slide>
 				</app-vertical-carousel>
 			</div>
-			<div pRipple class="item card-5">
-				<app-project-card-small></app-project-card-small>
+			<div  class="item card-5">
+				<app-project-card-small 
+				[name]="projects[2].name" 
+				[proposal]="projects[2].proposal" 
+				[stack]="projects[2].stack"
+				[repositoryUrl]="projects[2].repositoryUrl"
+				[projectUrl]="projects[2].projectUrl"></app-project-card-small>
 			</div>
-			<div pRipple class="item card-6">
-				<app-project-card-small></app-project-card-small>
+			<div  class="item card-6">
+				<app-project-card-small 
+				[name]="projects[3].name" 
+				[proposal]="projects[3].proposal" 
+				[stack]="projects[3].stack"
+				[repositoryUrl]="projects[3].repositoryUrl"
+				[projectUrl]="projects[3].projectUrl"></app-project-card-small>
 			</div>
 		</div>
 	</div>

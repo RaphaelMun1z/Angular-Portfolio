@@ -1,0 +1,44 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Dealership",
+            "stack": ["spring", "angular", "postgresql", "docker"],
+            "proposal": "Soon",
+            "description": "Soon",
+            "repositoryUrl": "https://github.com/RaphaelMun1z/SpringBoot-Dealership",
+            "projectUrl": "Soon",
+            "imageUrl": "banner-dealership.png"
+        },
+        {
+            "id": 2,
+            "name": "LeaseInsight",
+            "stack": ["spring", "angular", "postgresql", "docker"],
+            "proposal": "software para a administração de locação de imóveis.",
+            "description": "Soon",
+            "repositoryUrl": "https://github.com/RaphaelMun1z/SpringBoot-LeaseInsight",
+            "projectUrl": "Soon",
+            "imageUrl": "banner-leaseInsight.png"
+        },
+        {
+            "id": 3,
+            "name": "Netflix",
+            "stack": ["react"],
+            "proposal": "Exercitar minhas habilidades no desenvolvimento de interfaces.",
+            "description": "Clone da Interface Netflix em React: Um projeto que replica a experiência de usuário da Netflix usando React.",
+            "repositoryUrl": "https://github.com/RaphaelMun1z/React-Netflix-frontend",
+            "projectUrl": "Soon",
+            "imageUrl": "banner-netflix.png"
+        },
+        {
+            "id": 4,
+            "name": "ReactGram",
+            "stack": ["react", "nodejs", "mongodb"],
+            "proposal": "Exercitar minhas habilidades no desenvolvimento de interfaces.",
+            "description": "Inspirado no Instagram, foi desenvolvido utilizando React e NodeJS.",
+            "repositoryUrl": "https://github.com/RaphaelMun1z/React-ReactGram-frontend",
+            "projectUrl": "Soon",
+            "imageUrl": "banner-reactGram.png"
+        }
+    ]
+}

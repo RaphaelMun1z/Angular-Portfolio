@@ -11,6 +11,7 @@ import { IconComponent } from "../icon/icon.component";
 })
 export class PortfolioProjectCardComponent {
     @Input() name : string = "";
+    @Input() stack : string[] = [];
     @Input() proposal : string = "";
-    @Input() image : string = "";
+    @Input() imageUrl : string = "";
 }

@@ -4,9 +4,11 @@
     </div>
     <app-portfolio-projects-header></app-portfolio-projects-header>
     <div class="projects-container">
-        <app-portfolio-project-card [name]="'Clone Netflix'" [proposal]="'Proposta do projeto clone netflix. texto exemplar, apenas testando.'" [image]="'netflixclone.png'" pRipple></app-portfolio-project-card>
-        <app-portfolio-project-card pRipple></app-portfolio-project-card>
-        <app-portfolio-project-card pRipple></app-portfolio-project-card>
-        <app-portfolio-project-card pRipple></app-portfolio-project-card>
+        <app-portfolio-project-card 
+        *ngFor="let project of projects"
+        [name]="project.name" 
+        [stack]="project.stack"
+        [proposal]="project.proposal" 
+        [imageUrl]="project.imageUrl" pRipple></app-portfolio-project-card>
     </div>
 </section>
