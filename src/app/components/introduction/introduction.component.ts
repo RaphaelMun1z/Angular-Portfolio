@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { RippleModule } from 'primeng/ripple';
 import {MatButtonModule} from '@angular/material/button';
 import {
@@ -9,7 +10,7 @@ import { ModalComponent } from '../modal/modal.component';
 @Component({
     selector: 'app-introduction',
     standalone: true,
-    imports: [RippleModule, MatButtonModule],
+    imports: [RippleModule, RouterModule, MatButtonModule],
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './introduction.component.html',
     styleUrl: './introduction.component.scss'

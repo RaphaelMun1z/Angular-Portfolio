@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "id": 1,
+            "id": "1",
             "name": "Dealership",
             "stack": ["spring", "angular", "postgresql", "docker"],
             "proposal": "Soon",
@@ -11,7 +11,7 @@
             "imageUrl": "banner-dealership.png"
         },
         {
-            "id": 2,
+            "id": "2",
             "name": "LeaseInsight",
             "stack": ["spring", "angular", "postgresql", "docker"],
             "proposal": "software para a administração de locação de imóveis.",
@@ -21,7 +21,7 @@
             "imageUrl": "banner-leaseInsight.png"
         },
         {
-            "id": 3,
+            "id": "3",
             "name": "Netflix",
             "stack": ["react"],
             "proposal": "Exercitar minhas habilidades no desenvolvimento de interfaces.",
@@ -31,7 +31,7 @@
             "imageUrl": "banner-netflix.png"
         },
         {
-            "id": 4,
+            "id": "4",
             "name": "ReactGram",
             "stack": ["react", "nodejs", "mongodb"],
             "proposal": "Exercitar minhas habilidades no desenvolvimento de interfaces.",

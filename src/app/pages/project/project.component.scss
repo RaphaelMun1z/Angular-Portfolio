@@ -1,0 +1,162 @@
+:host{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 0 10.5vw;
+}
+
+.main-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 5vh 0;
+    
+    .title-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        
+        h1{
+            width: 70%;
+            font-size: 3rem;
+            font-weight: 700;
+            
+            span{
+                color: grey;
+            }
+        }
+    }
+    
+    .container{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        gap: 5vh;
+        
+        .grid-info-container{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 100%;
+            height: fit-content;
+            border: 1px solid rgba(17, 17, 17, 0.2196078431);
+            
+            .item{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: flex-start;
+                border: 1px solid rgba(17, 17, 17, 0.2196078431);
+                padding: 7%;
+                background-color: #fff;
+                
+                &.item-1{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+                
+                &.item-2{
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                }
+                
+                &.item-3{
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                
+                &.item-4{
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                }
+                
+                .title{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    font-size: 2rem;
+                    gap: .5vw;
+                    
+                    i{
+                        font-size: 2rem;
+                    }
+                }
+                
+                .list{
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    width: 100%;
+                    height: fit-content;
+                    list-style: none;
+                    padding-left: 2vw;
+                    gap: 1vh;
+                    
+                    &.stack{
+                        flex-direction: row;
+                        padding: 0;
+                    }
+                    
+                    li{
+                        position: relative;
+                        display: flex;
+                        width: fit-content;
+                        align-items: center;
+                        color: blue;
+                        cursor: pointer;
+
+
+                        a{
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            text-decoration: none;
+                            color: inherit;
+                            font-weight: 500;
+                            font-size: 1rem;
+                            gap: .5vw;
+                        }
+                        
+                        &:hover{
+                            border-bottom: 1px solid blue;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .break{
+            position: relative;
+            display: flex;
+            width: 30%;
+            height: 2px;
+            background-color: rgba(17, 17, 17, 0.2196078431);
+            border: none;
+        }
+        
+        &.banner-container{
+            width: fit-content;
+            height: fit-content;
+        }
+        
+        .banner{
+            position: relative;
+            display: flex;
+            width: 500px;
+            height: 350px;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}

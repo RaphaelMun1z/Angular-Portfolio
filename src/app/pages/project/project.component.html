@@ -1,0 +1,33 @@
+<section class="main-container">
+    <div class="title-container">
+        <h1>Projeto <span>{{ name }}</span></h1>
+    </div>
+    <div class="container">
+        <div class="topic-container banner-container">
+            <img class="banner" [src]="'/assets/' + imageUrl" alt="Imagem representativa do projeto">
+        </div>
+        <div class="grid-info-container">
+            <div class="item item-1">
+                <h2 class="title"><i class="material-icons">lightbulb_outline</i>Proposta</h2>
+                <p class="proposal">{{ proposal }}</p>
+            </div>
+            <div class="item item-2">
+                <h2 class="title"><i class="material-icons">description</i>Descrição</h2>
+                <p class="proposal">{{ description }}</p>
+            </div>
+            <div class="item item-3">
+                <h2 class="title"><i class="material-icons">all_inbox</i>Stack</h2>
+                <ul class="list stack">
+                    <app-icon *ngFor="let tech of stack" [name]="tech" [size]="'50px'"></app-icon>
+                </ul>
+            </div>
+            <div class="item item-4">
+                <h2 class="title"><i class="material-icons">link</i>Links</h2>
+                <ul class="list">
+                    <li><a [href]="repositoryUrl"><i class="material-icons">folder_open</i>Repositório GitHub</a></li>
+                    <li><a [href]="projectUrl"><i class="material-icons">open_in_new</i>Acessar projeto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

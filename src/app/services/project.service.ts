@@ -11,4 +11,8 @@ export class ProjectService {
     getAll(){
         return data.projects;
     }
+    
+    getProjectById(id: string | null){
+        return data.projects.filter(project => project.id === id)[0];
+    }
 }
