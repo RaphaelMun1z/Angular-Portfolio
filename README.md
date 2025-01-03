@@ -1,3 +1,3 @@
 ## Portfolio
 
-<img src="./banner-github-portfolio.png"/>
+<img src="./readme-assets/banner-github-portfolio.png"/>
