@@ -1,12 +1,12 @@
-## Portfolio
+## 📌 Portfolio
 
 <img src="./readme-assets/banner-github-portfolio.png"/>
 
-## Descrição
+## 📄 Descrição
 <p>Soon</p>
 
-## Proposta
+## 💡 Proposta
 <p>Soon</p>
 
-## Stack
+## 🛠️ Stack
 <p>Soon</p>
