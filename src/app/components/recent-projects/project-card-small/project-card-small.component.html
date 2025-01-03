@@ -1,12 +1,17 @@
 <div class="project-content-container">
     <h3 id="name">{{ name }}</h3>
     <p id="idea"><span>Proposta:</span>{{ proposal }}</p>
+    <p id="description"><span>Descrição:</span>{{ description }}</p>
     <div class="stack-container">
         <app-icon *ngFor="let tech of stack" [name]="tech" [size]="'30px'"></app-icon>
     </div>
     <hr>
     <div class="links">
-        <p pRipple><a [href]="repositoryUrl" target="_blank" RippleModule>Repositório<app-icon [name]="'github'" [size]="'20px'"></app-icon></a></p>
-        <p pRipple><a [href]="projectUrl" target="_blank" RippleModule>Abrir no navegador<i class="material-icons">open_in_new</i></a></p>
+        <app-button 
+        [text]="'Acessar página do projeto'"
+        [icon]="'keyboard_arrow_right'"
+        [styleType]="2"
+        [redirectTo]="'/portfolio/project'"
+        [redirectParam]="id"></app-button>
     </div>	
 </div>

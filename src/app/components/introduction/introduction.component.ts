@@ -6,11 +6,14 @@ import {
     MatDialog
 } from '@angular/material/dialog';
 import { ModalComponent } from '../modal/modal.component';
+import { ButtonComponent } from "../button/button.component";
+import { SectionTitleComponent } from "../section-title/section-title.component";
+import { BaseContainerComponent } from "../base-container/base-container.component";
 
 @Component({
     selector: 'app-introduction',
     standalone: true,
-    imports: [RippleModule, RouterModule, MatButtonModule],
+    imports: [RippleModule, RouterModule, MatButtonModule, ButtonComponent, SectionTitleComponent, BaseContainerComponent],
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './introduction.component.html',
     styleUrl: './introduction.component.scss'

@@ -1,4 +1,4 @@
-<section class="main-container">
+<app-base-container>
     <div class="container">
         <div class="child">
             <div class="content-container">
@@ -9,11 +9,14 @@
                     </p>
                 </div>
                 <div class="links">
-                    <button pRipple>
-                        <span>Explorar projetos</span>
-                        <span class="material-icons">chevron_right</span>
-                    </button>
-                    <a>Saiba mais sobre mim</a>
+                    <app-button 
+                    [text]="'Explorar projetos'"
+                    [icon]="'chevron_right'"
+                    [redirectTo]="'/portfolio'"></app-button>
+                    <app-button 
+                    [text]="'Saiba mais sobre mim'"
+                    [styleType]="3"
+                    [redirectTo]="'/about'"></app-button>
                 </div>
             </div>
         </div>
@@ -26,4 +29,4 @@
             </div>
         </div>
     </div>
-</section>
+</app-base-container>

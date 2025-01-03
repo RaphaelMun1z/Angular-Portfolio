@@ -1,65 +1,61 @@
-<section class="main-container">
-	<h2>Projetos Recentes</h2>
+<app-base-container>
+	<app-section-title [text]="'Projetos'" [emphasis]="'recentes'"></app-section-title>
 	<div class="inside-container">
 		<div class="grid-container">
 			<div class="item card-1">
 				<app-project-card-small 
+				[id]="projects[0].id"
 				[name]="projects[0].name" 
 				[proposal]="projects[0].proposal" 
+				[description]="projects[0].description"
 				[stack]="projects[0].stack"
 				[repositoryUrl]="projects[0].repositoryUrl"
 				[projectUrl]="projects[0].projectUrl"></app-project-card-small>
 			</div>
 			<div  class="item card-2">
 				<app-project-card-small 
+				[id]="projects[1].id"
 				[name]="projects[1].name" 
 				[proposal]="projects[1].proposal" 
+				[description]="projects[1].description"
 				[stack]="projects[1].stack"
 				[repositoryUrl]="projects[1].repositoryUrl"
 				[projectUrl]="projects[1].projectUrl"></app-project-card-small>
 			</div>
 			<div  class="item item-li large-item-1">
 				<app-vertical-carousel>
-					<swiper-slide>
-						<img class="project-image-large-box" src="/assets/netflix-1.png" alt="Imagem de projeto">
-					</swiper-slide>
-					<swiper-slide>
-						<img class="project-image-large-box" src="/assets/netflix-1.png" alt="Imagem de projeto">
-					</swiper-slide>
-					<swiper-slide>
-						<img class="project-image-large-box" src="/assets/netflix-1.png" alt="Imagem de projeto">
+					<swiper-slide *ngFor="let image of emphasisProjectImage[0]">
+						<img class="project-image-large-box" [src]="'/assets/'+image.path" [alt]="'Imagem do projeto'+image.projectName">
 					</swiper-slide>
 				</app-vertical-carousel>
 			</div>
 			<div  class="item item-li large-item-2">
 				<app-vertical-carousel>
-					<swiper-slide>
-						<img class="project-image-large-box" src="/assets/netflix-2.png" alt="Imagem de projeto">
-					</swiper-slide>
-					<swiper-slide>
-						<img class="project-image-large-box" src="/assets/netflix-1.png" alt="Imagem de projeto">
-					</swiper-slide>
-					<swiper-slide>
-						<img class="project-image-large-box" src="/assets/netflix-1.png" alt="Imagem de projeto">
+					<swiper-slide *ngFor="let image of emphasisProjectImage[1]">
+						<img class="project-image-large-box" [src]="'/assets/'+image.path" [alt]="'Imagem do projeto'+image.projectName">
 					</swiper-slide>
 				</app-vertical-carousel>
 			</div>
 			<div  class="item card-5">
 				<app-project-card-small 
+				[id]="projects[2].id"
 				[name]="projects[2].name" 
 				[proposal]="projects[2].proposal" 
+				[description]="projects[2].description"
 				[stack]="projects[2].stack"
 				[repositoryUrl]="projects[2].repositoryUrl"
 				[projectUrl]="projects[2].projectUrl"></app-project-card-small>
 			</div>
 			<div  class="item card-6">
 				<app-project-card-small 
+				[id]="projects[3].id"
 				[name]="projects[3].name" 
 				[proposal]="projects[3].proposal" 
+				[description]="projects[3].description"
 				[stack]="projects[3].stack"
 				[repositoryUrl]="projects[3].repositoryUrl"
 				[projectUrl]="projects[3].projectUrl"></app-project-card-small>
 			</div>
 		</div>
 	</div>
-</section>
+</app-base-container>

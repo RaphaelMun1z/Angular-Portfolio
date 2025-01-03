@@ -1,0 +1,88 @@
+.card{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    gap: 5vh 0;
+    
+    .header{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        gap: 0 1vw;
+        
+        i{
+            position: relative;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            color: #222;
+            font-size: 4rem;
+            padding-right: 1vw;
+        }
+        
+        .title{
+            position: relative;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            font-size: 3rem;
+            text-align: left;
+            color: #222;
+            font-weight: 800;
+        }
+    }
+    
+    .text-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        
+        .text{
+            text-align: start;
+            color: #222;
+            font-weight: 500;
+        }
+    }
+    
+    .links{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+        
+        p{
+            position: relative;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            border-radius: 10px;
+            overflow: hidden;
+            
+            a{
+                position: relative;
+                display: flex;
+                width: fit-content;
+                height: fit-content;
+                border-radius: 30px;
+                background-color: #53E953;
+                padding: 1.7vh 2vw 1.7vh 2vw;
+                font-weight: 600;
+                border: none;
+                font-size: 1rem;
+                align-items: center;
+                gap: 1vw;
+                transition: all 0.1s ease-in-out;
+                border: 1px solid rgba(17, 17, 17, 0.2196078431);
+                cursor: pointer;
+                outline: none !important;
+            }
+        }
+    }
+}

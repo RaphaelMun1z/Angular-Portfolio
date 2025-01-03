@@ -24,10 +24,23 @@
         z-index: 10;
     }
     
+    &.shadow-left{
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70px;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(240, 248, 255, 1), rgba(240, 248, 255, .1));
+            z-index: 10;
+        }
+    }
+    
     .swiper-container{
         position: relative;
         display: flex;
         width: 100%;
-        height: fit-content;
+        height: auto;
     }
 }

@@ -1,105 +1,108 @@
-<section class="main-container">
-  <h2>Habilidades</h2>
-  <app-carousel class="carousel">
-    <swiper-slide>
-      <div class="cards-column-container">
-        <app-carousel-skill-card
-          [title]="'Java'"
-          color="#E76E00"
-          [description]="
-            'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-          "
-          [logo]="'java'"
-        ></app-carousel-skill-card>
-        <app-carousel-skill-card
-          [title]="'Spring Framework'"
-          color="#68BD45"
-          [description]="
-            'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-          "
-          [logo]="'spring'"
-        ></app-carousel-skill-card>
-      </div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="cards-column-container">
-        <app-carousel-skill-card
-          [title]="'NodeJs'"
-          color=""
-          [description]="
-            'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-          "
-          [logo]="'nodejs'"
-        ></app-carousel-skill-card>
-        <app-carousel-skill-card
-          [title]="'Typescript'"
-          color="#3178c6"
-          [description]="
-            'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-          "
-          [logo]="'typescript'"
-        ></app-carousel-skill-card>
-      </div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="cards-column-container">
-        <app-carousel-skill-card
-          [title]="'Angular'"
-          color="#DE002D"
-          [description]="
-            'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-          "
-          [logo]="'angular'"
-        ></app-carousel-skill-card>
-        <app-carousel-skill-card
-          [title]="'React'"
-          color="#61DBFB"
-          [description]="
-            'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-          "
-          [logo]="'react'"
-        ></app-carousel-skill-card>
-      </div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="cards-column-container">
-        <app-carousel-skill-card
-          [title]="'Docker'"
-          color="#0091E2"
-          [description]="
-            'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-          "
-          [logo]="'docker'"
-        ></app-carousel-skill-card>
-        <app-carousel-skill-card
-          [title]="'Git'"
-          color="#F14E32"
-          [description]="
-            'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-          "
-          [logo]="'git'"
-        ></app-carousel-skill-card>
-      </div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="cards-column-container">
-        <app-carousel-skill-card
-          [title]="'Azure'"
-          color=""
-          [description]="
-            'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-          "
-          [logo]="'azure'"
-        ></app-carousel-skill-card>
-        <app-carousel-skill-card
-          [title]="'PostgreSQL'"
-          color=""
-          [description]="
-            'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-          "
-          [logo]="'postgresql'"
-        ></app-carousel-skill-card>
-      </div>
-    </swiper-slide>
-  </app-carousel>
-</section>
+<app-base-container>
+	<app-section-title [text]="'Minhas'" [emphasis]="'habilidades'"></app-section-title>
+	<app-carousel 
+	class="carousel"
+	[breakpoints]="breakpoints"
+	[navigation]="false">
+	<swiper-slide>
+		<div class="cards-column-container">
+			<app-carousel-skill-card
+			[title]="'Java'"
+			color="#E76E00"
+			[description]="
+			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
+			"
+			[logo]="'java'"
+			></app-carousel-skill-card>
+			<app-carousel-skill-card
+			[title]="'Spring Framework'"
+			color="#68BD45"
+			[description]="
+			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
+			"
+			[logo]="'spring'"
+			></app-carousel-skill-card>
+		</div>
+	</swiper-slide>
+	<swiper-slide>
+		<div class="cards-column-container">
+			<app-carousel-skill-card
+			[title]="'NodeJs'"
+			color=""
+			[description]="
+			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
+			"
+			[logo]="'nodejs'"
+			></app-carousel-skill-card>
+			<app-carousel-skill-card
+			[title]="'Typescript'"
+			color="#3178c6"
+			[description]="
+			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
+			"
+			[logo]="'typescript'"
+			></app-carousel-skill-card>
+		</div>
+	</swiper-slide>
+	<swiper-slide>
+		<div class="cards-column-container">
+			<app-carousel-skill-card
+			[title]="'Angular'"
+			color="#DE002D"
+			[description]="
+			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
+			"
+			[logo]="'angular'"
+			></app-carousel-skill-card>
+			<app-carousel-skill-card
+			[title]="'React'"
+			color="#61DBFB"
+			[description]="
+			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
+			"
+			[logo]="'react'"
+			></app-carousel-skill-card>
+		</div>
+	</swiper-slide>
+	<swiper-slide>
+		<div class="cards-column-container">
+			<app-carousel-skill-card
+			[title]="'Docker'"
+			color="#0091E2"
+			[description]="
+			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
+			"
+			[logo]="'docker'"
+			></app-carousel-skill-card>
+			<app-carousel-skill-card
+			[title]="'Git'"
+			color="#F14E32"
+			[description]="
+			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
+			"
+			[logo]="'git'"
+			></app-carousel-skill-card>
+		</div>
+	</swiper-slide>
+	<swiper-slide>
+		<div class="cards-column-container">
+			<app-carousel-skill-card
+			[title]="'Azure'"
+			color=""
+			[description]="
+			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
+			"
+			[logo]="'azure'"
+			></app-carousel-skill-card>
+			<app-carousel-skill-card
+			[title]="'PostgreSQL'"
+			color=""
+			[description]="
+			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
+			"
+			[logo]="'postgresql'"
+			></app-carousel-skill-card>
+		</div>
+	</swiper-slide>
+</app-carousel>
+</app-base-container>

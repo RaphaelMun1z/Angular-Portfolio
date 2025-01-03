@@ -1,56 +1,71 @@
-<section class="main-container">
-  <h2>Projetos Destaque</h2>
-  <div class="inside-container">
-    <div class="card size-2">
-      <div class="image-container">
-        <img src="/assets/netflixclone.png" alt="Imagem de projeto" />
-      </div>
-      <div class="buttons-container">
-        <div class="buttons-division buttons-top">
-          <button class="btn" pRipple (click)="openDialog('CLONE SITE NETFLIX', 'https://www.youtube.com/embed/xm4DbSFsOTM?si=zIdi96fEwJdb8THd')">
-            Assistir Prévia
-            <i class="material-icons">play_circle_outline</i>
-          </button>
-          <button [routerLink]="['/project/1']"><span pRipple class="material-icons">call_made</span></button>
-        </div>
-        <div class="buttons-division buttons-bottom">
-          <p>Projeto <span>CLONE SITE NETFLIX</span></p>
-        </div>
-      </div>
-    </div>
-    <div class="card size-2">
-      <div class="image-container">
-        <img src="/assets/coffeexp.png" alt="Imagem de projeto" />
-      </div>
-      <div class="buttons-container">
-        <div class="buttons-division buttons-top">
-          <button class="btn" pRipple (click)="openDialog('', '')">
-            Assistir Prévia
-            <i class="material-icons">play_circle_outline</i>
-          </button>
-          <button [routerLink]="['/project/2']"><span pRipple class="material-icons">call_made</span></button>
-        </div>
-        <div class="buttons-division buttons-bottom">
-          <p>Projeto <span>COFFEE XP</span></p>
-        </div>
-      </div>
-    </div>
-    <div class="card size-3">
-      <div class="image-container">
-        <img src="/assets/reactgram.png" alt="Imagem de projeto" />
-      </div>
-      <div class="buttons-container">
-        <div class="buttons-division buttons-top">
-          <button class="btn" pRipple (click)="openDialog('', '')">
-            Assistir Prévia
-            <i class="material-icons">play_circle_outline</i>
-          </button>
-          <button [routerLink]="['/project/3']"><span pRipple class="material-icons">call_made</span></button>
-        </div>
-        <div class="buttons-division buttons-bottom">
-          <p>Projeto <span>REACTGRAM</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<app-base-container>
+	<app-section-title [text]="'Projetos em'" [emphasis]="'destaque'"></app-section-title>
+	<div class="inside-container">
+		<div class="card size-2">
+			<div class="image-container">
+				<img src="/assets/netflixclone.png" alt="Imagem de projeto" />
+			</div>
+			<div class="buttons-container">
+				<div class="buttons-division buttons-top">
+					<app-button 
+					[text]="'Assistir Prévia'"
+					[icon]="'play_circle_outline'" 
+					(click)="openDialog('CLONE SITE NETFLIX', 'https://www.youtube.com/embed/xm4DbSFsOTM?si=zIdi96fEwJdb8THd')"></app-button>
+					<app-button 
+					[text]="''"
+					[redirectTo]="'/portfolio/project'"
+					[redirectParam]="'1'"
+					[icon]="'call_made'"
+					[styleType]="1"></app-button>
+				</div>
+				<div class="buttons-division buttons-bottom">
+					<p>Projeto <span>CLONE SITE NETFLIX</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="card size-2">
+			<div class="image-container">
+				<img src="/assets/coffeexp.png" alt="Imagem de projeto" />
+			</div>
+			<div class="buttons-container">
+				<div class="buttons-division buttons-top">
+					<app-button 
+					[text]="'Assistir Prévia'"
+					[icon]="'play_circle_outline'" 
+					(click)="openDialog('COFFEE XP', 'https://www.youtube.com/embed/xm4DbSFsOTM?si=zIdi96fEwJdb8THd')"></app-button>
+					<app-button 
+					[text]="''"
+					[redirectTo]="'/portfolio/project'"
+					[redirectParam]="'2'"
+					[icon]="'call_made'"
+					[styleType]="1"></app-button>
+				</div>
+				<div class="buttons-division buttons-bottom">
+					<p>Projeto <span>COFFEE XP</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="card size-3">
+			<div class="image-container">
+				<img src="/assets/reactgram.png" alt="Imagem de projeto" />
+			</div>
+			<div class="buttons-container">
+				<div class="buttons-division buttons-top">
+					<app-button 
+					[text]="'Assistir Prévia'"
+					[icon]="'play_circle_outline'" 
+					(click)="openDialog('REACTGRAM', 'https://www.youtube.com/embed/xm4DbSFsOTM?si=zIdi96fEwJdb8THd')"></app-button>
+					<app-button 
+					[text]="''"
+					[redirectTo]="'/portfolio/project'"
+					[redirectParam]="'3'"
+					[icon]="'call_made'"
+					[styleType]="1"></app-button>
+				</div>
+				<div class="buttons-division buttons-bottom">
+					<p>Projeto <span>REACTGRAM</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</app-base-container>

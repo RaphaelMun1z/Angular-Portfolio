@@ -1,7 +1,5 @@
 <section class="main-container">
-    <div class="title-container">
-        <h1>Projeto <span>{{ name }}</span></h1>
-    </div>
+    <app-section-title [text]="'Projeto'" [emphasis]="name"></app-section-title>
     <div class="container">
         <div class="topic-container banner-container">
             <img class="banner" [src]="'/assets/' + imageUrl" alt="Imagem representativa do projeto">

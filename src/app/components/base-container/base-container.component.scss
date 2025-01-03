@@ -1,0 +1,10 @@
+.main-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding: 5vh 0;
+    padding-top: 0;
+    transform: translateY(-10vh);
+}

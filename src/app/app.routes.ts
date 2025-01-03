@@ -13,6 +13,10 @@ export const routes: Routes = [
     {
         path: 'about',
         component: AboutMeComponent
+    }, 
+    {
+        path: 'portfolio/project/:id',
+        component: ProjectComponent
     },
     {
         path: 'portfolio',
@@ -21,10 +25,6 @@ export const routes: Routes = [
     {
         path: 'contact',
         component: ContactPageComponent
-    },
-    {
-        path: 'project/:id',
-        component: ProjectComponent
     },
     {
         path: '**',

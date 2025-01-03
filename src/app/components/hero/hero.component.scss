@@ -1,142 +1,131 @@
-.main-container{
+.container{
     position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: fit-content;
-    padding: 5vh 0;
-    padding-top: 0;
-    transform: translateY(-10vh);
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    background: radial-gradient( circle at 70% center, #333 10%, #222 25%, #111 60%);
+    border-radius: 50px;
+    padding: 10vh 10vw;
+    overflow: hidden;
     
-    .container{
+    .child{
         position: relative;
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-        aspect-ratio: 16 / 9;
-        background: radial-gradient( circle at 70% center, #333 10%, #222 25%, #111 60%);
-        border-radius: 50px;
-        padding: 10vh 10vw;
-        overflow: hidden;
+        width: 50%;
+        height: auto;
+        align-items: center;
         
-        .child{
-            position: relative;
-            display: flex;
-            width: 50%;
-            height: auto;
+        &:nth-child(1){
+            padding: 5% 0;
+        }
+        
+        &:nth-child(2){
+            justify-content: center;
             align-items: center;
             
-            &:nth-child(1){
-                padding: 5% 0;
-            }
-            
-            &:nth-child(2){
-                justify-content: center;
-                align-items: center;
+            .card-container{
+                position: relative;
+                display: flex;
+                height: 70%;
+                aspect-ratio: 9 / 11;
+                border-radius: 20px;
+                z-index: 2;
                 
-                .card-container{
+                img{
                     position: relative;
                     display: flex;
-                    height: 70%;
-                    aspect-ratio: 9 / 11;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
                     border-radius: 20px;
                     z-index: 2;
-                    
-                    img{
-                        position: relative;
-                        display: flex;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: contain;
-                        border-radius: 20px;
-                        z-index: 2;
-                    }
                 }
             }
+        }
+        
+        .content-container{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: #fff;
             
-            .content-container{
+            .text{
                 position: relative;
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 width: 100%;
-                height: 100%;
-                color: #fff;
+                height: fit-content;
+                gap: 2vh;
                 
-                .text{
+                h1{
+                    font-size: 3.5vw;
+                    line-height: normal;
+                    font-weight: 700;
+                }
+                
+                p{
+                    font-size: 1.05vw;
+                    font-weight: 200;
+                    line-height: normal;
+                }
+            }
+            
+            .links{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: fit-content;
+                align-items: center;
+                gap: 1.5vw;
+                margin-top: 5vh;
+                font-size: 1rem;
+                
+                button{
                     position: relative;
                     display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: column;
-                    width: 100%;
+                    width: fit-content;
                     height: fit-content;
-                    gap: 2vh;
+                    border-radius: 30px;
+                    background-color: #53E953;
+                    padding: 1.7vh 2vw 1.7vh 2vw;
+                    font-weight: 600;
+                    border: none;
+                    font-size: 1rem;
+                    align-items: center;
+                    gap: 1vw;
+                    transition: all .1s ease-in-out;
+                    border: 2px solid #53E953;
+                    cursor: pointer;
+                    outline: none !important;
                     
-                    h1{
-                        font-size: 3.5vw;
-                        line-height: normal;
-                        font-weight: 700;
-                    }
-                    
-                    p{
-                        font-size: 1.05vw;
-                        font-weight: 200;
-                        line-height: normal;
+                    &:hover{
+                        border: 2px solid #53E953;
+                        background-color: transparent;
+                        color: #53E953;
+                        transition: all .1s ease-in-out;
                     }
                 }
                 
-                .links{
-                    position: relative;
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    height: fit-content;
-                    align-items: center;
-                    gap: 1.5vw;
-                    margin-top: 5vh;
-                    font-size: 1rem;
+                a{
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all .1s ease-in-out;
                     
-                    button{
-                        position: relative;
-                        display: flex;
-                        width: fit-content;
-                        height: fit-content;
-                        border-radius: 30px;
-                        background-color: #53E953;
-                        padding: 1.7vh 2vw 1.7vh 2vw;
-                        font-weight: 600;
-                        border: none;
-                        font-size: 1rem;
-                        align-items: center;
-                        gap: 1vw;
+                    &:hover{
                         transition: all .1s ease-in-out;
-                        border: 2px solid #53E953;
-                        cursor: pointer;
-                        outline: none !important;
-                        
-                        &:hover{
-                            border: 2px solid #53E953;
-                            background-color: transparent;
-                            color: #53E953;
-                            transition: all .1s ease-in-out;
-                        }
+                        opacity: .5;
                     }
-                    
-                    a{
-                        font-weight: 600;
-                        cursor: pointer;
-                        transition: all .1s ease-in-out;
-                        
-                        &:hover{
-                            transition: all .1s ease-in-out;
-                            opacity: .5;
-                        }
-                    }
-                }  
-            }
+                }
+            }  
         }
     }
 }

@@ -3,11 +3,12 @@ import { IconComponent } from "../../components/icon/icon.component";
 import { ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../../services/project.service';
 import { CommonModule } from '@angular/common';
+import { SectionTitleComponent } from "../../components/section-title/section-title.component";
 
 @Component({
     selector: 'app-project',
     standalone: true,
-    imports: [IconComponent, CommonModule],
+    imports: [IconComponent, CommonModule, SectionTitleComponent],
     templateUrl: './project.component.html',
     styleUrl: './project.component.scss'
 })

@@ -1,6 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CarouselComponent } from "../carousel/carousel.component";
 import { CarouselTestimonialCardComponent } from "../carousel/carousel-testimonial-card/carousel-testimonial-card.component";
+import { SectionTitleComponent } from "../section-title/section-title.component";
 
 interface Testimonial {
     id: string;
@@ -13,7 +14,7 @@ interface Testimonial {
 @Component({
     selector: 'app-testimonials',
     standalone: true,
-    imports: [CarouselComponent, CarouselTestimonialCardComponent],
+    imports: [CarouselComponent, CarouselTestimonialCardComponent, SectionTitleComponent],
     host: { ngSkipHydration: 'true' },
     templateUrl: './testimonials.component.html',
     styleUrl: './testimonials.component.scss',
