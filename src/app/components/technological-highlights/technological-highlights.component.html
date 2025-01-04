@@ -1,4 +1,4 @@
-<section class="main-container">
+<app-base-container>
 	<app-section-title [text]="'Minhas'" [emphasis]="'habilidades conceituais'"></app-section-title>
 	<div class="inside-container">
 		<div class="grid-container">
@@ -16,115 +16,49 @@
 				[centeredSlides]="true"
 				[spaceBetween]="10"
 				[withShadowLeft]="true">
-				<swiper-slide class="carousel-item">
-					<app-tech-card [icon]="'account_balance'" [title]="'Padrões de design'" [description]="'SOLID e TDD'"></app-tech-card>
-				</swiper-slide>
-				<swiper-slide class="carousel-item">
-					<app-tech-card [icon]="'settings_suggest'" [title]="'Gerenciamento de estado'" [description]="'dawdwawadwa'"></app-tech-card>
-				</swiper-slide>
-				<swiper-slide class="carousel-item">
-					<app-tech-card [icon]="'http'" [title]="'Protocolo HTTP'" [description]="'dawdwawadwa'"></app-tech-card>
-				</swiper-slide>
-				<swiper-slide class="carousel-item">
-					<app-tech-card [icon]="'security'" [title]="'Estratégia de Autenticação'" [description]="'dawdwawadwa'"></app-tech-card>
-				</swiper-slide>
-				<swiper-slide class="carousel-item">
-					<app-tech-card [icon]="'search'" [title]="'SEO'" [description]="'dawdwawadwa'"></app-tech-card>
-				</swiper-slide>
-				<swiper-slide class="carousel-item">
-					<app-tech-card [icon]="'biotech'" [title]="'Testes unitários'" [description]="'dawdwawadwa'"></app-tech-card>
-				</swiper-slide>
-				<swiper-slide class="carousel-item">
-					<app-tech-card [icon]="'css'" [title]="'SASS'" [description]="'dawdwawadwa'"></app-tech-card>
-				</swiper-slide>
-				<swiper-slide class="carousel-item">
-					<app-tech-card [icon]="'phonelink'" [title]="'Responsividade'" [description]="'dawdwawadwa'"></app-tech-card>
-				</swiper-slide>
-				<swiper-slide class="carousel-item">
-					<app-tech-card [icon]="'share'" [title]="'Controle de versão'" [description]="'Git - Github'"></app-tech-card>
-				</swiper-slide>
-			</app-carousel>
+					<swiper-slide class="carousel-item" *ngFor="let skill of frontendConceptualSkills">
+						<app-tech-card [icon]="skill.icon" [title]="skill.name" [description]="skill.description"></app-tech-card>
+					</swiper-slide>
+				</app-carousel>
+			</div>
+			<div pRipple class="item card-4 card-n left">
+				<app-carousel
+				class="carousel"
+				[slidesPerView]="1.5"
+				[centeredSlides]="true"
+				[spaceBetween]="10"
+				[withShadowLeft]="true">
+					<swiper-slide class="carousel-item" *ngFor="let skill of backendConceptualSkills">
+						<app-tech-card [icon]="skill.icon" [title]="skill.name" [description]="skill.description"></app-tech-card>
+					</swiper-slide>
+				</app-carousel>
+			</div>
+			<div pRipple class="item card-6 card-l card-l-2">
+				<app-tech-topic-card
+				[name]="'BACKEND'"
+				[icon]="'dns'"
+				[description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
+				[link]="'aaa'"></app-tech-topic-card>
+			</div>
+			<div pRipple class="item card-7 card-l card-l-3">
+				<app-tech-topic-card
+				[name]="'GERAL'"
+				[icon]="'add_circle_outline'"
+				[description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
+				[link]="'aaa'"></app-tech-topic-card>
+			</div>
+			<div pRipple class="item card-8 card-n right">
+				<app-carousel
+				class="carousel"
+				[slidesPerView]="1.5"
+				[centeredSlides]="true"
+				[spaceBetween]="10"
+				[withShadowLeft]="true">
+					<swiper-slide class="carousel-item" *ngFor="let skill of generalConceptualSkills">
+						<app-tech-card [icon]="skill.icon" [title]="skill.name" [description]="skill.description"></app-tech-card>
+					</swiper-slide>
+				</app-carousel>
+			</div>
 		</div>
-		<div pRipple class="item card-4 card-n left">
-			<app-carousel
-			class="carousel"
-			[slidesPerView]="1.5"
-			[centeredSlides]="true"
-			[spaceBetween]="10"
-			[withShadowLeft]="true">
-			<swiper-slide class="carousel-item">
-				<app-tech-card [icon]="'lock_outline'" [title]="'Spring Security'" [description]="'Autenticação JWT'"></app-tech-card>
-			</swiper-slide>
-			<swiper-slide class="carousel-item">
-				<app-tech-card [icon]="'account_tree'" [title]="'Hibernate (ORM)'" [description]="'dawdawdw'"></app-tech-card>
-			</swiper-slide>
-			<swiper-slide class="carousel-item">
-				<app-tech-card [icon]="'web_stories'" [title]="'Spring Data'" [description]="'Spring Data JPA'"></app-tech-card>
-			</swiper-slide>
-			<swiper-slide class="carousel-item">
-				<app-tech-card [icon]="'miscellaneous_services'" [title]="'Microsserviços'" [description]="'dawdawdaw'"></app-tech-card>
-			</swiper-slide>
-			<swiper-slide class="carousel-item">
-				<app-tech-card [icon]="'schedule'" [title]="'Scheduling'" [description]="'dawdawdaw'"></app-tech-card>
-			</swiper-slide>
-			<swiper-slide class="carousel-item">
-				<app-tech-card [icon]="'memory'" [title]="'Multithreading'" [description]="'dawdawdaw'"></app-tech-card>
-			</swiper-slide>
-			<swiper-slide class="carousel-item">
-				<app-tech-card [icon]="'biotech'" [title]="'Testes unitários'" [description]="'dawdwawadwa'"></app-tech-card>
-			</swiper-slide>
-			<swiper-slide class="carousel-item">
-				<app-tech-card [icon]="'timeline'" [title]="'Testes de integração'" [description]="'dawdwawadwa'"></app-tech-card>
-			</swiper-slide>
-			<swiper-slide class="carousel-item">
-				<app-tech-card [icon]="'share'" [title]="'Controle de versão'" [description]="'Git - Github'"></app-tech-card>
-			</swiper-slide>	
-		</app-carousel>
 	</div>
-	<div pRipple class="item card-6 card-l card-l-2">
-		<app-tech-topic-card
-		[name]="'BACKEND'"
-		[icon]="'dns'"
-		[description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
-		[link]="'aaa'"></app-tech-topic-card>
-	</div>
-	<div pRipple class="item card-7 card-l card-l-3">
-		<app-tech-topic-card
-		[name]="'GERAL'"
-		[icon]="'add_circle_outline'"
-		[description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
-		[link]="'aaa'"></app-tech-topic-card>
-	</div>
-	<div pRipple class="item card-8 card-n right">
-		<app-carousel
-		class="carousel"
-		[slidesPerView]="1.5"
-		[centeredSlides]="true"
-		[spaceBetween]="10"
-		[withShadowLeft]="true">
-		<swiper-slide class="carousel-item">
-			<app-tech-card [icon]="'cloud'" [title]="'Azure'" [description]="'dawawdwa'"></app-tech-card>
-		</swiper-slide>
-		<swiper-slide class="carousel-item">
-			<app-tech-card [icon]="'table_chart'" [title]="'Banco de dados SQL'" [description]="'dawawdwa'"></app-tech-card>
-		</swiper-slide>
-		<swiper-slide class="carousel-item">
-			<app-tech-card [icon]="'data_array'" [title]="'Banco de dados NoSQL'" [description]="'dawawdwa'"></app-tech-card>
-		</swiper-slide>
-		<swiper-slide class="carousel-item">
-			<app-tech-card [icon]="'data_object'" [title]="'ORM'" [description]="'JPA/Hibernate (Java) e Sequelize (Node.js)'"></app-tech-card>
-		</swiper-slide>
-		<swiper-slide class="carousel-item">
-			<app-tech-card [icon]="'map'" [title]="'DevOps'" [description]="'dawdawawdaw'"></app-tech-card>
-		</swiper-slide>
-		<swiper-slide class="carousel-item">
-			<app-tech-card [icon]="'auto_mode'" [title]="'CI/CD - Integração Contínua e Deploy Contínuo'" [description]="'dawdawawdaw'"></app-tech-card>
-		</swiper-slide>
-		<swiper-slide class="carousel-item">
-			<app-tech-card [icon]="'inbox'" [title]="'Docker'" [description]="'dawdawawdaw'"></app-tech-card>
-		</swiper-slide>
-	</app-carousel>
-</div>
-</div>
-</div>
-</section>
+</app-base-container>

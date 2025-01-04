@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IconComponent } from "../../components/icon/icon.component";
 import { ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../../services/project.service';
@@ -12,7 +12,7 @@ import { SectionTitleComponent } from "../../components/section-title/section-ti
     templateUrl: './project.component.html',
     styleUrl: './project.component.scss'
 })
-export class ProjectComponent {
+export class ProjectComponent implements OnInit {
     private id: string | null = "0";
     
     name! : string;

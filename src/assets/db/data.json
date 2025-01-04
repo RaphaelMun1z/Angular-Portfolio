@@ -1,0 +1,319 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "name": "Dealership",
+            "stack": ["spring", "angular", "postgresql", "docker"],
+            "proposal": "Soon",
+            "description": "Soon",
+            "repositoryUrl": "https://github.com/RaphaelMun1z/SpringBoot-Dealership",
+            "projectUrl": "Soon",
+            "imageUrl": "banner-dealership.png"
+        },
+        {
+            "id": "2",
+            "name": "LeaseInsight",
+            "stack": ["spring", "angular", "postgresql", "docker"],
+            "proposal": "software para a administração de locação de imóveis.",
+            "description": "Soon",
+            "repositoryUrl": "https://github.com/RaphaelMun1z/SpringBoot-LeaseInsight",
+            "projectUrl": "Soon",
+            "imageUrl": "banner-leaseInsight.png"
+        },
+        {
+            "id": "3",
+            "name": "Netflix",
+            "stack": ["react"],
+            "proposal": "Exercitar minhas habilidades no desenvolvimento de interfaces.",
+            "description": "Clone da Interface Netflix em React: Um projeto que replica a experiência de usuário da Netflix usando React.",
+            "repositoryUrl": "https://github.com/RaphaelMun1z/React-Netflix-frontend",
+            "projectUrl": "Soon",
+            "imageUrl": "banner-netflix.png"
+        },
+        {
+            "id": "4",
+            "name": "ReactGram",
+            "stack": ["react", "nodejs", "mongodb"],
+            "proposal": "Exercitar minhas habilidades no desenvolvimento de interfaces.",
+            "description": "Inspirado no Instagram, foi desenvolvido utilizando React e NodeJS.",
+            "repositoryUrl": "https://github.com/RaphaelMun1z/React-ReactGram-frontend",
+            "projectUrl": "Soon",
+            "imageUrl": "banner-reactGram.png"
+        }
+    ],
+    "skills": [
+        {
+            "id": "1",
+            "name": "Java",
+            "icon": "java",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "2",
+            "name": "Spring Framework",
+            "icon": "spring",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "3",
+            "name": "Typescript",
+            "icon": "typescript",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "4",
+            "name": "Angular",
+            "icon": "angular",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "5",
+            "name": "NodeJs",
+            "icon": "nodejs",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "6",
+            "name": "React",
+            "icon": "react",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "7",
+            "name": "Docker",
+            "icon": "docker",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "8",
+            "name": "Git",
+            "icon": "git",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "9",
+            "name": "Azure",
+            "icon": "azure",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "10",
+            "name": "PostgreSQL",
+            "icon": "postgresql",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "11",
+            "name": "MySQL",
+            "icon": "mysql",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        },
+        {
+            "id": "12",
+            "name": "MongoDB",
+            "icon": "mongodb",
+            "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        }
+    ],
+    "conceptual_skills": [
+        {
+            "frontend": [
+                {
+                    "id": "1",
+                    "name": "Padrões de design",
+                    "icon": "account_balance",
+                    "description": "SOLID e TDD"
+                },
+                {
+                    "id": "2",
+                    "name": "Gerenciamento de estado",
+                    "icon": "settings_suggest",
+                    "description": "dawdwawadwa"
+                },
+                {
+                    "id": "3",
+                    "name": "Protocolo HTTP",
+                    "icon": "http",
+                    "description": "dawdwawadwa"
+                },
+                {
+                    "id": "4",
+                    "name": "SEO",
+                    "icon": "security",
+                    "description": "dawdwawadwa"
+                },
+                {
+                    "id": "5",
+                    "name": "",
+                    "icon": "search",
+                    "description": "dawdwawadwa"
+                },
+                {
+                    "id": "6",
+                    "name": "Testes unitários",
+                    "icon": "biotech",
+                    "description": "dawdwawadwa"
+                },
+                {
+                    "id": "7",
+                    "name": "SASS",
+                    "icon": "css",
+                    "description": "dawdwawadwa"
+                },
+                {
+                    "id": "8",
+                    "name": "Responsividade",
+                    "icon": "phonelink",
+                    "description": "dawdwawadwa"
+                },
+                {
+                    "id": "9",
+                    "name": "Controle de versão",
+                    "icon": "share",
+                    "description": "dawdwawadwa"
+                }
+            ]
+        },
+        {
+            "backend": [
+                {
+                    "id": "1",
+                    "name": "Spring Security",
+                    "icon": "lock_outline",
+                    "description": "Autenticação JWT"
+                },
+                {
+                    "id": "2",
+                    "name": "Hibernate (ORM)",
+                    "icon": "account_tree",
+                    "description": "dawdawdw"
+                },
+                {
+                    "id": "3",
+                    "name": "Spring Data",
+                    "icon": "web_stories",
+                    "description": "Spring Data JPA"
+                },
+                {
+                    "id": "4",
+                    "name": "Microsserviços",
+                    "icon": "miscellaneous_services",
+                    "description": "dawdawdw"
+                },
+                {
+                    "id": "5",
+                    "name": "Scheduling",
+                    "icon": "schedule",
+                    "description": "dawdawdw"
+                },
+                {
+                    "id": "6",
+                    "name": "Multithreading",
+                    "icon": "memory",
+                    "description": "dawdawdw"
+                },
+                {
+                    "id": "7",
+                    "name": "Testes unitários",
+                    "icon": "biotech",
+                    "description": "dawdawdw"
+                },
+                {
+                    "id": "8",
+                    "name": "Testes de integração",
+                    "icon": "timeline",
+                    "description": "dawdawdw"
+                },
+                {
+                    "id": "9",
+                    "name": "Controle de versão",
+                    "icon": "share",
+                    "description": "dawdawdw"
+                }
+            ]
+        },
+        {
+            "general": [
+                {
+                    "id": "1",
+                    "name": "Azure",
+                    "icon": "cloud",
+                    "description": "dawdawawdaw"
+                },
+                {
+                    "id": "2",
+                    "name": "Banco de dados SQL",
+                    "icon": "table_chart",
+                    "description": "dawdawawdaw"
+                },
+                {
+                    "id": "3",
+                    "name": "Banco de dados NoSQL",
+                    "icon": "data_array",
+                    "description": "dawdawawdaw"
+                },
+                {
+                    "id": "4",
+                    "name": "ORM",
+                    "icon": "data_object",
+                    "description": "dawdawawdaw"
+                },
+                {
+                    "id": "5",
+                    "name": "DevOps",
+                    "icon": "map",
+                    "description": "dawdawawdaw"
+                },
+                {
+                    "id": "6",
+                    "name": "CI/CD - Integração Contínua e Deploy Contínuo",
+                    "icon": "auto_mode",
+                    "description": "dawdawawdaw"
+                },
+                {
+                    "id": "7",
+                    "name": "Docker",
+                    "icon": "inbox",
+                    "description": "dawdawawdaw"
+                }
+            ]
+        }
+    ],
+    "testimonials": [
+        {
+            "id": "1",
+            "image": "user.png",
+            "text": "Exemplo de texto Exemplo de texto Exemplo de texto Exemplo de texto ",
+            "name": "Exemplo de nome",
+            "position": "CEO at Google"
+        },
+        {
+            "id": "2",
+            "image": "user.png",
+            "text": "Exemplo de texto Exemplo de texto Exemplo de texto Exemplo de texto ",
+            "name": "Exemplo de nome",
+            "position": "CEO at Google"
+        },
+        {
+            "id": "3",
+            "image": "user.png",
+            "text": "Exemplo de texto Exemplo de texto Exemplo de texto Exemplo de texto ",
+            "name": "Exemplo de nome",
+            "position": "CEO at Google"
+        },
+        {
+            "id": "4",
+            "image": "user.png",
+            "text": "Exemplo de texto Exemplo de texto Exemplo de texto Exemplo de texto ",
+            "name": "Exemplo de nome",
+            "position": "CEO at Google"
+        },
+        {
+            "id": "5",
+            "image": "user.png",
+            "text": "Exemplo de texto Exemplo de texto Exemplo de texto Exemplo de texto ",
+            "name": "Exemplo de nome",
+            "position": "CEO at Google"
+        }
+    ]
+}

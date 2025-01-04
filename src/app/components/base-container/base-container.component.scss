@@ -2,9 +2,13 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     height: fit-content;
-    padding: 5vh 0;
-    padding-top: 0;
-    transform: translateY(-10vh);
+    padding: 0;
+    margin-bottom: 0;
+
+    &.hero{
+        margin-top: -10vh;
+    }
 }

@@ -4,103 +4,19 @@
 	class="carousel"
 	[breakpoints]="breakpoints"
 	[navigation]="false">
-	<swiper-slide>
+	<swiper-slide *ngFor="let skillGroup of skills">
 		<div class="cards-column-container">
 			<app-carousel-skill-card
-			[title]="'Java'"
+			[title]="skillGroup[0].name"
 			color="#E76E00"
-			[description]="
-			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-			"
-			[logo]="'java'"
+			[description]="skillGroup[0].description"
+			[logo]="skillGroup[0].icon"
 			></app-carousel-skill-card>
 			<app-carousel-skill-card
-			[title]="'Spring Framework'"
-			color="#68BD45"
-			[description]="
-			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-			"
-			[logo]="'spring'"
-			></app-carousel-skill-card>
-		</div>
-	</swiper-slide>
-	<swiper-slide>
-		<div class="cards-column-container">
-			<app-carousel-skill-card
-			[title]="'NodeJs'"
-			color=""
-			[description]="
-			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-			"
-			[logo]="'nodejs'"
-			></app-carousel-skill-card>
-			<app-carousel-skill-card
-			[title]="'Typescript'"
-			color="#3178c6"
-			[description]="
-			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-			"
-			[logo]="'typescript'"
-			></app-carousel-skill-card>
-		</div>
-	</swiper-slide>
-	<swiper-slide>
-		<div class="cards-column-container">
-			<app-carousel-skill-card
-			[title]="'Angular'"
-			color="#DE002D"
-			[description]="
-			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-			"
-			[logo]="'angular'"
-			></app-carousel-skill-card>
-			<app-carousel-skill-card
-			[title]="'React'"
-			color="#61DBFB"
-			[description]="
-			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-			"
-			[logo]="'react'"
-			></app-carousel-skill-card>
-		</div>
-	</swiper-slide>
-	<swiper-slide>
-		<div class="cards-column-container">
-			<app-carousel-skill-card
-			[title]="'Docker'"
-			color="#0091E2"
-			[description]="
-			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-			"
-			[logo]="'docker'"
-			></app-carousel-skill-card>
-			<app-carousel-skill-card
-			[title]="'Git'"
-			color="#F14E32"
-			[description]="
-			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-			"
-			[logo]="'git'"
-			></app-carousel-skill-card>
-		</div>
-	</swiper-slide>
-	<swiper-slide>
-		<div class="cards-column-container">
-			<app-carousel-skill-card
-			[title]="'Azure'"
-			color=""
-			[description]="
-			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-			"
-			[logo]="'azure'"
-			></app-carousel-skill-card>
-			<app-carousel-skill-card
-			[title]="'PostgreSQL'"
-			color=""
-			[description]="
-			'Soluções sob medida para atender às necessidades específicas de cada cliente.'
-			"
-			[logo]="'postgresql'"
+			[title]="skillGroup[1].name"
+			color="#E76E00"
+			[description]="skillGroup[1].description"
+			[logo]="skillGroup[1].icon"
 			></app-carousel-skill-card>
 		</div>
 	</swiper-slide>

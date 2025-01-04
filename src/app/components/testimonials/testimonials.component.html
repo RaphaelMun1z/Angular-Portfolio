@@ -1,98 +1,17 @@
-<section class="main-container">
-  <app-section-title [text]="'Depoimentos'" [emphasis]="''"></app-section-title>
-  <div class="inside-container">
-    <!-- <p-carousel
-    [value]="testimonials"
-    [numVisible]="3"
-    [numScroll]="3"
-    [circular]="true"
-    [responsiveOptions]="responsiveOptions"
-    autoplayInterval="5000"
-    >
-    <ng-template let-testimonial pTemplate="item">
-      <div class="p-1">
-        <app-card
-        [imageUrl]="testimonial.imageUrl"
-        [name]="testimonial.name"
-        [text]="testimonial.text"
-        [position]="testimonial.position"
-        ></app-card>
-      </div>
-    </ng-template>
-  </p-carousel> -->
-    <app-carousel class="carousel">
-      <swiper-slide>
-        <div class="cards-column-container">
-          <app-carousel-testimonial-card
-            [imageUrl]="'https://cdn-icons-png.flaticon.com/512/149/149071.png'"
-            [name]="'Nome 1'"
-            [text]="
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro soluta quos adipisci at fuga voluptatem! Voluptatum mollitia hic velit est assumenda dignissimos totam ullam, iure adipisci dicta, esse optio.'
-            "
-            [position]="'CEO'"
-          ></app-carousel-testimonial-card>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="cards-column-container">
-          <app-carousel-testimonial-card
-            [imageUrl]="'https://cdn-icons-png.flaticon.com/512/149/149071.png'"
-            [name]="'Nome 1'"
-            [text]="
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro soluta quos adipisci at fuga voluptatem! Voluptatum mollitia hic velit est assumenda dignissimos totam ullam, iure adipisci dicta, esse optio.'
-            "
-            [position]="'CEO'"
-          ></app-carousel-testimonial-card>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="cards-column-container">
-          <app-carousel-testimonial-card
-            [imageUrl]="'https://cdn-icons-png.flaticon.com/512/149/149071.png'"
-            [name]="'Nome 1'"
-            [text]="
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro soluta quos adipisci at fuga voluptatem! Voluptatum mollitia hic velit est assumenda dignissimos totam ullam, iure adipisci dicta, esse optio.'
-            "
-            [position]="'CEO'"
-          ></app-carousel-testimonial-card>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="cards-column-container">
-          <app-carousel-testimonial-card
-            [imageUrl]="'https://cdn-icons-png.flaticon.com/512/149/149071.png'"
-            [name]="'Nome 1'"
-            [text]="
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro soluta quos adipisci at fuga voluptatem! Voluptatum mollitia hic velit est assumenda dignissimos totam ullam, iure adipisci dicta, esse optio.'
-            "
-            [position]="'CEO'"
-          ></app-carousel-testimonial-card>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="cards-column-container">
-          <app-carousel-testimonial-card
-            [imageUrl]="'https://cdn-icons-png.flaticon.com/512/149/149071.png'"
-            [name]="'Nome 1'"
-            [text]="
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro soluta quos adipisci at fuga voluptatem! Voluptatum mollitia hic velit est assumenda dignissimos totam ullam, iure adipisci dicta, esse optio.'
-            "
-            [position]="'CEO'"
-          ></app-carousel-testimonial-card>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="cards-column-container">
-          <app-carousel-testimonial-card
-            [imageUrl]="'https://cdn-icons-png.flaticon.com/512/149/149071.png'"
-            [name]="'Nome 1'"
-            [text]="
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro soluta quos adipisci at fuga voluptatem! Voluptatum mollitia hic velit est assumenda dignissimos totam ullam, iure adipisci dicta, esse optio.'
-            "
-            [position]="'CEO'"
-          ></app-carousel-testimonial-card>
-        </div>
-      </swiper-slide>
-    </app-carousel>
-  </div>
-</section>
+<app-base-container>
+	<app-section-title [text]="'Depoimentos'" [emphasis]="''"></app-section-title>
+	<div class="inside-container">
+		<app-carousel class="carousel">
+			<swiper-slide *ngFor="let testimonial of testimonials">
+				<div class="cards-column-container">
+					<app-carousel-testimonial-card
+					[imageUrl]="testimonial.image"
+					[name]="testimonial.name"
+					[text]="testimonial.text"
+					[position]="testimonial.position"
+					></app-carousel-testimonial-card>
+				</div>
+			</swiper-slide>
+		</app-carousel>
+	</div>
+</app-base-container>
