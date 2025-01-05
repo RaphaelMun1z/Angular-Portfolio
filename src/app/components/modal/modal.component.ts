@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Inject, inject, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {
     MAT_DIALOG_DATA,

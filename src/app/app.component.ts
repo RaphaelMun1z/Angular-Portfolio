@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
 
 export class AppComponent implements OnInit {
     title = 'portfolio';
-    isScrolled: boolean = false;
+    isScrolled = false;
     
     constructor(private primengConfig: PrimeNGConfig, private router: Router) {
         this.router.events.subscribe((evt) => {

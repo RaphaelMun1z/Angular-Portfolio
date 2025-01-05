@@ -12,11 +12,7 @@ import { TagModule } from 'primeng/tag';
     host: { ngSkipHydration: 'true' }
 })
 export class DropdownComponent  implements OnInit {
-    products: string[] = ['a', 'b', 'c'];
-    
     responsiveOptions: any[] | undefined;
-    
-    constructor() {}
     
     ngOnInit() {      
         this.responsiveOptions = [

@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './tech-card.component.scss'
 })
 export class TechCardComponent {
-    @Input() title : string = "";
-    @Input() description : string = "";
-    @Input() icon : string = "";
+    @Input() title! : string;
+    @Input() description! : string;
+    @Input() icon! : string;
 }

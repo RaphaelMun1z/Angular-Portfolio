@@ -25,14 +25,13 @@ interface Testimonial {
 })
 
 export class TestimonialsComponent implements OnInit{
-    testimonials: any = [];
+    testimonials: Testimonial[] = [];
     
     constructor(private service:TestimonialService){}
     
     ngOnInit() {
         this.service.getAll().subscribe((testimonials) => {
             this.testimonials = testimonials;
-            console.log(this.testimonials);
         });
     }
 }

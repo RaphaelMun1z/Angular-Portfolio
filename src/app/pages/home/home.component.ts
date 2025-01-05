@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
 import { SkillsComponent } from "../../components/skills/skills.component";
 import { IntroductionComponent } from "../../components/introduction/introduction.component";
 import { TestimonialsComponent } from "../../components/testimonials/testimonials.component";
@@ -19,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit{
     constructor(private el: ElementRef) { }
 
     ngAfterViewInit() {

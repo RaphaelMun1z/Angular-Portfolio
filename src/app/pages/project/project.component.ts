@@ -5,6 +5,17 @@ import { ProjectService } from '../../services/project.service';
 import { CommonModule } from '@angular/common';
 import { SectionTitleComponent } from "../../components/section-title/section-title.component";
 
+interface Project {
+    id: string;
+    name: string;
+    stack: string[];
+    proposal: string;
+    description: string;
+    repositoryUrl: string;
+    projectUrl: string;
+    imageUrl: string;
+}
+
 @Component({
     selector: 'app-project',
     standalone: true,
@@ -12,36 +23,26 @@ import { SectionTitleComponent } from "../../components/section-title/section-ti
     templateUrl: './project.component.html',
     styleUrl: './project.component.scss'
 })
+
 export class ProjectComponent implements OnInit {
-    private id: string | null = "0";
+    id!: string | null;
+    project!: Project;
     
-    name! : string;
-    stack! : string[];
-    proposal! : string; 
-    description! : string;
-    repositoryUrl! : string;
-    projectUrl! : string;
-    imageUrl! : string; 
+    constructor(private service:ProjectService, private route: ActivatedRoute){}
     
-    constructor(private service: ProjectService, private route: ActivatedRoute){}
-    
-    ngOnInit(): void{
+    ngOnInit() {
         this.route.paramMap.subscribe(
             value => this.id = value.get("id")
         )
-        
-        this.setValuesToComponent(this.id);
-    }
-    
-    setValuesToComponent(id: string | null){
-        const result = this.service.getProjectById(id);
-        
-        this.name = result.name;
-        this.stack = result.stack;
-        this.proposal = result.proposal;
-        this.description = result.description;
-        this.repositoryUrl = result.repositoryUrl;
-        this.projectUrl = result.projectUrl;
-        this.imageUrl = result.imageUrl;
+
+        const projectResponse : Project = this.service.getProjectById(this.id);
+        this.project.id = projectResponse.id;
+        this.project.name = projectResponse.name;
+        this.project.stack = projectResponse.stack;
+        this.project.proposal = projectResponse.proposal;
+        this.project.description = projectResponse.description;
+        this.project.repositoryUrl = projectResponse.repositoryUrl;
+        this.project.projectUrl = projectResponse.projectUrl;
+        this.project.imageUrl = projectResponse.imageUrl;
     }
 }

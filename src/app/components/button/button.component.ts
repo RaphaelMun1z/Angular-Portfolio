@@ -15,5 +15,5 @@ export class ButtonComponent {
     @Input() icon! : string;
     @Input() redirectTo! : string;
     @Input() redirectParam! : string;
-    @Input() styleType : number = 0;
+    @Input() styleType = 0;
 }

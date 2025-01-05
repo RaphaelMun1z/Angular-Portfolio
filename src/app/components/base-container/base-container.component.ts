@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './base-container.component.scss'
 })
 export class BaseContainerComponent {
-    @Input() isHeroSection: boolean = false;
+    @Input() isHeroSection = false;
 }

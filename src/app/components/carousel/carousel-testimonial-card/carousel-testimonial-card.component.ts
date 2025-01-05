@@ -8,8 +8,8 @@ import { Component, Input } from '@angular/core';
     styleUrl: './carousel-testimonial-card.component.scss'
 })
 export class CarouselTestimonialCardComponent {
-    @Input() imageUrl: string = "";
-    @Input() text: string = "";
-    @Input() name: string = "";
-    @Input() position: string = "";
+    @Input() imageUrl!: string;
+    @Input() text!: string;
+    @Input() name!: string;
+    @Input() position!: string;
 }

@@ -2,6 +2,23 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 
+interface ConceptualSkill {
+    id: string;
+    name: string;
+    icon: string;
+    description: string;
+}
+
+interface GroupedConceptualSkills {
+    frontend?: ConceptualSkill[];
+    backend?: ConceptualSkill[];
+    general?: ConceptualSkill[];
+}
+
+interface ConceptualSkillsResponse {
+    conceptualSkills: GroupedConceptualSkills;
+}
+
 @Injectable({
     providedIn: 'root'
 })
@@ -11,13 +28,16 @@ export class ConceptualSkillService {
     
     constructor(private http: HttpClient) { }
     
-    getAll(): Observable<any> {
-        return this.http.get<any>(this.dataUrl);
+    getAll(): Observable<ConceptualSkill[]> {
+        return this.http.get<ConceptualSkill[]>(this.dataUrl);
     }
     
-    getByGroup<T>(groupName: string): Observable<T[]> {
-        return this.http.get<any>(this.dataUrl).pipe(
-            map(data => data.conceptual_skills.find((group: any) => groupName in group)?.[groupName] || [])
+    getByGroup(groupName: 'frontend' | 'backend' | 'general'): Observable<ConceptualSkill[]> {
+        return this.http.get<ConceptualSkillsResponse>(this.dataUrl).pipe(
+            map((data) => {
+                const skills = data.conceptualSkills[groupName];
+                return skills || []; 
+            })
         );
     }
 }

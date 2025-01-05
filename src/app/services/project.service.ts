@@ -6,9 +6,6 @@ import data from '../../assets/db/data.json'
 })
 
 export class ProjectService {
-    
-    constructor() { }
-    
     getAll(){
         return data.projects;
     }

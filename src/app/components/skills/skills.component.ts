@@ -6,6 +6,13 @@ import { SectionTitleComponent } from "../section-title/section-title.component"
 import { BaseContainerComponent } from "../base-container/base-container.component";
 import { SkillService } from '../../services/skill.service';
 
+interface Skill {
+    id: string;
+    name: string;
+    icon: string;
+    description: string;
+}
+
 @Component({
     selector: 'app-skills',
     standalone: true,
@@ -14,8 +21,9 @@ import { SkillService } from '../../services/skill.service';
     styleUrl: './skills.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
+
 export class SkillsComponent implements OnInit{
-    skills: any[][] = [];
+    skills: Skill[][] = [];
     
     constructor(private service:SkillService){}
     
@@ -25,7 +33,7 @@ export class SkillsComponent implements OnInit{
         });
     }
     
-    breakpoints: any = {
+    breakpoints: unknown = {
         320: { slidesPerView: 1.5 },
         768: { slidesPerView: 2.5 },
         1024: { slidesPerView: 3.5 }

@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
     styleUrl: './icon.component.scss'
 })
 export class IconComponent {
-    @Input() name: string = "";
-    @Input() size: string = "50px";
+    @Input() name!: string;
+    @Input() size = "50px";
 }

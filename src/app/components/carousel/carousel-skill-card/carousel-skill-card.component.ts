@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Pipe, PipeTransform } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IconComponent } from "../../icon/icon.component";
 
 @Component({
@@ -11,8 +11,8 @@ import { IconComponent } from "../../icon/icon.component";
 })
 
 export class CarouselSkillCardComponent {
-    @Input() title: string = "";
-    @Input() description: string = "";
-    @Input() logo: string = "";
-    @Input() color: string = "";
+    @Input() title!: string;
+    @Input() description!: string;
+    @Input() logo!: string;
+    @Input() color!: string;
 }

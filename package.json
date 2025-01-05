@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +9,8 @@
     "deploy:ghdocs": "ng build --configuration production --output-path docs --base-href /Angular-Portfolio/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs"
+    "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
@@ -51,6 +52,8 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
     "@types/swiper": "^5.4.3",
+    "angular-eslint": "19.0.2",
+    "eslint": "^9.16.0",
     "font-awesome": "^4.7.0",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",
@@ -59,6 +62,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.5.2",
+    "typescript-eslint": "8.18.0",
     "webpack-bundle-analyzer": "^4.10.2"
   }
 }

@@ -13,15 +13,14 @@ registerSwiperElements();
 })
 
 export class CarouselComponent {
-    @Input() loop: boolean = true;
-    @Input() slidesPerView: number = 2.5;
-    @Input() speed: number = 1000;
-    @Input() effect!: string;
-    @Input() navigation: boolean = false;
-    @Input() pagination: any = { clickable: true, dynamicBullets: true };
-    @Input() grabCursor: boolean = true;
-    @Input() breakpoints!: any;
-    @Input() centeredSlides: boolean = false;
-    @Input() spaceBetween: number = 0;
-    @Input() withShadowLeft: boolean = false;
+    @Input() loop = true;
+    @Input() slidesPerView = 2.5;
+    @Input() speed = 1000;
+    @Input() navigation = false;
+    @Input() pagination = { clickable: true, dynamicBullets: true };
+    @Input() grabCursor = true;
+    @Input() breakpoints!: unknown;
+    @Input() centeredSlides = false;
+    @Input() spaceBetween = 0;
+    @Input() withShadowLeft = false;
 }

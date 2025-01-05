@@ -11,6 +11,13 @@ import { ConceptualSkillService } from '../../services/conceptual-skill.service'
 import { CommonModule } from '@angular/common';
 registerSwiperElements();
 
+interface ConceptualSkill {
+    id: string;
+    name: string;
+    icon: string;
+    description: string;
+}
+
 @Component({
     selector: 'app-technological-highlights',
     standalone: true,
@@ -19,24 +26,26 @@ registerSwiperElements();
     styleUrl: './technological-highlights.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
+
 export class TechnologicalHighlightsComponent implements OnInit{
-    frontendConceptualSkills: any = [];
-    backendConceptualSkills: any = [];
-    generalConceptualSkills: any = [];
+    frontendConceptualSkills: ConceptualSkill[] = [];
+    backendConceptualSkills: ConceptualSkill[] = [];
+    generalConceptualSkills: ConceptualSkill[] = [];
     
     constructor(private service:ConceptualSkillService){}
     
     ngOnInit() {
         this.service.getByGroup("frontend").subscribe((skills) => {
-            this.frontendConceptualSkills = skills;
+            this.frontendConceptualSkills = skills || [];
+            console.log(this.frontendConceptualSkills)
         });
         
         this.service.getByGroup("backend").subscribe((skills) => {
-            this.backendConceptualSkills = skills;
+            this.backendConceptualSkills = skills || [];
         });
         
         this.service.getByGroup("general").subscribe((skills) => {
-            this.generalConceptualSkills = skills;
+            this.generalConceptualSkills = skills || [];
         });
     }
 }
