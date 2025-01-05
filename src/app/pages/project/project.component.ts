@@ -35,14 +35,17 @@ export class ProjectComponent implements OnInit {
             value => this.id = value.get("id")
         )
 
-        const projectResponse : Project = this.service.getProjectById(this.id);
-        this.project.id = projectResponse.id;
-        this.project.name = projectResponse.name;
-        this.project.stack = projectResponse.stack;
-        this.project.proposal = projectResponse.proposal;
-        this.project.description = projectResponse.description;
-        this.project.repositoryUrl = projectResponse.repositoryUrl;
-        this.project.projectUrl = projectResponse.projectUrl;
-        this.project.imageUrl = projectResponse.imageUrl;
+        this.service.getProjectById(this.id).subscribe((response) => {
+            if (response) {
+                this.project.id = response.id;
+                this.project.name = response.name;
+                this.project.stack = response.stack;
+                this.project.proposal = response.proposal;
+                this.project.description = response.description;
+                this.project.repositoryUrl = response.repositoryUrl;
+                this.project.projectUrl = response.projectUrl;
+                this.project.imageUrl = response.imageUrl;
+            }
+        });
     }
 }

@@ -1,7 +1,7 @@
 <section class="main-container">
     <app-section-title [text]="'Cada projeto, um marco em'" [emphasis]="'inovação e qualidade'"></app-section-title>
     <app-portfolio-projects-header></app-portfolio-projects-header>
-    <div class="projects-container">
+    <div class="projects-container" *ngIf="projects">
         <app-portfolio-project-card 
         *ngFor="let project of projects"
         [id]="project.id"

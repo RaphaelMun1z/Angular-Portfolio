@@ -9,14 +9,10 @@ interface ConceptualSkill {
     description: string;
 }
 
-interface GroupedConceptualSkills {
+interface ConceptualSkills {
     frontend?: ConceptualSkill[];
     backend?: ConceptualSkill[];
     general?: ConceptualSkill[];
-}
-
-interface ConceptualSkillsResponse {
-    conceptualSkills: GroupedConceptualSkills;
 }
 
 @Injectable({
@@ -24,19 +20,19 @@ interface ConceptualSkillsResponse {
 })
 
 export class ConceptualSkillService {
-    private dataUrl = '/assets/db/data.json';
+    private dataUrl = '/assets/db/conceptual_skills.json';
     
     constructor(private http: HttpClient) { }
     
-    getAll(): Observable<ConceptualSkill[]> {
-        return this.http.get<ConceptualSkill[]>(this.dataUrl);
+    getAll(): Observable<ConceptualSkills[]> {
+        return this.http.get<ConceptualSkills[]>(this.dataUrl);
     }
     
-    getByGroup(groupName: 'frontend' | 'backend' | 'general'): Observable<ConceptualSkill[]> {
-        return this.http.get<ConceptualSkillsResponse>(this.dataUrl).pipe(
-            map((data) => {
-                const skills = data.conceptualSkills[groupName];
-                return skills || []; 
+    getByGroup(groupName: 'frontend' | 'backend' | 'general'): Observable<ConceptualSkill[] | undefined> {
+        return this.getAll().pipe(
+            map((conceptualSkillsArray) => {
+                const group = conceptualSkillsArray.find((obj) => obj[groupName]);
+                return group ? group[groupName] : [];
             })
         );
     }

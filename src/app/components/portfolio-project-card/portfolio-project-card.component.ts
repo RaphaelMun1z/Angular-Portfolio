@@ -4,17 +4,6 @@ import { IconComponent } from "../icon/icon.component";
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-interface Project {
-    id: string;
-    name: string;
-    stack: string[];
-    proposal: string;
-    description: string;
-    repositoryUrl: string;
-    projectUrl: string;
-    imageUrl: string;
-}
-
 @Component({
     selector: 'app-portfolio-project-card',
     standalone: true,

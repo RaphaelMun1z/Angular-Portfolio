@@ -37,7 +37,6 @@ export class TechnologicalHighlightsComponent implements OnInit{
     ngOnInit() {
         this.service.getByGroup("frontend").subscribe((skills) => {
             this.frontendConceptualSkills = skills || [];
-            console.log(this.frontendConceptualSkills)
         });
         
         this.service.getByGroup("backend").subscribe((skills) => {

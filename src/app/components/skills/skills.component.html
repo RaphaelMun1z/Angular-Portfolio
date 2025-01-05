@@ -1,6 +1,7 @@
 <app-base-container>
 	<app-section-title [text]="'Minhas'" [emphasis]="'habilidades'"></app-section-title>
 	<app-carousel 
+	*ngIf="skills.length > 0"
 	class="carousel"
 	[breakpoints]="breakpoints"
 	[navigation]="false">

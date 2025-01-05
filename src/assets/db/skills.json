@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "name": "Java",
+        "icon": "java",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "2",
+        "name": "Spring Framework",
+        "icon": "spring",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "3",
+        "name": "Typescript",
+        "icon": "typescript",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "4",
+        "name": "Angular",
+        "icon": "angular",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "5",
+        "name": "NodeJs",
+        "icon": "nodejs",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "6",
+        "name": "React",
+        "icon": "react",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "7",
+        "name": "Docker",
+        "icon": "docker",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "8",
+        "name": "Git",
+        "icon": "git",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "9",
+        "name": "Azure",
+        "icon": "azure",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "10",
+        "name": "PostgreSQL",
+        "icon": "postgresql",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "11",
+        "name": "MySQL",
+        "icon": "mysql",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    },
+    {
+        "id": "12",
+        "name": "MongoDB",
+        "icon": "mongodb",
+        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+    }
+]

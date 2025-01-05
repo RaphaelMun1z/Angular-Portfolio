@@ -1,6 +1,6 @@
 <app-base-container>
 	<app-section-title [text]="'Depoimentos'" [emphasis]="''"></app-section-title>
-	<div class="inside-container">
+	<div class="inside-container" *ngIf="testimonials.length > 0">
 		<app-carousel class="carousel">
 			<swiper-slide *ngFor="let testimonial of testimonials">
 				<div class="cards-column-container">

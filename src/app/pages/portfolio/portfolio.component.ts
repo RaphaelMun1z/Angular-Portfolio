@@ -1,9 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PortfolioProjectCardComponent } from '../../components/portfolio-project-card/portfolio-project-card.component';
 import { PortfolioProjectsHeaderComponent } from "../../components/portfolio-projects-header/portfolio-projects-header.component";
 import { ProjectService } from '../../services/project.service';
 import { CommonModule } from '@angular/common';
 import { SectionTitleComponent } from "../../components/section-title/section-title.component";
+
+interface Project {
+    id: string;
+    name: string;
+    stack: string[];
+    proposal: string;
+    description: string;
+    repositoryUrl: string;
+    projectUrl: string;
+    imageUrl: string;
+}
 
 @Component({
     selector: 'app-portfolio',
@@ -12,10 +23,17 @@ import { SectionTitleComponent } from "../../components/section-title/section-ti
     templateUrl: './portfolio.component.html',
     styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent {
-    projects: any = [];
 
-    constructor(private service:ProjectService){
-        this.projects = service.getAll();
+export class PortfolioComponent implements OnInit{
+    projects: Project[] = [];
+
+    constructor(private service:ProjectService){}
+
+    ngOnInit() {
+        this.service.getAll().subscribe((response) => {
+            if (response) {
+                this.projects = response;
+            }
+        })
     }
 }

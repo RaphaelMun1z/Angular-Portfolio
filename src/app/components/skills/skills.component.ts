@@ -26,11 +26,13 @@ export class SkillsComponent implements OnInit{
     skills: Skill[][] = [];
     
     constructor(private service:SkillService){}
-    
+
     ngOnInit() {
-        this.service.getAllGroupFormat().subscribe((groupedSkills) => {
-            this.skills = groupedSkills;
-        });
+        this.service.getAllGroupFormat().subscribe((response) => {
+            if (response) {
+                this.skills = response;
+            }
+        })
     }
     
     breakpoints: unknown = {

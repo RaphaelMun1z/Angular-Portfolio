@@ -1,6 +1,6 @@
 <app-base-container>
 	<app-section-title [text]="'Projetos'" [emphasis]="'recentes'"></app-section-title>
-	<div class="inside-container">
+	<div class="inside-container" *ngIf="projects.length > 0">
 		<div class="grid-container">
 			<div class="item card-1">
 				<app-project-card-small 
