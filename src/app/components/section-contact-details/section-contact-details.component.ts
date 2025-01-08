@@ -5,11 +5,11 @@ import { SectionTitleComponent } from "../section-title/section-title.component"
 import { BaseContainerComponent } from "../base-container/base-container.component";
 
 @Component({
-    selector: 'app-contact-form',
+    selector: 'app-section-contact-details',
     standalone: true,
     imports: [RippleModule, IconComponent, SectionTitleComponent, BaseContainerComponent],
-    templateUrl: './contact.component.html',
-    styleUrl: './contact.component.scss'
+    templateUrl: './section-contact-details.component.html',
+    styleUrl: './section-contact-details.component.scss'
 })
-export class ContactComponent {
+export class SectionContactDetailsComponent {
 }

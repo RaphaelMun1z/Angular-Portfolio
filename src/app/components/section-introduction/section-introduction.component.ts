@@ -11,14 +11,14 @@ import { SectionTitleComponent } from "../section-title/section-title.component"
 import { BaseContainerComponent } from "../base-container/base-container.component";
 
 @Component({
-    selector: 'app-introduction',
+    selector: 'app-section-introduction',
     standalone: true,
     imports: [RippleModule, RouterModule, MatButtonModule, ButtonComponent, SectionTitleComponent, BaseContainerComponent],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    templateUrl: './introduction.component.html',
-    styleUrl: './introduction.component.scss'
+    templateUrl: './section-introduction.component.html',
+    styleUrl: './section-introduction.component.scss'
 })
-export class IntroductionComponent {
+export class SectionIntroductionComponent {
     readonly dialog = inject(MatDialog);
     
     openDialog(projectName: string, source: string) {

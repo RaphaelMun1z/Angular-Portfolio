@@ -5,13 +5,13 @@ import { RippleModule } from 'primeng/ripple';
 import { ButtonComponent } from "../../button/button.component";
 
 @Component({
-    selector: 'app-project-card-small',
+    selector: 'app-card-small',
     standalone: true,
     imports: [IconComponent, CommonModule, RippleModule, ButtonComponent],
-    templateUrl: './project-card-small.component.html',
-    styleUrl: './project-card-small.component.scss'
+    templateUrl: './card-small.component.html',
+    styleUrl: './card-small.component.scss'
 })
-export class ProjectCardSmallComponent {
+export class CardSmallComponent {
     @Input() id!: string;
     @Input() name!: string;
     @Input() proposal!: string;

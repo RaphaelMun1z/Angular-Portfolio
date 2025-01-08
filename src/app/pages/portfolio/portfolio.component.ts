@@ -4,6 +4,7 @@ import { PortfolioProjectsHeaderComponent } from "../../components/portfolio-pro
 import { ProjectService } from '../../services/project.service';
 import { CommonModule } from '@angular/common';
 import { SectionTitleComponent } from "../../components/section-title/section-title.component";
+import { BaseContainerComponent } from "../../components/base-container/base-container.component";
 
 interface Project {
     id: string;
@@ -19,7 +20,7 @@ interface Project {
 @Component({
     selector: 'app-portfolio',
     standalone: true,
-    imports: [PortfolioProjectCardComponent, PortfolioProjectsHeaderComponent, CommonModule, SectionTitleComponent],
+    imports: [PortfolioProjectCardComponent, PortfolioProjectsHeaderComponent, CommonModule, SectionTitleComponent, BaseContainerComponent],
     templateUrl: './portfolio.component.html',
     styleUrl: './portfolio.component.scss'
 })

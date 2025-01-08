@@ -1,11 +1,11 @@
 import { AfterViewInit, Component, ElementRef } from '@angular/core';
-import { SkillsComponent } from "../../components/skills/skills.component";
-import { IntroductionComponent } from "../../components/introduction/introduction.component";
-import { TestimonialsComponent } from "../../components/testimonials/testimonials.component";
-import { RecentProjectsComponent } from "../../components/recent-projects/recent-projects.component";
-import { TechnologicalHighlightsComponent } from '../../components/technological-highlights/technological-highlights.component';
-import { ContactComponent } from "../../components/contact/contact.component";
-import { HeroComponent } from "../../components/hero/hero.component";
+import { SectionSkillsComponent } from "../../components/section-skills/section-skills.component";
+import { SectionIntroductionComponent } from "../../components/section-introduction/section-introduction.component";
+import { SectionTestimonialsComponent } from "../../components/section-testimonials/section-testimonials.component";
+import { SectionRecentProjectsComponent } from "../../components/section-recent-projects/section-recent-projects.component";
+import { SectionConceptualSkillsComponent } from '../../components/section-conceptual-skills/section-conceptual-skills.component';
+import { SectionContactDetailsComponent } from "../../components/section-contact-details/section-contact-details.component";
+import { SectionHeroComponent } from "../../components/section-hero/section-hero.component";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -15,7 +15,15 @@ gsap.registerPlugin(ScrollTrigger);
 @Component({
     selector: 'app-home',
     standalone: true,
-    imports: [SkillsComponent, IntroductionComponent, TestimonialsComponent, RecentProjectsComponent, TechnologicalHighlightsComponent, ContactComponent, HeroComponent],
+    imports: [
+        SectionHeroComponent,
+        SectionIntroductionComponent, 
+        SectionSkillsComponent, 
+        SectionRecentProjectsComponent, 
+        SectionConceptualSkillsComponent, 
+        SectionTestimonialsComponent, 
+        SectionContactDetailsComponent
+    ],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
 })

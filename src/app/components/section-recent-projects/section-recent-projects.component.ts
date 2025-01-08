@@ -1,6 +1,6 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { VerticalCarouselComponent } from "../vertical-carousel/vertical-carousel.component";
-import { ProjectCardSmallComponent } from "./project-card-small/project-card-small.component";
+import { CardSmallComponent } from "./card-small/card-small.component";
 import { ProjectService } from '../../services/project.service';
 import { SectionTitleComponent } from "../section-title/section-title.component";
 import { CommonModule } from '@angular/common';
@@ -17,15 +17,15 @@ interface Project {
 }
 
 @Component({
-    selector: 'app-recent-projects',
+    selector: 'app-section-recent-projects',
     standalone: true,
-    imports: [VerticalCarouselComponent, ProjectCardSmallComponent, SectionTitleComponent, CommonModule],
-    templateUrl: './recent-projects.component.html',
-    styleUrl: './recent-projects.component.scss',
+    imports: [VerticalCarouselComponent, CardSmallComponent, SectionTitleComponent, CommonModule],
+    templateUrl: './section-recent-projects.component.html',
+    styleUrl: './section-recent-projects.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
-export class RecentProjectsComponent implements OnInit {
+export class SectionRecentProjectsComponent implements OnInit {
     projects : Project[] = [];
     
     constructor(private service: ProjectService){}
@@ -42,29 +42,29 @@ export class RecentProjectsComponent implements OnInit {
         [
             {
                 "projectName": "Netflix",
-                "path": "banner-netflix.png"
-            },
-            {
-                "projectName": "Dealership",
-                "path": "banner-dealership.png"
-            },
-            {
-                "projectName": "LeaseInsight",
-                "path": "banner-leaseInsight.png"
-            }
-        ],
-        [
-            {
-                "projectName": "ReactGram",
-                "path": "banner-reactGram.png"
-            },
-            {
-                "projectName": "Netflix",
                 "path": "netflix-1.png"
             },
             {
                 "projectName": "Netflix",
                 "path": "netflix-2.png"
+            },
+            {
+                "projectName": "Netflix",
+                "path": "netflix-3.png"
+            }
+        ],
+        [
+            {
+                "projectName": "Coffee XP",
+                "path": "coffeexp-1.png"
+            },
+            {
+                "projectName": "Portfolio",
+                "path": "portfolio-1.png"
+            },
+            {
+                "projectName": "Reactgram",
+                "path": "reactgram-1.png"
             },
         ]
     ]

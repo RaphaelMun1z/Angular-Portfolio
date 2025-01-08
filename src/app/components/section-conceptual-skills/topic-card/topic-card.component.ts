@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'app-tech-topic-card',
+    selector: 'app-topic-card',
     standalone: true,
     imports: [],
-    templateUrl: './tech-topic-card.component.html',
-    styleUrl: './tech-topic-card.component.scss'
+    templateUrl: './topic-card.component.html',
+    styleUrl: './topic-card.component.scss'
 })
-export class TechTopicCardComponent {
+export class TopicCardComponent {
     @Input() name! : string;
     @Input() icon! : string;
     @Input() description! : string;

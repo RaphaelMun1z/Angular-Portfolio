@@ -17,7 +17,7 @@
         "description": "Soon",
         "repositoryUrl": "https://github.com/RaphaelMun1z/SpringBoot-LeaseInsight",
         "projectUrl": "Soon",
-        "imageUrl": "banner-leaseInsight.png"
+        "imageUrl": "banner-leaseinsight.png"
     },
     {
         "id": "3",
@@ -37,6 +37,6 @@
         "description": "Inspirado no Instagram, foi desenvolvido utilizando React e NodeJS.",
         "repositoryUrl": "https://github.com/RaphaelMun1z/React-ReactGram-frontend",
         "projectUrl": "Soon",
-        "imageUrl": "banner-reactGram.png"
+        "imageUrl": "banner-reactgram.png"
     }
 ]

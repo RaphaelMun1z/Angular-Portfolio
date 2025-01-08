@@ -6,103 +6,93 @@
     padding: 0 10.5vw;
 }
 
-.main-container{
+.main-image-container{
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: grey;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+hr{
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin: 7vh auto;
+    height: 3px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+.section-container{
+    position: relative;
+    display: flex;
     width: 100%;
     height: fit-content;
-    gap: 5vh 0;
+    gap: 0 2vw;
     
-    .main-image-container{
-        position: relative;
-        display: flex;
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        background-color: grey;
+    &.t-2{
+        flex-direction: row-reverse;
         
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+        .topic-container{
+            justify-content: flex-end;
+            
+            h1{
+                text-align: right;
+            }
         }
     }
     
-    hr{
+    .child{
         position: relative;
         display: flex;
-        width: 80%;
-        margin: 7vh auto;
-        height: 3px;
-        border: none;
-        background-color: rgba(128, 128, 128, 0.6);
-    }
-    
-    .section-container{
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: fit-content;
-        gap: 0 2vw;
+        width: 50%;
+        height: 100%;
         
-        &.t-2{
-            flex-direction: row-reverse;
+        &.topic-container{
+            height: auto;
             
-            .topic-container{
-                justify-content: flex-end;
-                
-                h1{
-                    text-align: right;
-                }
+            h1{
+                font-size: 4vw;
+                padding-right: 5vw;
+                width: min-content;
+                line-height: normal;
+                font-weight: 700;
             }
         }
         
-        .child{
-            position: relative;
-            display: flex;
-            width: 50%;
-            height: 100%;
+        &.content-container{
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 2vh 0;
             
-            &.topic-container{
-                height: auto;
+            p{
+                width: 100%;
+                font-size: 1.2rem;
+                text-align: justify;
                 
-                h1{
-                    font-size: 4vw;
-                    padding-right: 5vw;
-                    width: min-content;
-                    line-height: normal;
-                    font-weight: 700;
+                &.p-1{
+                    color: #111111;
+                    padding: 0 !important;
+                    font-weight: 600;
+                }
+                
+                &.p-2{
+                    color: grey;
+                    padding: 0 !important;
+                    font-weight: 500;
                 }
             }
             
-            &.content-container{
-                flex-wrap: wrap;
-                flex-direction: column;
-                gap: 2vh 0;
-                
-                p{
-                    width: 100%;
-                    font-size: 1.2rem;
-                    text-align: justify;
-                    
-                    &.p-1{
-                        color: #111111;
-                        padding: 0 !important;
-                        font-weight: 600;
-                    }
-                    
-                    &.p-2{
-                        color: grey;
-                        padding: 0 !important;
-                        font-weight: 500;
-                    }
-                }
-
-                #merco-logo{
-                    width: 50%;
-                }
+            #merco-logo{
+                width: 50%;
             }
         }
     }

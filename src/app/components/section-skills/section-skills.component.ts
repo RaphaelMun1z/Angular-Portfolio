@@ -14,15 +14,15 @@ interface Skill {
 }
 
 @Component({
-    selector: 'app-skills',
+    selector: 'app-section-skills',
     standalone: true,
     imports: [CommonModule, CarouselComponent, CarouselSkillCardComponent, SectionTitleComponent, BaseContainerComponent],
-    templateUrl: './skills.component.html',
-    styleUrl: './skills.component.scss',
+    templateUrl: './section-skills.component.html',
+    styleUrl: './section-skills.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
-export class SkillsComponent implements OnInit{
+export class SectionSkillsComponent implements OnInit{
     skills: Skill[][] = [];
     
     constructor(private service:SkillService){}

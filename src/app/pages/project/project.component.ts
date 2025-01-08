@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../../services/project.service';
 import { CommonModule } from '@angular/common';
 import { SectionTitleComponent } from "../../components/section-title/section-title.component";
+import { BaseContainerComponent } from "../../components/base-container/base-container.component";
 
 interface Project {
     id: string;
@@ -19,7 +20,7 @@ interface Project {
 @Component({
     selector: 'app-project',
     standalone: true,
-    imports: [IconComponent, CommonModule, SectionTitleComponent],
+    imports: [IconComponent, CommonModule, SectionTitleComponent, BaseContainerComponent],
     templateUrl: './project.component.html',
     styleUrl: './project.component.scss'
 })
@@ -34,18 +35,9 @@ export class ProjectComponent implements OnInit {
         this.route.paramMap.subscribe(
             value => this.id = value.get("id")
         )
-
+        
         this.service.getProjectById(this.id).subscribe((response) => {
-            if (response) {
-                this.project.id = response.id;
-                this.project.name = response.name;
-                this.project.stack = response.stack;
-                this.project.proposal = response.proposal;
-                this.project.description = response.description;
-                this.project.repositoryUrl = response.repositoryUrl;
-                this.project.projectUrl = response.projectUrl;
-                this.project.imageUrl = response.imageUrl;
-            }
+            if (response) this.project = response;
         });
     }
 }

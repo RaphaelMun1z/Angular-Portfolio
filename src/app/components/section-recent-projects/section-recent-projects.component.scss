@@ -20,7 +20,6 @@
             padding: 7%;
             text-align: center;
             border: 1px solid rgba(17, 17, 17, 0.2196078431);
-            aspect-ratio: 1 / 1;
             border-radius: 30px;
             cursor: pointer;
             
@@ -29,10 +28,10 @@
                 display: flex;
                 width: 100%;
                 height: 100%;
-                height: auto;
-                object-fit: cover;
                 transform: scale(2) translate(15vw, 25vh); 
                 filter: drop-shadow(-2mm 3mm 4mm rgb(70, 64, 71));
+                object-position: center;
+                object-fit: contain;
             }
         }
         
@@ -42,6 +41,7 @@
             border: none !important;
             height: fit-content !important;
             border-radius: 0px !important;
+            aspect-ratio: 1 / 1;
             
             swiper-slide {
                 position: relative;
@@ -49,7 +49,6 @@
                 
                 &.swiper-slide-active{
                     img{
-                        background-color: grey;
                         animation: zoomMove 10s ease-in-out infinite;
                         
                         &:hover{

@@ -15,16 +15,16 @@ interface Testimonial {
 }
 
 @Component({
-    selector: 'app-testimonials',
+    selector: 'app-section-testimonials',
     standalone: true,
     imports: [CarouselComponent, CarouselTestimonialCardComponent, SectionTitleComponent, CommonModule, BaseContainerComponent],
     host: { ngSkipHydration: 'true' },
-    templateUrl: './testimonials.component.html',
-    styleUrl: './testimonials.component.scss',
+    templateUrl: './section-testimonials.component.html',
+    styleUrl: './section-testimonials.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
-export class TestimonialsComponent implements OnInit{
+export class SectionTestimonialsComponent implements OnInit{
     testimonials: Testimonial[] = [];
     
     constructor(private service:TestimonialService){}

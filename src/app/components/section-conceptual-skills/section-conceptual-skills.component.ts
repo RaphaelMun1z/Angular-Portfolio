@@ -2,10 +2,10 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 import { register as registerSwiperElements } from 'swiper/element/bundle';
-import { TechCardComponent } from './tech-card/tech-card.component';
+import { CardComponent } from './card/card.component';
 import { SectionTitleComponent } from "../section-title/section-title.component";
 import { BaseContainerComponent } from "../base-container/base-container.component";
-import { TechTopicCardComponent } from './tech-topic-card/tech-topic-card.component';
+import { TopicCardComponent } from './topic-card/topic-card.component';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { ConceptualSkillService } from '../../services/conceptual-skill.service';
 import { CommonModule } from '@angular/common';
@@ -19,15 +19,15 @@ interface ConceptualSkill {
 }
 
 @Component({
-    selector: 'app-technological-highlights',
+    selector: 'app-section-conceptual-skills',
     standalone: true,
-    imports: [MatIconModule, TechCardComponent, SectionTitleComponent, BaseContainerComponent, TechTopicCardComponent, CarouselComponent, CommonModule],
-    templateUrl: './technological-highlights.component.html',
-    styleUrl: './technological-highlights.component.scss',
+    imports: [MatIconModule, CardComponent, SectionTitleComponent, BaseContainerComponent, TopicCardComponent, CarouselComponent, CommonModule],
+    templateUrl: './section-conceptual-skills.component.html',
+    styleUrl: './section-conceptual-skills.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
-export class TechnologicalHighlightsComponent implements OnInit{
+export class SectionConceptualSkillsComponent implements OnInit{
     frontendConceptualSkills: ConceptualSkill[] = [];
     backendConceptualSkills: ConceptualSkill[] = [];
     generalConceptualSkills: ConceptualSkill[] = [];

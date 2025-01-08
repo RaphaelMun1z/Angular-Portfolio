@@ -3,11 +3,11 @@
 	<div class="inside-container">
 		<div class="grid-container">
 			<div pRipple class="item card-1 card-l card-l-1" *ngIf="frontendConceptualSkills.length > 0"> 
-				<app-tech-topic-card
+				<app-topic-card
 				[name]="'FRONTEND'"
 				[icon]="'brush'"
 				[description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
-				[link]="'aaa'"></app-tech-topic-card>
+				[link]="'aaa'"></app-topic-card>
 			</div>
 			<div pRipple class="item card-2 card-n right" *ngIf="frontendConceptualSkills.length > 0">
 				<app-carousel
@@ -17,7 +17,7 @@
 				[spaceBetween]="10"
 				[withShadowLeft]="true">
 					<swiper-slide class="carousel-item" *ngFor="let skill of frontendConceptualSkills">
-						<app-tech-card [icon]="skill.icon" [title]="skill.name" [description]="skill.description"></app-tech-card>
+						<app-card [icon]="skill.icon" [title]="skill.name" [description]="skill.description"></app-card>
 					</swiper-slide>
 				</app-carousel>
 			</div>
@@ -29,23 +29,23 @@
 				[spaceBetween]="10"
 				[withShadowLeft]="true">
 					<swiper-slide class="carousel-item" *ngFor="let skill of backendConceptualSkills">
-						<app-tech-card [icon]="skill.icon" [title]="skill.name" [description]="skill.description"></app-tech-card>
+						<app-card [icon]="skill.icon" [title]="skill.name" [description]="skill.description"></app-card>
 					</swiper-slide>
 				</app-carousel>
 			</div>
 			<div pRipple class="item card-6 card-l card-l-2" *ngIf="backendConceptualSkills.length > 0">
-				<app-tech-topic-card
+				<app-topic-card
 				[name]="'BACKEND'"
 				[icon]="'dns'"
 				[description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
-				[link]="'aaa'"></app-tech-topic-card>
+				[link]="'aaa'"></app-topic-card>
 			</div>
 			<div pRipple class="item card-7 card-l card-l-3" *ngIf="generalConceptualSkills.length > 0">
-				<app-tech-topic-card
+				<app-topic-card
 				[name]="'GERAL'"
 				[icon]="'add_circle_outline'"
 				[description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
-				[link]="'aaa'"></app-tech-topic-card>
+				[link]="'aaa'"></app-topic-card>
 			</div>
 			<div pRipple class="item card-8 card-n right" *ngIf="generalConceptualSkills.length > 0">
 				<app-carousel
@@ -55,7 +55,7 @@
 				[spaceBetween]="10"
 				[withShadowLeft]="true">
 					<swiper-slide class="carousel-item" *ngFor="let skill of generalConceptualSkills">
-						<app-tech-card [icon]="skill.icon" [title]="skill.name" [description]="skill.description"></app-tech-card>
+						<app-card [icon]="skill.icon" [title]="skill.name" [description]="skill.description"></app-card>
 					</swiper-slide>
 				</app-carousel>
 			</div>

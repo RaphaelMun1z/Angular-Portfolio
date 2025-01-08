@@ -1,13 +1,14 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-tech-card',
+  selector: 'app-card',
   standalone: true,
   imports: [],
-  templateUrl: './tech-card.component.html',
-  styleUrl: './tech-card.component.scss'
+  templateUrl: './card.component.html',
+  styleUrl: './card.component.scss'
 })
-export class TechCardComponent {
+
+export class CardComponent {
     @Input() title! : string;
     @Input() description! : string;
     @Input() icon! : string;
