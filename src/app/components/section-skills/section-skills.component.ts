@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CarouselComponent } from "../carousel/carousel.component";
-import { CarouselSkillCardComponent } from '../carousel/carousel-skill-card/carousel-skill-card.component';
 import { SectionTitleComponent } from "../section-title/section-title.component";
 import { BaseContainerComponent } from "../base-container/base-container.component";
 import { SkillService } from '../../services/skill.service';
+import { CarouselCardComponent } from './carousel-card/carousel-card.component';
 
 interface Skill {
     id: string;
@@ -16,7 +16,7 @@ interface Skill {
 @Component({
     selector: 'app-section-skills',
     standalone: true,
-    imports: [CommonModule, CarouselComponent, CarouselSkillCardComponent, SectionTitleComponent, BaseContainerComponent],
+    imports: [CommonModule, CarouselComponent, CarouselCardComponent, SectionTitleComponent, BaseContainerComponent],
     templateUrl: './section-skills.component.html',
     styleUrl: './section-skills.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]

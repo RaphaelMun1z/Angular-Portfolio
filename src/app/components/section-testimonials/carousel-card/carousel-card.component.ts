@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'app-carousel-testimonial-card',
+    selector: 'app-carousel-card',
     standalone: true,
     imports: [],
-    templateUrl: './carousel-testimonial-card.component.html',
-    styleUrl: './carousel-testimonial-card.component.scss'
+    templateUrl: './carousel-card.component.html',
+    styleUrl: './carousel-card.component.scss'
 })
-export class CarouselTestimonialCardComponent {
+export class CarouselCardComponent {
     @Input() imageUrl!: string;
     @Input() text!: string;
     @Input() name!: string;

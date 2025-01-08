@@ -3,14 +3,14 @@ import { Component, Input } from '@angular/core';
 import { IconComponent } from "../../icon/icon.component";
 
 @Component({
-    selector: 'app-carousel-skill-card',
+    selector: 'app-carousel-card',
     standalone: true,
     imports: [CommonModule, IconComponent],
-    templateUrl: './carousel-skill-card.component.html',
-    styleUrl: './carousel-skill-card.component.scss'
+    templateUrl: './carousel-card.component.html',
+    styleUrl: './carousel-card.component.scss'
 })
 
-export class CarouselSkillCardComponent {
+export class CarouselCardComponent {
     @Input() title!: string;
     @Input() description!: string;
     @Input() logo!: string;

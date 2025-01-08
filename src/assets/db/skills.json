@@ -3,72 +3,72 @@
         "id": "1",
         "name": "Java",
         "icon": "java",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Caracteriza-se por sua máquina virtual (JVM) que oferece portabilidade, gerenciamento de memória automático e suporte para múltiplos paradigmas de programação."
     },
     {
         "id": "2",
         "name": "Spring Framework",
         "icon": "spring",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Proporciona uma arquitetura modular e escalável, com injeção de dependência e suporte robusto para a criação de APIs RESTful."
     },
     {
         "id": "3",
         "name": "Typescript",
         "icon": "typescript",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Expande o Javascript com tipagem estática e verificação em tempo de compilação, reduzindo erros em tempo de execução e melhorando a legibilidade e manutenção do código em projetos grandes e complexos."
     },
     {
         "id": "4",
         "name": "Angular",
         "icon": "angular",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Oferece bindings bidirecionais, injeção de dependência, e uma ferramenta CLI avançada para criar e gerenciar aplicações dinâmicas de forma eficiente."
     },
     {
         "id": "5",
         "name": "NodeJs",
         "icon": "nodejs",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Executa Javascript no servidor com um modelo assíncrono e não bloqueante, proporcionando alta escalabilidade e desempenho em aplicações I/O intensivas."
     },
     {
         "id": "6",
         "name": "React",
         "icon": "react",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Utiliza reconciliamento eficiente para atualizações rápidas do DOM e permite a criação de componentes reutilizáveis com fluxo de dados unidirecional."
     },
     {
         "id": "7",
         "name": "Docker",
         "icon": "docker",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Utiliza contêineres para isolar e empacotar aplicações e suas dependências, promovendo portabilidade, consistência e escalabilidade entre ambientes."
     },
     {
         "id": "8",
         "name": "Git",
         "icon": "git",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Permite versionamento distribuído com operações rápidas de commit, branch, merge e rebase, garantindo controle completo sobre o histórico de código."
     },
     {
         "id": "9",
         "name": "Azure",
         "icon": "azure",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Fornece uma plataforma em nuvem com serviços de infraestrutura, banco de dados, armazenamento e machine learning, com alta disponibilidade e escalabilidade."
     },
     {
         "id": "10",
         "name": "PostgreSQL",
         "icon": "postgresql",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Banco de dados relacional open-source com suporte a tipos de dados avançados, transações ACID e conformidade com padrões SQL."
     },
     {
         "id": "11",
         "name": "MySQL",
         "icon": "mysql",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Banco de dados relacional open-source, conhecido pela sua alta performance, suporte a SQL e confiabilidade em aplicações de missão crítica e sistemas de grande escala."
     },
     {
         "id": "12",
         "name": "MongoDB",
         "icon": "mongodb",
-        "description": "texto exemplotexto exemplotexto exemplotexto exemplotexto exemplotexto exemplo"
+        "description": "Banco de dados NoSQL orientado a documentos, ideal para dados não estruturados, com alta escalabilidade e flexibilidade na modelagem de dados."
     }
 ]

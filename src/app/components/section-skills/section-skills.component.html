@@ -7,18 +7,18 @@
 	[navigation]="false">
 	<swiper-slide *ngFor="let skillGroup of skills">
 		<div class="cards-column-container">
-			<app-carousel-skill-card
+			<app-carousel-card
 			[title]="skillGroup[0].name"
 			color="#E76E00"
 			[description]="skillGroup[0].description"
 			[logo]="skillGroup[0].icon"
-			></app-carousel-skill-card>
-			<app-carousel-skill-card
+			></app-carousel-card>
+			<app-carousel-card
 			[title]="skillGroup[1].name"
 			color="#E76E00"
 			[description]="skillGroup[1].description"
 			[logo]="skillGroup[1].icon"
-			></app-carousel-skill-card>
+			></app-carousel-card>
 		</div>
 	</swiper-slide>
 </app-carousel>

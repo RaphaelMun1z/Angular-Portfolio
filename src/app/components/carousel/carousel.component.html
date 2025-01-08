@@ -1,17 +1,17 @@
 <div class="carousel" [ngClass]="{'shadow-left': withShadowLeft}">
-  <swiper-container
-    [loop]="loop"
-    [slidesPerView]="slidesPerView"
-    [speed]="speed"
-    autoplay="true"
-    [navigation]="navigation"
-    [pagination]="pagination"
-    [grabCursor]="grabCursor"
-    [breakpoints]="breakpoints"
-    [centeredSlides]="centeredSlides"
-    [spaceBetween]="spaceBetween"
-    class="swiper-container"
-  >
-    <ng-content></ng-content>
-  </swiper-container>
+	<swiper-container
+	[loop]="loop"
+	[slidesPerView]="slidesPerView"
+	[speed]="speed"
+	autoplay="true"
+	[navigation]="navigation"
+	[pagination]="pagination"
+	[grabCursor]="grabCursor"
+	[breakpoints]="breakpoints"
+	[centeredSlides]="centeredSlides"
+	[spaceBetween]="spaceBetween"
+	class="swiper-container"
+	>
+	<ng-content></ng-content>
+</swiper-container>
 </div>

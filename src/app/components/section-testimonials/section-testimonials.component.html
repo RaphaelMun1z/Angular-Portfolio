@@ -4,12 +4,12 @@
 		<app-carousel class="carousel">
 			<swiper-slide *ngFor="let testimonial of testimonials">
 				<div class="cards-column-container">
-					<app-carousel-testimonial-card
+					<app-carousel-card
 					[imageUrl]="testimonial.imageUrl"
 					[name]="testimonial.name"
 					[text]="testimonial.text"
 					[position]="testimonial.position"
-					></app-carousel-testimonial-card>
+					></app-carousel-card>
 				</div>
 			</swiper-slide>
 		</app-carousel>

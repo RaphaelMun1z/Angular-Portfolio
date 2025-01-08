@@ -4,6 +4,7 @@ import { CardSmallComponent } from "./card-small/card-small.component";
 import { ProjectService } from '../../services/project.service';
 import { SectionTitleComponent } from "../section-title/section-title.component";
 import { CommonModule } from '@angular/common';
+import { CarouselComponent } from "../carousel/carousel.component";
 
 interface Project {
     id: string;
@@ -19,7 +20,7 @@ interface Project {
 @Component({
     selector: 'app-section-recent-projects',
     standalone: true,
-    imports: [VerticalCarouselComponent, CardSmallComponent, SectionTitleComponent, CommonModule],
+    imports: [VerticalCarouselComponent, CardSmallComponent, SectionTitleComponent, CommonModule, CarouselComponent],
     templateUrl: './section-recent-projects.component.html',
     styleUrl: './section-recent-projects.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
