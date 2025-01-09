@@ -125,11 +125,12 @@
                 img{
                     position: relative;
                     width: 100%;
-                    object-fit: contain;
-                    object-position: top;
                     text-align: center;
                     color: rgba(17, 17, 17, 0.2196078431);
                     font-weight: 700;
+                    object-position: 0 -80px;
+                    height: 90%;
+                    object-fit: cover;
                 }
             }
         }

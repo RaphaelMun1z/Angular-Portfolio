@@ -3,29 +3,37 @@
         <app-section-title [text]="'Projeto'" [emphasis]="project.name"></app-section-title>
         <div class="container">
             <div class="topic-container banner-container" *ngIf="project.imageUrl !== undefined">
-                <img class="banner" [src]="'/assets/projects/banner/' + project.imageUrl" alt="Imagem representativa do projeto">
+                <img class="banner" [src]="'/assets/projects/banner/main/' + project.imageUrl" alt="Imagem representativa do projeto">
             </div>
             <div class="grid-info-container">
                 <div class="item item-1" *ngIf="project.proposal !== undefined">
-                    <h2 class="title"><i class="material-icons">lightbulb_outline</i>Proposta</h2>
-                    <p class="proposal">{{ project.proposal }}</p>
+                    <div class="content-container">
+                        <h2 class="title"><i class="material-icons">lightbulb_outline</i>Proposta</h2>
+                        <p class="proposal">{{ project.proposal }}</p>
+                    </div>
                 </div>
                 <div class="item item-2" *ngIf="project.description !== undefined">
-                    <h2 class="title"><i class="material-icons">description</i>Descrição</h2>
-                    <p class="proposal">{{ project.description }}</p>
+                    <div class="content-container">
+                        <h2 class="title"><i class="material-icons">description</i>Descrição</h2>
+                        <p class="proposal">{{ project.description }}</p>
+                    </div>
                 </div>
                 <div class="item item-3" *ngIf="project.stack !== undefined">
-                    <h2 class="title"><i class="material-icons">all_inbox</i>Stack</h2>
-                    <ul class="list stack">
-                        <app-icon *ngFor="let tech of project.stack" [name]="tech" [size]="'50px'"></app-icon>
-                    </ul>
+                    <div class="content-container">
+                        <h2 class="title"><i class="material-icons">all_inbox</i>Stack</h2>
+                        <ul class="list stack">
+                            <app-icon *ngFor="let tech of project.stack" [name]="tech" [size]="'50px'"></app-icon>
+                        </ul>
+                    </div>
                 </div>
                 <div class="item item-4">
-                    <h2 class="title"><i class="material-icons">link</i>Links</h2>
-                    <ul class="list">
-                        <li *ngIf="project.repositoryUrl !== undefined"><a [href]="project.repositoryUrl"><i class="material-icons">folder_open</i>Repositório GitHub</a></li>
-                        <li *ngIf="project.projectUrl !== undefined"><a [href]="project.projectUrl"><i class="material-icons">open_in_new</i>Acessar projeto</a></li>
-                    </ul>
+                    <div class="content-container">
+                        <h2 class="title"><i class="material-icons">link</i>Links</h2>
+                        <ul class="list">
+                            <li *ngIf="project.repositoryUrl !== undefined"><a [href]="project.repositoryUrl"><i class="material-icons">folder_open</i>Repositório GitHub</a></li>
+                            <li *ngIf="project.projectUrl !== undefined"><a [href]="project.projectUrl"><i class="material-icons">open_in_new</i>Acessar projeto</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

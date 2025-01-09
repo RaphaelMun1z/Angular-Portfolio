@@ -7,7 +7,7 @@
         "description": "Soon",
         "repositoryUrl": "https://github.com/RaphaelMun1z/SpringBoot-Dealership",
         "projectUrl": "Soon",
-        "imageUrl": "banner-dealership.png"
+        "imageUrl": "BannerDealership.png"
     },
     {
         "id": "2",
@@ -17,7 +17,7 @@
         "description": "Soon",
         "repositoryUrl": "https://github.com/RaphaelMun1z/SpringBoot-LeaseInsight",
         "projectUrl": "Soon",
-        "imageUrl": "banner-leaseinsight.png"
+        "imageUrl": "BannerLeaseInsight.png"
     },
     {
         "id": "3",
@@ -27,7 +27,7 @@
         "description": "Clone da Interface Netflix em React: Um projeto que replica a experiência de usuário da Netflix usando React.",
         "repositoryUrl": "https://github.com/RaphaelMun1z/React-Netflix-frontend",
         "projectUrl": "Soon",
-        "imageUrl": "banner-netflix.png"
+        "imageUrl": "BannerNetflix.png"
     },
     {
         "id": "4",
@@ -37,6 +37,6 @@
         "description": "Inspirado no Instagram, foi desenvolvido utilizando React e NodeJS.",
         "repositoryUrl": "https://github.com/RaphaelMun1z/React-ReactGram-frontend",
         "projectUrl": "Soon",
-        "imageUrl": "banner-reactgram.png"
+        "imageUrl": "BannerReactGram.png"
     }
 ]
