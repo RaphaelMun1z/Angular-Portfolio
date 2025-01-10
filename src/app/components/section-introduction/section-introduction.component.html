@@ -1,7 +1,7 @@
 <app-base-container>
 	<app-section-title [text]="'Projetos em'" [emphasis]="'destaque'"></app-section-title>
 	<div class="inside-container">
-		<div class="card size-2">
+		<div class="card size-2" *ngIf="projects[0]; else loading">
 			<div class="image-container">
 				<img [src]="'/assets/projects/banner/mini/'+projects[0].project.imageUrl" [alt]="'Imagem do projeto ' + projects[0].project.name" />
 			</div>
@@ -23,7 +23,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card size-2">
+		<div class="card size-2" *ngIf="projects[1]; else loading">
 			<div class="image-container">
 				<img [src]="'/assets/projects/banner/mini/'+projects[1].project.imageUrl" [alt]="'Imagem do projeto ' + projects[1].project.name" />
 			</div>
@@ -45,7 +45,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card size-3">
+		<div class="card size-3" *ngIf="projects[2]; else loading2">
 			<div class="image-container">
 				<img [src]="'/assets/projects/banner/mini/'+projects[2].project.imageUrl" [alt]="'Imagem do projeto ' + projects[2].project.name" />
 			</div>
@@ -68,4 +68,10 @@
 			</div>
 		</div>
 	</div>
+	<ng-template #loading>
+		<p-skeleton width="25vw" height="50vh" borderRadius="30px" />
+	</ng-template>
+	<ng-template #loading2>
+		<p-skeleton width="40vw" height="50vh" borderRadius="30px" />
+	</ng-template>
 </app-base-container>

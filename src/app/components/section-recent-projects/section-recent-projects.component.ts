@@ -5,6 +5,7 @@ import { ProjectService } from '../../services/project.service';
 import { SectionTitleComponent } from "../section-title/section-title.component";
 import { CommonModule } from '@angular/common';
 import { RecentProjectService } from '../../services/recent-project.service';
+import { SkeletonModule } from 'primeng/skeleton';
 
 interface Project {
     id: string;
@@ -25,7 +26,7 @@ interface RecentProject {
 @Component({
     selector: 'app-section-recent-projects',
     standalone: true,
-    imports: [VerticalCarouselComponent, CardSmallComponent, SectionTitleComponent, CommonModule],
+    imports: [VerticalCarouselComponent, SkeletonModule, CardSmallComponent, SectionTitleComponent, CommonModule],
     templateUrl: './section-recent-projects.component.html',
     styleUrl: './section-recent-projects.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]

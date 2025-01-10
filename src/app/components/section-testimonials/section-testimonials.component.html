@@ -1,9 +1,9 @@
 <app-base-container>
 	<app-section-title [text]="'Depoimentos'" [emphasis]="''"></app-section-title>
 	<div class="inside-container" *ngIf="testimonials.length > 0">
-		<app-carousel class="carousel">
+		<app-carousel class="carousel" [spaceBetween]="15">
 			<swiper-slide *ngFor="let testimonial of testimonials">
-				<div class="cards-column-container">
+				<div class="cards-column-container" *ngIf="testimonials.length > 0; else loading">
 					<app-carousel-card
 					[imageUrl]="testimonial.imageUrl"
 					[name]="testimonial.name"
@@ -15,3 +15,6 @@
 		</app-carousel>
 	</div>
 </app-base-container>
+<ng-template #loading>
+	<p-skeleton width="100%" height="400px" borderRadius="30px" />
+</ng-template>

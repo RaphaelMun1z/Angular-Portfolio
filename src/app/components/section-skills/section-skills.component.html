@@ -8,12 +8,14 @@
 	<swiper-slide *ngFor="let skillGroup of skills">
 		<div class="cards-column-container">
 			<app-carousel-card
+			*ngIf="skills.length > 0; else loading"
 			[title]="skillGroup[0].name"
 			color="#E76E00"
 			[description]="skillGroup[0].description"
 			[logo]="skillGroup[0].icon"
 			></app-carousel-card>
 			<app-carousel-card
+			*ngIf="skills.length > 0; else loading"
 			[title]="skillGroup[1].name"
 			color="#E76E00"
 			[description]="skillGroup[1].description"
@@ -23,3 +25,6 @@
 	</swiper-slide>
 </app-carousel>
 </app-base-container>
+<ng-template #loading>
+	<p-skeleton width="auto" height="250px" borderRadius="30px" />
+</ng-template>

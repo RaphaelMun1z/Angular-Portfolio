@@ -5,6 +5,7 @@ import { TestimonialService } from '../../services/testimonial.service';
 import { CommonModule } from '@angular/common';
 import { BaseContainerComponent } from '../base-container/base-container.component';
 import { CarouselCardComponent } from './carousel-card/carousel-card.component';
+import { SkeletonModule } from 'primeng/skeleton';
 
 interface Testimonial {
     id: string;
@@ -17,7 +18,7 @@ interface Testimonial {
 @Component({
     selector: 'app-section-testimonials',
     standalone: true,
-    imports: [CarouselComponent, CarouselCardComponent, SectionTitleComponent, CommonModule, BaseContainerComponent],
+    imports: [CarouselComponent, SkeletonModule, CarouselCardComponent, SectionTitleComponent, CommonModule, BaseContainerComponent],
     host: { ngSkipHydration: 'true' },
     templateUrl: './section-testimonials.component.html',
     styleUrl: './section-testimonials.component.scss',

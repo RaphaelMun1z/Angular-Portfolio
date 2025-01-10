@@ -9,6 +9,7 @@ import { TopicCardComponent } from './topic-card/topic-card.component';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { ConceptualSkillService } from '../../services/conceptual-skill.service';
 import { CommonModule } from '@angular/common';
+import { SkeletonModule } from 'primeng/skeleton';
 registerSwiperElements();
 
 interface ConceptualSkill {
@@ -21,7 +22,7 @@ interface ConceptualSkill {
 @Component({
     selector: 'app-section-conceptual-skills',
     standalone: true,
-    imports: [MatIconModule, CardComponent, SectionTitleComponent, BaseContainerComponent, TopicCardComponent, CarouselComponent, CommonModule],
+    imports: [MatIconModule, SkeletonModule, CardComponent, SectionTitleComponent, BaseContainerComponent, TopicCardComponent, CarouselComponent, CommonModule],
     templateUrl: './section-conceptual-skills.component.html',
     styleUrl: './section-conceptual-skills.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]

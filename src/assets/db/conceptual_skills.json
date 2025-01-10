@@ -4,56 +4,47 @@
             {
                 "id": "1",
                 "name": "Padrões de design",
-                "icon": "account_balance",
-                "description": "SOLID e TDD"
+                "icon": "account_balance"
             },
             {
                 "id": "2",
                 "name": "Gerenciamento de estado",
-                "icon": "settings_suggest",
-                "description": "dawdwawadwa"
+                "icon": "settings_suggest"
             },
             {
                 "id": "3",
                 "name": "Protocolo HTTP",
-                "icon": "http",
-                "description": "dawdwawadwa"
+                "icon": "http"
             },
             {
                 "id": "4",
                 "name": "Autenticação",
-                "icon": "security",
-                "description": "dawdwawadwa"
+                "icon": "security"
             },
             {
                 "id": "5",
                 "name": "SEO",
-                "icon": "search",
-                "description": "Conjunto de técnicas e estratégias para sites ficarem melhor posicionados nos buscadores, gerar reconhecimento de marca, aumentar o tráfego e as conversões"
+                "icon": "search"
             },
             {
                 "id": "6",
                 "name": "Testes unitários",
-                "icon": "biotech",
-                "description": "Validam o funcionamento correto de unidades isoladas de código, garantindo qualidade e facilitando a manutenção do software."
+                "icon": "biotech"
             },
             {
                 "id": "7",
                 "name": "SASS",
-                "icon": "css",
-                "description": "dawdwawadwa"
+                "icon": "css"
             },
             {
                 "id": "8",
                 "name": "Responsividade",
-                "icon": "phonelink",
-                "description": "dawdwawadwa"
+                "icon": "phonelink"
             },
             {
                 "id": "9",
                 "name": "Controle de versão",
-                "icon": "share",
-                "description": "dawdwawadwa"
+                "icon": "share"
             }
         ]
     },
@@ -62,56 +53,47 @@
             {
                 "id": "1",
                 "name": "Spring Security",
-                "icon": "lock_outline",
-                "description": "Autenticação JWT"
+                "icon": "lock_outline"
             },
             {
                 "id": "2",
                 "name": "Hibernate (ORM)",
-                "icon": "account_tree",
-                "description": "dawdawdw"
+                "icon": "account_tree"
             },
             {
                 "id": "3",
                 "name": "Spring Data",
-                "icon": "web_stories",
-                "description": "Spring Data JPA"
+                "icon": "web_stories"
             },
             {
                 "id": "4",
                 "name": "Microsserviços",
-                "icon": "miscellaneous_services",
-                "description": "dawdawdw"
+                "icon": "miscellaneous_services"
             },
             {
                 "id": "5",
                 "name": "Scheduling",
-                "icon": "schedule",
-                "description": "dawdawdw"
+                "icon": "schedule"
             },
             {
                 "id": "6",
                 "name": "Multithreading",
-                "icon": "memory",
-                "description": "dawdawdw"
+                "icon": "memory"
             },
             {
                 "id": "7",
                 "name": "Testes unitários",
-                "icon": "biotech",
-                "description": "dawdawdw"
+                "icon": "biotech"
             },
             {
                 "id": "8",
                 "name": "Testes de integração",
-                "icon": "timeline",
-                "description": "dawdawdw"
+                "icon": "timeline"
             },
             {
                 "id": "9",
                 "name": "Controle de versão",
-                "icon": "share",
-                "description": "dawdawdw"
+                "icon": "share"
             }
         ]
     },
@@ -120,44 +102,37 @@
             {
                 "id": "1",
                 "name": "Azure",
-                "icon": "cloud",
-                "description": "dawdawawdaw"
+                "icon": "cloud"
             },
             {
                 "id": "2",
                 "name": "Banco de dados SQL",
-                "icon": "table_chart",
-                "description": "dawdawawdaw"
+                "icon": "table_chart"
             },
             {
                 "id": "3",
                 "name": "Banco de dados NoSQL",
-                "icon": "data_array",
-                "description": "dawdawawdaw"
+                "icon": "data_array"
             },
             {
                 "id": "4",
                 "name": "ORM",
-                "icon": "data_object",
-                "description": "dawdawawdaw"
+                "icon": "data_object"
             },
             {
                 "id": "5",
                 "name": "DevOps",
-                "icon": "map",
-                "description": "dawdawawdaw"
+                "icon": "map"
             },
             {
                 "id": "6",
                 "name": "CI/CD - Integração Contínua e Deploy Contínuo",
-                "icon": "auto_mode",
-                "description": "dawdawawdaw"
+                "icon": "auto_mode"
             },
             {
                 "id": "7",
                 "name": "Docker",
-                "icon": "inbox",
-                "description": "dawdawawdaw"
+                "icon": "inbox"
             }
         ]
     }

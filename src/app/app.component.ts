@@ -4,13 +4,15 @@ import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { CommonModule } from '@angular/common';
+import { transitionAnimation } from './components/animations/transition'
 
 @Component({
     selector: 'app-root',
     standalone: true,
     imports: [RouterOutlet, CommonModule, NavBarComponent, FooterComponent],
     templateUrl: './app.component.html',
-    styleUrl: './app.component.scss'
+    styleUrl: './app.component.scss',
+    animations: [transitionAnimation]
 })
 
 export class AppComponent implements OnInit {
@@ -33,5 +35,9 @@ export class AppComponent implements OnInit {
     @HostListener('window:scroll', [])
     onWindowScroll(): void {
         this.isScrolled = window.scrollY > 100;
+    }
+    
+    public getRouterOutletState(outlet: RouterOutlet) {
+        return outlet.isActivated ? outlet.activatedRoute : '';
     }
 }

@@ -3,7 +3,9 @@
         <div class="header">
             <div class="left">
                 <h2 class="project-name">{{ name }}</h2>
-                <h2 class="project-proposal"><span id="proposal-title">Proposta: </span><span [innerHTML]="proposal | truncate:200"></span>...
+                <h2 class="project-proposal">
+                    <span id="proposal-title">Proposta: </span>
+                    <span [innerHTML]="proposal | truncate:200"></span>...
                     <app-button 
                     *ngIf="proposal.length > 200"
                     [text]="'Ler mais.'"

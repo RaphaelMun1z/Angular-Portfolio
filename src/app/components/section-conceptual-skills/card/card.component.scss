@@ -39,20 +39,4 @@
             justify-content: center;
         }
     }
-    
-    .text-container{
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: fit-content;
-        justify-content: center;
-        
-        .text{
-            text-align: center;
-            color: #222;
-            font-weight: 500;
-            font-size: 1rem;
-            text-align: center;
-        }
-    }
 }

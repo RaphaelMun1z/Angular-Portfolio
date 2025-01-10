@@ -11,7 +11,7 @@
                 <li pRipple [routerLink]="['/contact']" [routerLinkActive]="['active']">Contato</li>
             </ul>
             <div class="profile-container">
-                <button id="freelancer" pRipple>
+                <button id="freelancer" pRipple [routerLink]="['/about']" [fragment]="'freelancer_'">
                     Freelancer
                     <i class="material-icons">link</i>
                 </button>

@@ -11,6 +11,7 @@ import { SectionTitleComponent } from "../section-title/section-title.component"
 import { BaseContainerComponent } from "../base-container/base-container.component";
 import { FeaturedProjectService } from '../../services/featured-project.service';
 import { CommonModule } from '@angular/common';
+import { SkeletonModule } from 'primeng/skeleton';
 
 interface Project {
     id: string;
@@ -32,8 +33,8 @@ interface FeaturedProject {
 @Component({
     selector: 'app-section-introduction',
     standalone: true,
-    imports: [RippleModule, RouterModule, MatButtonModule, ButtonComponent, SectionTitleComponent, BaseContainerComponent, CommonModule],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [RippleModule, SkeletonModule, RouterModule, MatButtonModule, ButtonComponent, SectionTitleComponent, BaseContainerComponent, CommonModule],
+    changeDetection: ChangeDetectionStrategy.Default,
     templateUrl: './section-introduction.component.html',
     styleUrl: './section-introduction.component.scss'
 })
@@ -49,15 +50,14 @@ export class SectionIntroductionComponent implements OnInit{
         });
     }
     
-    projects: FeaturedProject[] = [];
-    
     constructor(private service:FeaturedProjectService){}
+    
+    projects: FeaturedProject[] = [];
     
     ngOnInit() {
         this.service.getAll().subscribe((response) => {
             if (response) {
                 this.projects = response;
-                console.log(response)
             }
         })
     }
