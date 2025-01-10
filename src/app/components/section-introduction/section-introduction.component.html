@@ -3,67 +3,67 @@
 	<div class="inside-container">
 		<div class="card size-2">
 			<div class="image-container">
-				<img src="/assets/projects/banner/banner-netflix.png" alt="Imagem de projeto" />
+				<img [src]="'/assets/projects/banner/mini/'+projects[0].project.imageUrl" [alt]="'Imagem do projeto ' + projects[0].project.name" />
 			</div>
 			<div class="buttons-container">
 				<div class="buttons-division buttons-top">
 					<app-button 
 					[text]="'Assistir Prévia'"
 					[icon]="'play_circle_outline'" 
-					(click)="openDialog('CLONE SITE NETFLIX', 'https://www.youtube.com/embed/xm4DbSFsOTM?si=zIdi96fEwJdb8THd')"></app-button>
+					(click)="openDialog(projects[0].project.name, projects[0].videoUrl)"></app-button>
 					<app-button 
 					[text]="''"
-					[redirectTo]="'/portfolio/project'"
-					[redirectParam]="'1'"
+					[redirectTo]="'/portfolio/project/'"
+					[redirectParam]="projects[0].id"
 					[icon]="'call_made'"
 					[styleType]="1"></app-button>
 				</div>
 				<div class="buttons-division buttons-bottom">
-					<p>Projeto <span>CLONE SITE NETFLIX</span></p>
+					<p>Projeto <span>{{ projects[0].project.name }}</span></p>
 				</div>
 			</div>
 		</div>
 		<div class="card size-2">
 			<div class="image-container">
-				<img src="/assets/projects/banner/banner-coffeexp.png" alt="Imagem de projeto" />
+				<img [src]="'/assets/projects/banner/mini/'+projects[1].project.imageUrl" [alt]="'Imagem do projeto ' + projects[1].project.name" />
 			</div>
 			<div class="buttons-container">
 				<div class="buttons-division buttons-top">
 					<app-button 
 					[text]="'Assistir Prévia'"
 					[icon]="'play_circle_outline'" 
-					(click)="openDialog('COFFEE XP', 'https://www.youtube.com/embed/xm4DbSFsOTM?si=zIdi96fEwJdb8THd')"></app-button>
+					(click)="openDialog(projects[1].project.name, projects[1].videoUrl)"></app-button>
 					<app-button 
 					[text]="''"
 					[redirectTo]="'/portfolio/project'"
-					[redirectParam]="'2'"
+					[redirectParam]="projects[1].id"
 					[icon]="'call_made'"
 					[styleType]="1"></app-button>
 				</div>
 				<div class="buttons-division buttons-bottom">
-					<p>Projeto <span>COFFEE XP</span></p>
+					<p>Projeto <span>{{ projects[1].project.name }}</span></p>
 				</div>
 			</div>
 		</div>
 		<div class="card size-3">
 			<div class="image-container">
-				<img src="/assets/projects/banner/banner-reactgram.png" alt="Imagem de projeto" />
+				<img [src]="'/assets/projects/banner/mini/'+projects[2].project.imageUrl" [alt]="'Imagem do projeto ' + projects[2].project.name" />
 			</div>
 			<div class="buttons-container">
 				<div class="buttons-division buttons-top">
 					<app-button 
 					[text]="'Assistir Prévia'"
 					[icon]="'play_circle_outline'" 
-					(click)="openDialog('REACTGRAM', 'https://www.youtube.com/embed/xm4DbSFsOTM?si=zIdi96fEwJdb8THd')"></app-button>
+					(click)="openDialog(projects[2].project.name, projects[2].videoUrl)"></app-button>
 					<app-button 
 					[text]="''"
 					[redirectTo]="'/portfolio/project'"
-					[redirectParam]="'3'"
+					[redirectParam]="projects[2].id"
 					[icon]="'call_made'"
 					[styleType]="1"></app-button>
 				</div>
 				<div class="buttons-division buttons-bottom">
-					<p>Projeto <span>REACTGRAM</span></p>
+					<p>Projeto <span>{{ projects[2].project.name }}</span></p>
 				</div>
 			</div>
 		</div>

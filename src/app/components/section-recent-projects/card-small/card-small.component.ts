@@ -3,11 +3,12 @@ import { IconComponent } from '../../icon/icon.component';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
 import { ButtonComponent } from "../../button/button.component";
+import { TruncatePipe } from "../../../pipes/truncate.pipe";
 
 @Component({
     selector: 'app-card-small',
     standalone: true,
-    imports: [IconComponent, CommonModule, RippleModule, ButtonComponent],
+    imports: [IconComponent, CommonModule, RippleModule, ButtonComponent, TruncatePipe],
     templateUrl: './card-small.component.html',
     styleUrl: './card-small.component.scss'
 })

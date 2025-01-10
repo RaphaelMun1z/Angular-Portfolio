@@ -30,7 +30,7 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            height: fit-content;
+            height: 100%;
             overflow: hidden;
             z-index: 1;
             
@@ -129,7 +129,8 @@
                         span{
                             display: block;
                             color: #53E953;
-                            font-weight: 700;                            
+                            font-weight: 700;
+                            text-transform: uppercase;                          
                         }
                     }
                 }

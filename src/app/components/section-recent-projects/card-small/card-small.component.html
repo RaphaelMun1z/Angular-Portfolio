@@ -1,7 +1,23 @@
 <div class="project-content-container">
     <h3 id="name">{{ name }}</h3>
-    <p id="idea"><span>Proposta:</span>{{ proposal }}</p>
-    <p id="description"><span>Descrição:</span>{{ description }}</p>
+    <p id="description">
+        <span id="description-title">Descrição:</span>
+        <span [innerHTML]="description | truncate:200"></span>...
+        <app-button 
+        *ngIf="description.length > 200"
+        [text]="'Ler mais.'"
+        [styleType]="3"
+        [redirectTo]="'/project/' + id"></app-button>
+    </p>
+    <p id="idea">
+        <span id="idea-title">Proposta:</span>
+        <span [innerHTML]="proposal | truncate:200"></span>...
+        <app-button 
+        *ngIf="proposal.length > 200"
+        [text]="'Ler mais.'"
+        [styleType]="3"
+        [redirectTo]="'/project/' + id"></app-button>
+    </p>
     <div class="stack-container">
         <app-icon *ngFor="let tech of stack" [name]="tech" [size]="'30px'"></app-icon>
     </div>

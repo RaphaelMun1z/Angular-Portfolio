@@ -3,7 +3,12 @@
         <div class="header">
             <div class="left">
                 <h2 class="project-name">{{ name }}</h2>
-                <h2 class="project-proposal"><span>Proposta: </span>{{ proposal }}</h2>
+                <h2 class="project-proposal"><span id="proposal-title">Proposta: </span><span [innerHTML]="proposal | truncate:200"></span>...
+                    <app-button 
+                    *ngIf="proposal.length > 200"
+                    [text]="'Ler mais.'"
+                    [styleType]="3"
+                    [redirectTo]="'/project/' + id"></app-button></h2>
             </div>
             <div class="right">
                 <span class="material-icons">call_made</span>

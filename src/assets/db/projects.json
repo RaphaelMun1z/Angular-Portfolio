@@ -3,9 +3,9 @@
         "id": "1",
         "name": "Dealership",
         "stack": ["spring", "angular", "postgresql", "docker"],
-        "proposal": "Soon",
-        "description": "Soon",
-        "repositoryUrl": "https://github.com/RaphaelMun1z/SpringBoot-Dealership",
+        "proposal": "&emsp;O 'Dealership' foi concebido para resolver uma necessidade clara no mercado regional: a ausência de soluções eficazes e específicas para a gestão de concessionárias. A motivação por trás do projeto veio da carência de softwares robustos e escaláveis que atendam a esse nicho com qualidade. O sistema não apenas preenche essa lacuna, mas também se destaca pela combinação de alto desempenho, organização e tecnologia de ponta.<br><br>&emsp;Ao oferecer funcionalidades que abrangem desde o gerenciamento de estoques e vendas até a classificação detalhada de veículos, o 'Dealership' se torna um aliado essencial para concessionárias que desejam otimizar seus processos e melhorar a experiência do cliente. A utilização de Spring Framework assegura a escalabilidade necessária para empresas que planejam expandir, permitindo que o software cresça junto com o negócio.<br><br>&emsp;A proposta do 'Dealership' vai além da simples gestão operacional. O sistema foi projetado para oferecer uma solução integrada, que conecta diferentes áreas de uma organização e permite uma visão unificada das operações, garantindo maior controle e eficiência. Além disso, o foco em segurança, com a implementação de autenticação JWT, e a adoção de tecnologias modernas como PostgreSQL e Angular tornam o sistema uma escolha confiável e duradoura para empresas do setor.<br><br>&emsp;Desenvolvido para se adaptar às necessidades específicas de cada cliente, o 'Dealership' é a solução ideal para concessionárias que buscam modernizar suas operações e garantir um diferencial competitivo no mercado.",
+        "description": "&emsp;O 'Dealership' é um sistema completo e escalável, projetado para atender às necessidades de concessionárias de diferentes portes, desde pequenas empresas até grandes redes. Desenvolvido com o Spring Framework, o sistema reflete uma solução robusta e eficiente para organizações que precisam gerenciar suas operações de maneira integrada e organizada.<br><br>&emsp;Entre as principais funcionalidades, o 'Dealership' oferece o gerenciamento de funcionários, vendas, contratos, agendamentos, clientes e estoque, além de permitir a classificação e o detalhamento de veículos. O sistema utiliza conceitos de arquitetura em camadas e implementa técnicas de alto desempenho, como multithreading e paginação, para garantir operações rápidas e confiáveis.<br><br>&emsp;Sua API RESTful foi projetada para garantir facilidade de integração, enquanto a autenticação baseada em JSON Web Token (JWT) assegura um nível elevado de segurança. A solução também conta com um serviço de envio de e-mails integrado, ampliando as possibilidades de comunicação interna e externa. Para atender às demandas de um setor dinâmico, o sistema permite o gerenciamento de múltiplas unidades de uma mesma organização, otimizando processos e garantindo uma visão consolidada das operações.<br><br>&emsp;O 'Dealership' utiliza o banco de dados PostgreSQL como base para armazenar dados de forma eficiente e segura. Em breve, contará com uma interface web desenvolvida com Angular, proporcionando aos usuários uma experiência moderna e intuitiva.",
+        "repositoryUrl": "Spring-Dealership",
         "projectUrl": "Soon",
         "imageUrl": "BannerDealership.png"
     },
@@ -13,9 +13,9 @@
         "id": "2",
         "name": "LeaseInsight",
         "stack": ["spring", "angular", "postgresql", "docker"],
-        "proposal": "software para a administração de locação de imóveis.",
-        "description": "Soon",
-        "repositoryUrl": "https://github.com/RaphaelMun1z/SpringBoot-LeaseInsight",
+        "proposal": "&emsp;A motivação para criar o 'LeaseInsight' surgiu de experiências pessoais envolvendo um proprietário que enfrentava dificuldades na administração de um grande volume de imóveis de forma autônoma, devido à falta de ferramentas adequadas para controle eficiente. Diante disso, o sistema foi concebido para oferecer uma solução moderna que simplifica a gestão de contratos, pagamentos e relações com inquilinos, centralizando informações e automatizando processos de maneira intuitiva. Com foco em organização e eficácia, o 'LeaseInsight' busca reduzir erros manuais, economizar tempo e proporcionar maior tranquilidade para administradores e proprietários, estabelecendo um novo padrão de gestão imobiliária.",
+        "description": "&emsp;LeaseInsight é um software desenvolvido em Java Spring para a administração de locação de imóveis. Este projeto visa simplificar a gestão de propriedades, inquilinos, contratos de aluguel e pagamentos, proporcionando uma solução eficiente e organizada para a administração imobiliária.",
+        "repositoryUrl": "Spring-LeaseInsight",
         "projectUrl": "Soon",
         "imageUrl": "BannerLeaseInsight.png"
     },
@@ -23,9 +23,9 @@
         "id": "3",
         "name": "Netflix",
         "stack": ["react"],
-        "proposal": "Exercitar minhas habilidades no desenvolvimento de interfaces.",
-        "description": "Clone da Interface Netflix em React: Um projeto que replica a experiência de usuário da Netflix usando React.",
-        "repositoryUrl": "https://github.com/RaphaelMun1z/React-Netflix-frontend",
+        "proposal": "&emsp;A motivação para criar o 'Netflix' foi o desejo de aprimorar minhas habilidades como desenvolvedor frontend, explorando conceitos avançados de React e boas práticas na construção de interfaces web. Este projeto não apenas demonstra meu conhecimento em desenvolvimento de componentes reutilizáveis e estilização moderna, mas também reflete meu compromisso em buscar aperfeiçoamento constante e compreender a complexidade de interfaces de usuário dinâmicas e responsivas.",
+        "description": "&emsp;O 'Netflix' é um projeto que reproduz a interface do site da Netflix, desenvolvido com React. Este projeto foca na criação de uma experiência visual e interativa que se assemelha à plataforma original, priorizando a organização de componentes, estilização responsiva e interatividade do usuário. Embora não inclua funcionalidades de backend, o 'Netflix' apresenta um design fiel ao modelo original, ideal para fins de aprendizado e demonstração de habilidades frontend.",
+        "repositoryUrl": "React-Netflix-frontend",
         "projectUrl": "Soon",
         "imageUrl": "BannerNetflix.png"
     },
@@ -33,10 +33,90 @@
         "id": "4",
         "name": "ReactGram",
         "stack": ["react", "nodejs", "mongodb"],
-        "proposal": "Exercitar minhas habilidades no desenvolvimento de interfaces.",
-        "description": "Inspirado no Instagram, foi desenvolvido utilizando React e NodeJS.",
-        "repositoryUrl": "https://github.com/RaphaelMun1z/React-ReactGram-frontend",
+        "proposal": "&emsp;A motivação para criar o 'ReactGram' foi o desejo de aperfeiçoar minhas habilidades no desenvolvimento de aplicações fullstack, explorando com mais profundidade aspectos avançados de integração entre frontend e backend. Este projeto serviu como uma oportunidade para refinar minhas competências em React e NodeJs, abordando desafios mais complexos e implementando soluções escaláveis e de alta qualidade. O 'ReactGram' reflete meu compromisso com a evolução contínua como desenvolvedor e minha dedicação em criar aplicações modernas e eficientes.",
+        "description": "&emsp;O 'ReactGram' é um projeto inspirado no Instagram, desenvolvido com React e NodeJs. Este projeto fullstack recria funcionalidades essenciais de uma rede social de compartilhamento de fotos, permitindo uma experiência interativa e moderna para o usuário. O 'ReactGram' foi projetado com foco em boas práticas de desenvolvimento, integração eficiente entre frontend e backend, e implementação de recursos responsivos e escaláveis.",
+        "repositoryUrl": "React-ReactGram-frontend",
         "projectUrl": "Soon",
         "imageUrl": "BannerReactGram.png"
+    },
+    {
+        "id": "5",
+        "name": "Blog",
+        "stack": ["angular"],
+        "proposal": "&emsp;A motivação para o desenvolvimento deste projeto surgiu da necessidade de criar uma interface de blog interativa e eficiente, utilizando as vantagens do Angular para garantir desempenho e uma experiência de usuário fluida. O projeto visa oferecer uma plataforma de leitura e interação agradável, com foco em design responsivo e otimização da navegação. Ele é uma solução simples e escalável para quem deseja criar ou consumir conteúdo de blog de forma eficiente e agradável em diversos dispositivos.",
+        "description": "&emsp;O projeto 'Blog' foi desenvolvido com o framework Angular e tem como foco a criação de uma interface de usuário dinâmica e responsiva para um blog. Ele permite que os usuários naveguem por postagens, leiam artigos, e visualizem categorias. A interface foi projetada com um layout moderno, com ênfase em uma experiência de leitura agradável e interação intuitiva.",
+        "repositoryUrl": "Angular-Blog",
+        "projectUrl": "",
+        "imageUrl": "BannerBlog.png"
+    },
+    {
+        "id": "6",
+        "name": "BuzzFeed",
+        "stack": ["angular"],
+        "proposal": "",
+        "description": "",
+        "repositoryUrl": "Angular-Buzz-feed",
+        "projectUrl": "",
+        "imageUrl": "BannerBuzzFeed.png"
+    },
+    {
+        "id": "7",
+        "name": "Hope Handover",
+        "stack": ["nodejs", "react"],
+        "proposal": "",
+        "description": "",
+        "repositoryUrl": "React-HopeHandover-frontend",
+        "projectUrl": "",
+        "imageUrl": "BannerHopeHandover.png"
+    },
+    {
+        "id": "8",
+        "name": "Movies",
+        "stack": ["react"],
+        "proposal": "",
+        "description": "",
+        "repositoryUrl": "React-Movies-frontend",
+        "projectUrl": "",
+        "imageUrl": "BannerMovies.png"
+    },
+    {
+        "id": "9",
+        "name": "PetQuest",
+        "stack": ["nodejs", "react"],
+        "proposal": "A motivação para desenvolver o 'PetQuest' veio do desejo de criar uma solução tecnológica que promova a adoção de animais de estimação, contribuindo para a conexão entre pessoas que desejam adotar e aqueles que precisam encontrar lares para seus animais. Este projeto busca não apenas facilitar esse processo, mas também incentivar a responsabilidade e o cuidado com os animais, ao mesmo tempo em que exploro minhas habilidades no desenvolvimento de plataformas fullstack.",
+        "description": "PetQuest é um sistema de adoção de animais de estimação, desenvolvido com React e NodeJs. Este projeto oferece uma plataforma onde os usuários podem anunciar animais para adoção e também encontrar animais para adotar.",
+        "repositoryUrl": "React-PetQuest-frontend",
+        "projectUrl": "",
+        "imageUrl": "BannerPetQuest.png"
+    },
+    {
+        "id": "10",
+        "name": "PlaystationStore",
+        "stack": ["angular"],
+        "proposal": "A motivação para o desenvolvimento deste projeto surgiu da necessidade de oferecer aos usuários uma alternativa à interface oficial da PlayStation Store, que pode ser considerada complexa e com funcionalidades pouco acessíveis para uma navegação ágil. Ao criar uma interface mais limpa, rápida e com funcionalidades inovadoras, busca-se proporcionar uma experiência de compra mais fluida e atrativa, destacando-se pela simplicidade e eficiência.",
+        "description": "O projeto 'PlaystationStore' consiste no desenvolvimento de uma interface alternativa para a PlayStation Store, proporcionando aos usuários uma navegação mais personalizada, fluida e intuitiva. Esta interface visa otimizar a experiência de compra e exploração de jogos, conteúdo e outros produtos digitais, permitindo uma interação mais agradável e eficiente com a plataforma.",
+        "repositoryUrl": "Angular-Playstation-store",
+        "projectUrl": "",
+        "imageUrl": "BannerPlaystationStore.png"
+    },
+    {
+        "id": "11",
+        "name": "Trend",
+        "stack": ["react"],
+        "proposal": "A motivação para desenvolver o 'Trend' surgiu do desejo de resgatar a nostalgia e o encanto do Orkut, adaptando suas principais características a um contexto moderno. Este projeto foi impulsionado pela ideia de criar uma experiência que conecte memórias afetivas do passado com as expectativas e demandas dos usuários atuais, ao mesmo tempo em que exploro e aprimoro minhas habilidades em design e desenvolvimento de funcionalidades essenciais de redes sociais. O 'Trend' representa meu comprometimento em transformar conceitos nostálgicos em uma solução inovadora e relevante.",
+        "description": "Trend é uma plataforma de rede social que resgata a nostalgia do Orkut em um contexto moderno, com ênfase no design e funcionalidades essenciais, como autenticação de usuário e gerenciamento de publicações. Oferecendo uma interface intuitiva e visualmente cativante.",
+        "repositoryUrl": "React-Trend-frontend",
+        "projectUrl": "",
+        "imageUrl": "BannerTrend.png"
+    },
+    {
+        "id": "12",
+        "name": "Portfólio",
+        "stack": ["angular"],
+        "proposal": "",
+        "description": "",
+        "repositoryUrl": "Angular-Portfolio",
+        "projectUrl": "",
+        "imageUrl": "BannerPortfólio.png"
     }
 ]

@@ -21,21 +21,21 @@
             },
             {
                 "id": "4",
-                "name": "SEO",
+                "name": "Autenticação",
                 "icon": "security",
                 "description": "dawdwawadwa"
             },
             {
                 "id": "5",
-                "name": "",
+                "name": "SEO",
                 "icon": "search",
-                "description": "dawdwawadwa"
+                "description": "Conjunto de técnicas e estratégias para sites ficarem melhor posicionados nos buscadores, gerar reconhecimento de marca, aumentar o tráfego e as conversões"
             },
             {
                 "id": "6",
                 "name": "Testes unitários",
                 "icon": "biotech",
-                "description": "dawdwawadwa"
+                "description": "Validam o funcionamento correto de unidades isoladas de código, garantindo qualidade e facilitando a manutenção do software."
             },
             {
                 "id": "7",

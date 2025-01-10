@@ -4,7 +4,7 @@ import { CardSmallComponent } from "./card-small/card-small.component";
 import { ProjectService } from '../../services/project.service';
 import { SectionTitleComponent } from "../section-title/section-title.component";
 import { CommonModule } from '@angular/common';
-import { CarouselComponent } from "../carousel/carousel.component";
+import { RecentProjectService } from '../../services/recent-project.service';
 
 interface Project {
     id: string;
@@ -17,10 +17,15 @@ interface Project {
     imageUrl: string;
 }
 
+interface RecentProject {
+    projectName: string;
+    path: string;
+}
+
 @Component({
     selector: 'app-section-recent-projects',
     standalone: true,
-    imports: [VerticalCarouselComponent, CardSmallComponent, SectionTitleComponent, CommonModule, CarouselComponent],
+    imports: [VerticalCarouselComponent, CardSmallComponent, SectionTitleComponent, CommonModule],
     templateUrl: './section-recent-projects.component.html',
     styleUrl: './section-recent-projects.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -28,8 +33,10 @@ interface Project {
 
 export class SectionRecentProjectsComponent implements OnInit {
     projects : Project[] = [];
+    emphasisFrontendProject : RecentProject[] = [];
+    emphasisBackendProject : RecentProject[] = [];
     
-    constructor(private service: ProjectService){}
+    constructor(private service: ProjectService, private recentProjectsService: RecentProjectService){}
     
     ngOnInit() {
         this.service.getAll().subscribe((response) => {
@@ -37,36 +44,17 @@ export class SectionRecentProjectsComponent implements OnInit {
                 this.projects = response;
             }
         })
-    }
 
-    emphasisProjectImage = [
-        [
-            {
-                "projectName": "Netflix",
-                "path": "netflix-1.png"
-            },
-            {
-                "projectName": "Netflix",
-                "path": "netflix-2.png"
-            },
-            {
-                "projectName": "Netflix",
-                "path": "netflix-3.png"
+        this.recentProjectsService.getRecentProjectsByStack("frontend").subscribe((response) => {
+            if (response) {
+                this.emphasisFrontendProject = response;
             }
-        ],
-        [
-            {
-                "projectName": "Coffee XP",
-                "path": "coffeexp-1.png"
-            },
-            {
-                "projectName": "Portfolio",
-                "path": "portfolio-1.png"
-            },
-            {
-                "projectName": "Reactgram",
-                "path": "reactgram-1.png"
-            },
-        ]
-    ]
+        })
+
+        this.recentProjectsService.getRecentProjectsByStack("backend").subscribe((response) => {
+            if (response) {
+                this.emphasisBackendProject = response;
+            }
+        })
+    }
 }

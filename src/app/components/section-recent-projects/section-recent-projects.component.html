@@ -24,15 +24,15 @@
 			</div>
 			<div  class="item item-li large-item-1">
 				<app-vertical-carousel>
-					<swiper-slide *ngFor="let image of emphasisProjectImage[0]">
-						<img class="project-image-large-box" [src]="'/assets/projects/interface/'+image.path" [alt]="'Imagem do projeto'+image.projectName">
+					<swiper-slide *ngFor="let project of emphasisFrontendProject">
+						<img class="project-image-large-box" [src]="'/assets/projects/interface/'+project.path" [alt]="'Imagem do projeto'+project.projectName">
 					</swiper-slide>
 				</app-vertical-carousel>
 			</div>
 			<div class="item item-li large-item-2">
 				<app-vertical-carousel>
-					<swiper-slide *ngFor="let image of emphasisProjectImage[1]">
-						<img class="project-image-large-box" [src]="'/assets/projects/interface/'+image.path" [alt]="'Imagem do projeto'+image.projectName">
+					<swiper-slide *ngFor="let project of emphasisBackendProject">
+						<img class="project-image-large-box" [src]="'/assets/projects/interface/'+project.path" [alt]="'Imagem do projeto'+project.projectName">
 					</swiper-slide>
 				</app-vertical-carousel>
 			</div>

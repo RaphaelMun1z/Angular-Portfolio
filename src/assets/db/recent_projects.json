@@ -1,0 +1,34 @@
+[
+    {
+        "frontend": [
+            {
+                "projectName": "Netflix",
+                "path": "netflix-1.png"
+            },
+            {
+                "projectName": "Netflix",
+                "path": "netflix-2.png"
+            },
+            {
+                "projectName": "Netflix",
+                "path": "netflix-3.png"
+            }
+        ]
+    },
+    {
+        "backend": [
+            {
+                "projectName": "Coffee XP",
+                "path": "coffeexp-1.png"
+            },
+            {
+                "projectName": "Portfolio",
+                "path": "portfolio-1.png"
+            },
+            {
+                "projectName": "Reactgram",
+                "path": "reactgram-1.png"
+            }
+        ]
+    }
+]
