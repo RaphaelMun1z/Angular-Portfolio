@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map, Observable } from 'rxjs';
+import { map, Observable, switchMap } from 'rxjs';
 
 interface Project {
     id: string;
@@ -29,6 +29,21 @@ export class ProjectService {
     getProjectById(id: string | null): Observable<Project | undefined> {
         return this.getAll().pipe(
             map((projects) => projects.find((project) => project.id === id))
+        );
+    }
+    
+    getRelatedProjects(id: string | null): Observable<Project[]> {
+        return this.getProjectById(id).pipe(
+            switchMap(currentProject =>
+                currentProject ? this.getAll().pipe(
+                    map(allProjects =>
+                        allProjects.filter(project =>
+                            project.id !== currentProject.id &&
+                            project.stack.some(skill => currentProject.stack.includes(skill))
+                        )
+                    )
+                ): []
+            )
         );
     }
 }

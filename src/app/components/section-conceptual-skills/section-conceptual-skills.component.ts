@@ -1,7 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-
 import { register as registerSwiperElements } from 'swiper/element/bundle';
+registerSwiperElements();
 import { CardComponent } from './card/card.component';
 import { SectionTitleComponent } from "../section-title/section-title.component";
 import { BaseContainerComponent } from "../base-container/base-container.component";
@@ -10,7 +10,6 @@ import { CarouselComponent } from '../carousel/carousel.component';
 import { ConceptualSkillService } from '../../services/conceptual-skill.service';
 import { CommonModule } from '@angular/common';
 import { SkeletonModule } from 'primeng/skeleton';
-registerSwiperElements();
 
 interface ConceptualSkill {
     id: string;

@@ -1,0 +1,28 @@
+<div class="recommended-projects-container">
+	<app-section-title [text]="'Veja também'" [emphasis]="'projetos relacionados'"></app-section-title>
+	<app-carousel
+	class="carousel"
+	[slidesPerView]="2.5"
+	[centeredSlides]="false"
+	[spaceBetween]="10"
+	[withShadowLeft]="false" 
+	*ngIf="relatedProjects !== undefined else loading">
+	<swiper-slide class="carousel-item" *ngFor="let project of relatedProjects">
+		<app-card-small 
+		[id]="project.id"
+		[name]="project.name" 
+		[proposal]="project.proposal" 
+		[description]="project.description"
+		[stack]="project.stack"
+		[repositoryUrl]="project.repositoryUrl"
+		[projectUrl]="project.projectUrl"></app-card-small>
+	</swiper-slide>
+</app-carousel>
+</div>
+<ng-template #loading>
+	<div style="display: flex; gap: 1vw; justify-content: space-between;">
+		<p-skeleton height="50vh" width="28rem" styleClass="mb-2" borderRadius="30px"></p-skeleton>
+		<p-skeleton height="50vh" width="28rem" styleClass="mb-2" borderRadius="30px"></p-skeleton>
+		<p-skeleton height="50vh" width="28rem" styleClass="mb-2" borderRadius="30px"></p-skeleton>
+	</div>
+</ng-template>

@@ -1,0 +1,31 @@
+:host{
+    width: 100%;
+}
+
+.recommended-projects-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    
+    .carousel{
+        gap: 1vw;
+        padding-bottom: 1vh;
+        
+        .carousel-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3%;
+            background-color: #fff;
+            border: 1px solid rgba(17, 17, 17, 0.2196078431);
+            overflow: hidden;
+            border-radius: 30px;
+        }
+    }
+}
+
+

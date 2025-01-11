@@ -1,41 +1,94 @@
 <div class="page-container">
     <app-base-container>
-        <app-section-title [text]="'Projeto'" [emphasis]="project.name"></app-section-title>
+        <app-section-title [text]="'Projeto'" [emphasis]="project.name !== undefined ? project.name : 'carregando...'"></app-section-title>
         <div class="container">
-            <div class="topic-container banner-container" *ngIf="project.imageUrl !== undefined">
-                <img class="banner" [src]="'/assets/projects/banner/main/' + project.imageUrl" alt="Imagem representativa do projeto">
+            <div class="topic-container banner-container" *ngIf="project.imageUrl !== undefined else loadingimage">
+                <img
+                class="banner" 
+                [src]="'/assets/projects/banner/main/' + project.imageUrl" 
+                alt="Imagem representativa do projeto">
             </div>
-            <div class="grid-info-container">
-                <div class="item item-1" *ngIf="project.proposal !== undefined">
-                    <div class="content-container">
-                        <h2 class="title"><i class="material-icons">lightbulb_outline</i>Proposta</h2>
-                        <p class="proposal" [innerHTML]="project.proposal"></p>
-                    </div>
+            <div class="section-container">
+                <div class="child topic-container">
+                    <h1><i class="material-icons">lightbulb_outline</i>Proposta</h1>
                 </div>
-                <div class="item item-2" *ngIf="project.description !== undefined">
-                    <div class="content-container">
-                        <h2 class="title"><i class="material-icons">description</i>Descrição</h2>
-                        <p class="proposal" [innerHTML]="project.description"></p>
-                    </div>
-                </div>
-                <div class="item item-3" *ngIf="project.stack !== undefined">
-                    <div class="content-container">
-                        <h2 class="title"><i class="material-icons">all_inbox</i>Stack</h2>
-                        <ul class="list stack">
-                            <app-icon *ngFor="let tech of project.stack" [name]="tech" [size]="'50px'"></app-icon>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item item-4">
-                    <div class="content-container">
-                        <h2 class="title"><i class="material-icons">link</i>Links</h2>
-                        <ul class="list">
-                            <li *ngIf="project.repositoryUrl !== undefined"><a [href]="'https://github.com/RaphaelMun1z/'+project.repositoryUrl"><i class="material-icons">folder_open</i>Repositório GitHub</a></li>
-                            <li *ngIf="project.projectUrl !== undefined"><a [href]="project.projectUrl"><i class="material-icons">open_in_new</i>Acessar projeto</a></li>
-                        </ul>
-                    </div>
+                <div class="child content-container">
+                    <p class="p-1" [innerHTML]="project.proposal" *ngIf="project.proposal !== undefined else loading"></p>
                 </div>
             </div>
+            <hr>
+            <div class="section-container t-2">
+                <div class="child topic-container">
+                    <h1><i class="material-icons">description</i>Descrição</h1>
+                </div>
+                <div class="child content-container">
+                    <p class="p-1" [innerHTML]="project.description" *ngIf="project.description !== undefined else loading"></p>
+                </div>
+            </div>
+            <hr>
+            <div class="section-container">
+                <div class="child topic-container">
+                    <h1><i class="material-icons">all_inbox</i>Stack</h1>
+                </div>
+                <div class="child content-container">
+                    <ul class="p-1 stack-list" *ngIf="project.stack !== undefined else loadingstack">
+                        <li *ngFor="let tech of project.stack">
+                            <app-icon [name]="tech" [size]="'50px'"></app-icon>
+                            <p>{{ tech }}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="section-container t-2">
+                <div class="child topic-container">
+                    <h1><i class="material-icons">link</i>Links</h1>
+                </div>
+                <div class="child content-container">
+                    <ul class="p-1 links-list">
+                        <li *ngIf="project.repositoryUrl !== undefined else loadinglink">
+                            <app-button 
+                            [text]="'Repositório GitHub'"
+                            [icon]="'folder_open'"
+                            [redirectTo]="'https://github.com/RaphaelMun1z/'+project.repositoryUrl"></app-button>
+                        </li>
+                        <li *ngIf="project.projectUrl !== undefined else loadinglink">
+                            <app-button 
+                            [text]="'Acessar Projeto'"
+                            [icon]="'open_in_new'"
+                            [redirectTo]="'https://github.com/RaphaelMun1z/'+project.projectUrl"></app-button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <app-recommended-projects [relatedProjects]="relatedProjects"></app-recommended-projects>
         </div>
     </app-base-container>
 </div>
+<ng-template #loadingimage>
+    <p-skeleton width="100%" height="40vh"/>
+</ng-template>
+<ng-template #loading>
+    <p-skeleton width="100%" height="1.7rem" styleClass="mb-2" />
+    <p-skeleton width="82%" height="1.7rem" styleClass="mb-2" />
+    <p-skeleton width="91%" height="1.7rem" styleClass="mb-2" />
+    <p-skeleton width="87%" height="1.7rem" styleClass="mb-2" />
+    <p-skeleton width="89%" height="1.7rem" styleClass="mb-2" />
+</ng-template>
+<ng-template #loadingstack>
+    <div [style]="{'display': 'flex', 'align-items': 'center'}">
+        <p-skeleton size="4rem" styleClass="mr-2" />
+        <p-skeleton width="500px" height="2rem" styleClass="mb-2" />
+    </div>
+    <div [style]="{'display': 'flex', 'align-items': 'center'}">
+        <p-skeleton size="4rem" styleClass="mr-2" />
+        <p-skeleton width="500px" height="2rem" styleClass="mb-2" />
+    </div>
+    <div [style]="{'display': 'flex', 'align-items': 'center'}">
+        <p-skeleton size="4rem" styleClass="mr-2" />
+        <p-skeleton width="500px" height="2rem" styleClass="mb-2" />
+    </div>
+</ng-template>
+<ng-template #loadinglink>
+    <p-skeleton height="3.5rem" width="250px" styleClass="mb-2" borderRadius="30px" />
+</ng-template>
