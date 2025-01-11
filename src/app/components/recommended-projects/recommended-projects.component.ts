@@ -3,8 +3,8 @@ import { SectionTitleComponent } from "../section-title/section-title.component"
 import { CarouselComponent } from "../carousel/carousel.component";
 import { CommonModule } from '@angular/common';
 import { register as registerSwiperElements } from 'swiper/element/bundle';
-import { CardSmallComponent } from '../section-recent-projects/card-small/card-small.component';
 import { SkeletonModule } from 'primeng/skeleton';
+import { ProjectCardResumeComponent } from '../project-card-resume/project-card-resume.component';
 registerSwiperElements();
 
 interface Project {
@@ -21,7 +21,7 @@ interface Project {
 @Component({
     selector: 'app-recommended-projects',
     standalone: true,
-    imports: [SectionTitleComponent, CarouselComponent, CardSmallComponent, CommonModule, SkeletonModule],
+    imports: [SectionTitleComponent, CarouselComponent, CommonModule, SkeletonModule, ProjectCardResumeComponent],
     templateUrl: './recommended-projects.component.html',
     styleUrl: './recommended-projects.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]

@@ -73,16 +73,17 @@
 
 .carousel{
     gap: 1vw;
+    height: 100%;
 }
 .carousel-item {
     position: relative;
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-    padding: 7%;
     background-color: #fff;
     border: 1px solid rgba(17, 17, 17, 0.2196078431);
     overflow: hidden;

@@ -11,7 +11,7 @@ import { ButtonComponent } from "../button/button.component";
     standalone: true,
     imports: [RippleModule, IconComponent, RouterModule, CommonModule, TruncatePipe, ButtonComponent],
     templateUrl: './portfolio-project-card.component.html',
-    styleUrl: './portfolio-project-card.component.scss'
+    styleUrls: ["./portfolio-project-card.component.scss", "./portfolio-project-card-responsive.component.scss"]
 })
 
 export class PortfolioProjectCardComponent {

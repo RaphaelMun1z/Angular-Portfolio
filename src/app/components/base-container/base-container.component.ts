@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './base-container.component.html',
-  styleUrl: './base-container.component.scss'
+  styleUrls: ["./base-container.component.scss", "./base-container-responsive.component.scss"]
 })
 export class BaseContainerComponent {
     @Input() isHeroSection = false;

@@ -19,7 +19,7 @@ interface Skill {
     standalone: true,
     imports: [CommonModule, SkeletonModule, CarouselComponent, CarouselCardComponent, SectionTitleComponent, BaseContainerComponent],
     templateUrl: './section-skills.component.html',
-    styleUrl: './section-skills.component.scss',
+    styleUrls: ["./section-skills.component.scss", "./section-skills-responsive.component.scss"],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
@@ -35,10 +35,4 @@ export class SectionSkillsComponent implements OnInit{
             }
         })
     }
-    
-    breakpoints: unknown = {
-        320: { slidesPerView: 1.5 },
-        768: { slidesPerView: 2.5 },
-        1024: { slidesPerView: 3.5 }
-    };
 }

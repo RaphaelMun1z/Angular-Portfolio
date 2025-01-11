@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px) {
+    .inside-container{
+        flex-direction: column !important;
+        
+        .card{
+            width: 100% !important;
+            height: 30vh !important;
+            flex: inherit !important;
+        }
+        
+        .buttons-container{
+            padding: 2vh !important;
+        }
+    } 
+}

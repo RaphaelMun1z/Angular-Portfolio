@@ -3,7 +3,10 @@
         <div class="logo-container">
             <img src="/assets/icon/icon-2.png" alt="Ícone">
         </div>
-        <div class="nav-container">
+        <div class="mobile-button-container" *ngIf="isMobile">
+            <i class="material-icons" (click)="toggleMenu()">{{ isMobile && isOpen ? 'menu_open' : 'menu' }}</i>
+        </div>
+        <div class="nav-container" *ngIf="isOpen || !isMobile">
             <ul>
                 <li pRipple [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</li>
                 <li pRipple [routerLink]="['/about']" [routerLinkActive]="['active']">Sobre</li>
@@ -31,3 +34,5 @@
         </div>
     </div>
 </header>
+
+

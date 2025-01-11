@@ -7,7 +7,7 @@ import { IconComponent } from "../../icon/icon.component";
     standalone: true,
     imports: [CommonModule, IconComponent],
     templateUrl: './carousel-card.component.html',
-    styleUrl: './carousel-card.component.scss'
+    styleUrls: ["./carousel-card.component.scss", "./carousel-card-responsive.component.scss"]
 })
 
 export class CarouselCardComponent {

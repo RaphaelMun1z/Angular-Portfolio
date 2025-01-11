@@ -1,18 +1,19 @@
 import { Component, Input } from '@angular/core';
-import { IconComponent } from '../../icon/icon.component';
+import { IconComponent } from '../icon/icon.component';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
-import { ButtonComponent } from "../../button/button.component";
-import { TruncatePipe } from "../../../pipes/truncate.pipe";
+import { ButtonComponent } from '../button/button.component';
+import { TruncatePipe } from '../../pipes/truncate.pipe';
 
 @Component({
-    selector: 'app-card-small',
+    selector: 'app-project-card-resume',
     standalone: true,
     imports: [IconComponent, CommonModule, RippleModule, ButtonComponent, TruncatePipe],
-    templateUrl: './card-small.component.html',
-    styleUrl: './card-small.component.scss'
+    templateUrl: './project-card-resume.component.html',
+    styleUrl: './project-card-resume.component.scss'
 })
-export class CardSmallComponent {
+
+export class ProjectCardResumeComponent {
     @Input() id!: string;
     @Input() name!: string;
     @Input() proposal!: string;

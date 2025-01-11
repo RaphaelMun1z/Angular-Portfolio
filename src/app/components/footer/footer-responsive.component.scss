@@ -1,0 +1,35 @@
+@media only screen and (max-width: 768px) {
+    footer{
+        padding: 1.4vh !important;
+
+        .container{
+            padding: 7vh !important;
+            
+            .top{
+                flex-wrap: wrap !important;
+                flex-direction: column !important;
+                gap: 5vh !important;
+                
+                .logo-container{
+                    width: 100% !important;
+                }
+                
+                nav{
+                    justify-content: flex-start !important;
+                    align-items: flex-start !important;
+                    width: 100% !important;
+                    flex-direction: column !important;
+                    gap: 4vh !important;
+                    
+                    ul{
+                        gap: 1.5vh !important;
+                        
+                        p{
+                            margin: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

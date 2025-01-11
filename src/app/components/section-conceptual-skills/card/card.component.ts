@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.scss'
+  styleUrls: ["./card.component.scss", "./card-responsive.component.scss"]
 })
 
 export class CardComponent {

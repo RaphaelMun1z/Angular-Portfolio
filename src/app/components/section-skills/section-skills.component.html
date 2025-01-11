@@ -3,8 +3,8 @@
 	<app-carousel 
 	*ngIf="skills.length > 0"
 	class="carousel"
-	[breakpoints]="breakpoints"
-	[navigation]="false">
+	[navigation]="false"
+	[spaceBetween]="15">
 	<swiper-slide *ngFor="let skillGroup of skills">
 		<div class="cards-column-container">
 			<app-carousel-card

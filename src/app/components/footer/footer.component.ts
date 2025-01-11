@@ -6,7 +6,7 @@ import { IconComponent } from "../icon/icon.component";
     standalone: true,
     imports: [IconComponent],
     templateUrl: './footer.component.html',
-    styleUrl: './footer.component.scss'
+    styleUrls: ["./footer.component.scss", "./footer-responsive.component.scss"]
 })
 export class FooterComponent {
     

@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './section-title.component.html',
-  styleUrl: './section-title.component.scss'
+  styleUrls: ["./section-title.component.scss", "./section-title-responsive.component.scss"]
 })
 export class SectionTitleComponent {
     @Input() text! : string;

@@ -25,8 +25,8 @@ interface Project {
     standalone: true,
     imports: [IconComponent, SkeletonModule, CommonModule, SectionTitleComponent, BaseContainerComponent, RecommendedProjectsComponent, ButtonComponent],
     templateUrl: './project.component.html',
-    styleUrl: './project.component.scss',
-    changeDetection: ChangeDetectionStrategy.Default,
+    styleUrls: ["./project.component.scss", "./project-responsive.component.scss"],
+    changeDetection: ChangeDetectionStrategy.Default
 })
 
 export class ProjectComponent implements OnInit{

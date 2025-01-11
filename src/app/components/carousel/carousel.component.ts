@@ -14,13 +14,26 @@ registerSwiperElements();
 
 export class CarouselComponent {
     @Input() loop = true;
-    @Input() slidesPerView = 2.5;
+    @Input() slidesPerView = 3.5;
     @Input() speed = 1000;
     @Input() navigation = false;
     @Input() pagination = { clickable: true, dynamicBullets: true };
     @Input() grabCursor = true;
-    @Input() breakpoints!: unknown;
     @Input() centeredSlides = false;
     @Input() spaceBetween = 0;
     @Input() withShadowLeft = false;
+    
+    get breakpoints() {
+        return {
+            320: { 
+                slidesPerView: this.slidesPerView >= 3 ? this.slidesPerView - 2 : 1.5
+            },
+            768: { 
+                slidesPerView: this.slidesPerView >= 2 ? this.slidesPerView - 1 : 1.5
+            },
+            1024: { 
+                slidesPerView: this.slidesPerView 
+            },
+        };
+    }
 }

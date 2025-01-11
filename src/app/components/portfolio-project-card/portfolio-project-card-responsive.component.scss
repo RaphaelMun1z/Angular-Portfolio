@@ -1,0 +1,46 @@
+@media only screen and (max-width: 768px) {
+    :host{
+        width: 100% !important;
+        height: fit-content !important;
+        padding: 4vh 7vw !important;
+        aspect-ratio: inherit !important;
+    }
+    
+    .project-card{
+        height: fit-content !important;
+        
+        .intern{
+            height: fit-content !important;
+            gap: 1vh !important;
+
+            .project-proposal{
+                margin: 0 !important;
+
+                ::ng-deep app-button button{
+                    padding-top: 0 !important;
+                    padding-left: 0 !important;
+                }
+            }
+
+            .right span{
+                padding: 2vw !important;
+            }
+            
+            .content{
+                height: fit-content !important;
+                
+                .image-container{
+                    position: relative;
+                    width: 100% !important;
+                    margin-bottom: -5vh !important;
+                    
+                    img{
+                        object-fit: cover !important;
+                        height: 100% !important;
+                        object-position: inherit !important;
+                    }
+                }
+            }
+        }
+    }
+}

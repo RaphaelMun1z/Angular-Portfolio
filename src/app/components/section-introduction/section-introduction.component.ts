@@ -36,7 +36,7 @@ interface FeaturedProject {
     imports: [RippleModule, SkeletonModule, RouterModule, MatButtonModule, ButtonComponent, SectionTitleComponent, BaseContainerComponent, CommonModule],
     changeDetection: ChangeDetectionStrategy.Default,
     templateUrl: './section-introduction.component.html',
-    styleUrl: './section-introduction.component.scss'
+    styleUrls: ["./section-introduction.component.scss", "./section-introduction-responsive.component.scss"]
 })
 
 export class SectionIntroductionComponent implements OnInit{

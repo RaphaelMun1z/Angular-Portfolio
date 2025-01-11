@@ -11,7 +11,7 @@ import { transitionAnimation } from './components/animations/transition'
     standalone: true,
     imports: [RouterOutlet, CommonModule, NavBarComponent, FooterComponent],
     templateUrl: './app.component.html',
-    styleUrl: './app.component.scss',
+    styleUrls: ["./app.component.scss", "./app-responsive.component.scss"],
     animations: [transitionAnimation]
 })
 

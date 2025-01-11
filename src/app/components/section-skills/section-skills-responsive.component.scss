@@ -1,0 +1,18 @@
+@media only screen and (max-width: 768px) {
+    .cards-column-container{
+        gap: 1vh !important;
+        justify-content: space-between !important;
+    }
+    
+    ::ng-deep app-carousel-card{
+        height: fit-content !important;
+
+        &:nth-child(1){
+            flex: 1;
+        }
+        
+        &:nth-child(2){
+            flex: 2;
+        }
+    }
+}

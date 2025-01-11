@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px) {
+    .container{
+        aspect-ratio: inherit;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        padding: 5vh 10vw;
+        gap: 2vh;
+
+        .child{
+            width: 100%;
+            height: fit-content;
+
+            .card-container{
+                aspect-ratio: inherit !important;
+            }
+        }
+    }
+}

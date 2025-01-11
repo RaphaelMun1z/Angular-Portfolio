@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
     standalone: true,
     imports: [SectionTitleComponent, BaseContainerComponent],
     templateUrl: './about-me.component.html',
-    styleUrl: './about-me.component.scss'
+    styleUrls: ["./about-me.component.scss", "./about-me-responsive.component.scss"]
 })
 
 export class AboutMeComponent implements OnInit{

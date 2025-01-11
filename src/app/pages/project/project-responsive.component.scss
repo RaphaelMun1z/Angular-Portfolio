@@ -1,0 +1,30 @@
+@media only screen and (max-width: 768px) {
+    :host{
+        padding: inherit !important;
+    }
+    
+    .container{
+        .section-container{
+            flex-direction: column !important;
+            
+            .topic-container{
+                h1{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100% !important;
+                    text-align: left !important;
+                }
+            }
+            
+            .child{
+                width: 100% !important;
+            }
+        }
+        
+        .banner-container{
+            .banner{
+                height: 20vh !important;
+            }
+        }
+    }
+}

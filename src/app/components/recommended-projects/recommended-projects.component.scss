@@ -12,14 +12,13 @@
     
     .carousel{
         gap: 1vw;
-        padding-bottom: 1vh;
+        padding: 2vh 0 !important;
         
         .carousel-item {
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 3%;
             background-color: #fff;
             border: 1px solid rgba(17, 17, 17, 0.2196078431);
             overflow: hidden;

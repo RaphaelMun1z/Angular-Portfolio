@@ -1,0 +1,27 @@
+@media only screen and (max-width: 768px) {
+    .carousel-item {
+        aspect-ratio: inherit !important;
+        padding: 7vh !important;
+    }
+    
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr) !important; 
+        grid-template-rows: auto !important; 
+        
+        .item {
+            grid-column: 1 / 2 !important;
+        }
+        
+        .card-1{
+            grid-row: 1 / 2; 
+        }
+        
+        .card-6{  
+            grid-row: 3 / 4; 
+        }
+        
+        .card-7{
+            grid-row: 5 / 6; 
+        }
+    }
+}

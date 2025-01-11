@@ -9,7 +9,8 @@ import { BaseContainerComponent } from "../base-container/base-container.compone
     standalone: true,
     imports: [RippleModule, IconComponent, SectionTitleComponent, BaseContainerComponent],
     templateUrl: './section-contact-details.component.html',
-    styleUrl: './section-contact-details.component.scss'
+    styleUrls: ["./section-contact-details.component.scss", "./section-contact-details-responsive.component.scss"]
 })
+
 export class SectionContactDetailsComponent {
 }

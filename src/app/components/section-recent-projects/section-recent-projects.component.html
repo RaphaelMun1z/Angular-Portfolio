@@ -3,24 +3,25 @@
 	<div class="inside-container" *ngIf="projects.length > 0">
 		<div class="grid-container">
 			<div class="item card-1" *ngIf="projects[0]; else loading">
-				<app-card-small 
+				<app-project-card-resume
 				[id]="projects[0].id"
 				[name]="projects[0].name" 
 				[proposal]="projects[0].proposal" 
 				[description]="projects[0].description"
 				[stack]="projects[0].stack"
 				[repositoryUrl]="projects[0].repositoryUrl"
-				[projectUrl]="projects[0].projectUrl"></app-card-small>
+				[projectUrl]="projects[0].projectUrl">
+				</app-project-card-resume>
 			</div>
 			<div class="item card-2" *ngIf="projects[1]; else loading">
-				<app-card-small 
+				<app-project-card-resume 
 				[id]="projects[1].id"
 				[name]="projects[1].name" 
 				[proposal]="projects[1].proposal" 
 				[description]="projects[1].description"
 				[stack]="projects[1].stack"
 				[repositoryUrl]="projects[1].repositoryUrl"
-				[projectUrl]="projects[1].projectUrl"></app-card-small>
+				[projectUrl]="projects[1].projectUrl"></app-project-card-resume>
 			</div>
 			<div class="item item-li large-item-1">
 				<app-vertical-carousel>
@@ -37,24 +38,24 @@
 				</app-vertical-carousel>
 			</div>
 			<div  class="item card-5" *ngIf="projects[2]; else loading">
-				<app-card-small 
+				<app-project-card-resume 
 				[id]="projects[2].id"
 				[name]="projects[2].name" 
 				[proposal]="projects[2].proposal" 
 				[description]="projects[2].description"
 				[stack]="projects[2].stack"
 				[repositoryUrl]="projects[2].repositoryUrl"
-				[projectUrl]="projects[2].projectUrl"></app-card-small>
+				[projectUrl]="projects[2].projectUrl"></app-project-card-resume>
 			</div>
 			<div class="item card-6" *ngIf="projects[3]; else loading">
-				<app-card-small 
+				<app-project-card-resume 
 				[id]="projects[3].id"
 				[name]="projects[3].name" 
 				[proposal]="projects[3].proposal" 
 				[description]="projects[3].description"
 				[stack]="projects[3].stack"
 				[repositoryUrl]="projects[3].repositoryUrl"
-				[projectUrl]="projects[3].projectUrl"></app-card-small>
+				[projectUrl]="projects[3].projectUrl"></app-project-card-resume>
 			</div>
 		</div>
 	</div>

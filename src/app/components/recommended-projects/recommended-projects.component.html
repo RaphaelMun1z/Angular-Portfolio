@@ -8,14 +8,14 @@
 	[withShadowLeft]="false" 
 	*ngIf="relatedProjects !== undefined else loading">
 	<swiper-slide class="carousel-item" *ngFor="let project of relatedProjects">
-		<app-card-small 
+		<app-project-card-resume 
 		[id]="project.id"
 		[name]="project.name" 
 		[proposal]="project.proposal" 
 		[description]="project.description"
 		[stack]="project.stack"
 		[repositoryUrl]="project.repositoryUrl"
-		[projectUrl]="project.projectUrl"></app-card-small>
+		[projectUrl]="project.projectUrl"></app-project-card-resume>
 	</swiper-slide>
 </app-carousel>
 </div>

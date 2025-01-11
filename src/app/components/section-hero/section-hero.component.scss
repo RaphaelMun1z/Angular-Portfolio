@@ -66,13 +66,13 @@
                 gap: 2vh;
                 
                 h1{
-                    font-size: 3.5vw;
+                    font-size: max(3.5vw, 30px);
                     line-height: normal;
                     font-weight: 700;
                 }
                 
                 p{
-                    font-size: 1.05vw;
+                    font-size: max(1.05vw, 15px);
                     font-weight: 200;
                     line-height: normal;
                 }

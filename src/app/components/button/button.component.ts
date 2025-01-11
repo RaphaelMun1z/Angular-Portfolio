@@ -8,7 +8,7 @@ import { RippleModule } from 'primeng/ripple';
     standalone: true,
     imports: [RouterModule, RippleModule, CommonModule],
     templateUrl: './button.component.html',
-    styleUrl: './button.component.scss'
+    styleUrls: ["./button.component.scss", "./button-responsive.component.scss"]
 })
 export class ButtonComponent {
     @Input() text! : string;

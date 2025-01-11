@@ -22,7 +22,7 @@ interface Project {
     standalone: true,
     imports: [PortfolioProjectCardComponent, PortfolioProjectsHeaderComponent, CommonModule, SectionTitleComponent, BaseContainerComponent],
     templateUrl: './portfolio.component.html',
-    styleUrl: './portfolio.component.scss'
+    styleUrls: ["./portfolio.component.scss", "./portfolio-responsive.component.scss"]
 })
 
 export class PortfolioComponent implements OnInit{

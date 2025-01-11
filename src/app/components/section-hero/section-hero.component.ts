@@ -8,7 +8,7 @@ import { BaseContainerComponent } from '../base-container/base-container.compone
     standalone: true,
     imports: [RippleModule, ButtonComponent, BaseContainerComponent],
     templateUrl: './section-hero.component.html',
-    styleUrl: './section-hero.component.scss'
+    styleUrls: ["./section-hero.component.scss", "./section-hero-responsive.scss"]
 })
 export class SectionHeroComponent {
     

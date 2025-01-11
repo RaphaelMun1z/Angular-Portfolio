@@ -4,12 +4,12 @@ import { SectionTitleComponent } from "../../components/section-title/section-ti
 import { BaseContainerComponent } from "../../components/base-container/base-container.component";
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [SectionContactDetailsComponent, SectionTitleComponent, BaseContainerComponent],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+    selector: 'app-contact',
+    standalone: true,
+    imports: [SectionContactDetailsComponent, SectionTitleComponent, BaseContainerComponent],
+    templateUrl: './contact.component.html',
+    styleUrls: ["./contact.component.scss", "./contact-responsive.component.scss"]
 })
 export class ContactPageComponent {
-
+    
 }

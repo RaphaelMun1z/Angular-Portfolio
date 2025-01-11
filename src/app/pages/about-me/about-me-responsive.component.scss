@@ -1,0 +1,20 @@
+@media only screen and (max-width: 768px) {
+    :host{
+        padding: inherit !important;
+    }
+
+    .section-container{
+        flex-direction: column !important;
+        
+        .topic-container{
+            h1{
+                width: 100% !important;
+                text-align: left !important;
+            }
+        }
+        
+        .child{
+            width: 100% !important;
+        }
+    }
+}

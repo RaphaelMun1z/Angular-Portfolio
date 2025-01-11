@@ -23,7 +23,7 @@ interface ConceptualSkill {
     standalone: true,
     imports: [MatIconModule, SkeletonModule, CardComponent, SectionTitleComponent, BaseContainerComponent, TopicCardComponent, CarouselComponent, CommonModule],
     templateUrl: './section-conceptual-skills.component.html',
-    styleUrl: './section-conceptual-skills.component.scss',
+    styleUrls: ["./section-conceptual-skills.component.scss", "./section-conceptual-skills-responsive.component.scss"],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
