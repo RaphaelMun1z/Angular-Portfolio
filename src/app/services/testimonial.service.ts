@@ -15,7 +15,7 @@ interface Testimonial {
 })
 
 export class TestimonialService {
-    private dataUrl = '/assets/db/testimonials.json';
+    private dataUrl = 'assets/db/testimonials.json';
     
     constructor(private http: HttpClient) { }
     

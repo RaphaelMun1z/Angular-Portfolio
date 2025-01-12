@@ -18,7 +18,7 @@ interface Project {
 })
 
 export class ProjectService {
-    private dataUrl = '/assets/db/projects.json';
+    private dataUrl = 'assets/db/projects.json';
     
     constructor(private http: HttpClient) { }
     

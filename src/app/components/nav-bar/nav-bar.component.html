@@ -1,7 +1,7 @@
 <header [ngClass]="{'scrolled': isScrolled}">
     <div class="main-container">
         <div class="logo-container">
-            <img src="/assets/icon/icon-2.png" alt="Ícone">
+            <img src="assets/icon/icon-2.png" alt="Ícone">
         </div>
         <div class="mobile-button-container" *ngIf="isMobile">
             <button class="material-icons" (click)="toggleMenu()">{{ isMobile && isOpen ? 'menu_open' : 'menu' }}</button>

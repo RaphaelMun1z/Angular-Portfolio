@@ -20,7 +20,7 @@ interface ConceptualSkills {
 })
 
 export class ConceptualSkillService {
-    private dataUrl = '/assets/db/conceptual_skills.json';
+    private dataUrl = 'assets/db/conceptual_skills.json';
     
     constructor(private http: HttpClient) { }
     

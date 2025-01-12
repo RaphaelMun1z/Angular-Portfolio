@@ -17,7 +17,7 @@ interface RecentProjects {
 })
 
 export class RecentProjectService {
-    private dataUrl = '/assets/db/recent_projects.json';
+    private dataUrl = 'assets/db/recent_projects.json';
     
     constructor(private http: HttpClient) { }
     

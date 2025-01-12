@@ -14,7 +14,7 @@ interface Skill {
 })
 
 export class SkillService {
-    private dataUrl = '/assets/db/skills.json';
+    private dataUrl = 'assets/db/skills.json';
     
     constructor(private http: HttpClient) { }
     

@@ -25,7 +25,7 @@ interface FeaturedProject {
 })
 
 export class FeaturedProjectService {
-    private dataUrl = '/assets/db/featured_projects.json';
+    private dataUrl = 'assets/db/featured_projects.json';
     
     constructor(private http: HttpClient, private service: ProjectService) { }
 
