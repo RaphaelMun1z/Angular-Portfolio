@@ -12,4 +12,8 @@
             padding: 2vh !important;
         }
     } 
+
+    ::ng-deep p-skeleton{
+        width: 100vw !important;
+    }
 }

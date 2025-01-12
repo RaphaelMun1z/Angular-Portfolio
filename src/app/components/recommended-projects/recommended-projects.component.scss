@@ -1,5 +1,5 @@
 :host{
-    width: 100%;
+    width: 100% !important;
 }
 
 .recommended-projects-container{
@@ -9,21 +9,10 @@
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    
-    .carousel{
-        gap: 1vw;
-        padding: 2vh 0 !important;
-        
-        .carousel-item {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #fff;
-            border: 1px solid rgba(17, 17, 17, 0.2196078431);
-            overflow: hidden;
-            border-radius: 30px;
-        }
+
+    ::ng-deep swiper-slide{
+        background-color: #fff !important;
+        border-radius: var(--border-radius) !important;
     }
 }
 

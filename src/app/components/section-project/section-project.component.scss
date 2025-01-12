@@ -1,0 +1,14 @@
+:host{
+    width: 100% !important;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 5vh;
+    overflow: hidden !important;
+}

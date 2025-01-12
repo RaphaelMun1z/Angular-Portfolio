@@ -1,77 +1,85 @@
 <app-base-container id="introduction_">
 	<app-section-title [text]="'Projetos em'" [emphasis]="'destaque'"></app-section-title>
 	<div class="inside-container">
-		<div class="card size-2" *ngIf="projects[0]; else loading">
-			<div class="image-container">
-				<img [src]="'assets/projects/banner/mini/'+projects[0].project.imageUrl" [alt]="'Imagem do projeto ' + projects[0].project.name" />
-			</div>
-			<div class="buttons-container">
-				<div class="buttons-division buttons-top">
-					<app-button 
-					[text]="'Assistir Prévia'"
-					[icon]="'play_circle_outline'" 
-					(click)="openDialog(projects[0].project.name, projects[0].videoUrl)"></app-button>
-					<app-button 
-					[text]="''"
-					[redirectTo]="'/portfolio/project/'"
-					[redirectParam]="projects[0].id"
-					[icon]="'call_made'"
-					[styleType]="1"></app-button>
+		<div class="card size-2">
+			<ng-container *ngIf="projects[0]; else loading">
+				<div class="image-container">
+					<img [src]="'assets/projects/banner/mini/'+projects[0].project.imageUrl" [alt]="'Imagem do projeto ' + projects[0].project.name" />
 				</div>
-				<div class="buttons-division buttons-bottom">
-					<p>Projeto <span>{{ projects[0].project.name }}</span></p>
+				<div class="buttons-container">
+					<div class="buttons-division buttons-top">
+						<app-button 
+						[text]="'Assistir Prévia'"
+						[icon]="'play_circle_outline'" 
+						(click)="openDialog(projects[0].project.name, projects[0].videoUrl)"></app-button>
+						<app-button 
+						[text]="''"
+						[redirectTo]="'/portfolio/project/'"
+						[redirectParam]="projects[0].id"
+						[icon]="'call_made'"
+						[styleType]="1"></app-button>
+					</div>
+					<div class="buttons-division buttons-bottom">
+						<p>Projeto <span>{{ projects[0].project.name }}</span></p>
+					</div>
 				</div>
-			</div>
+			</ng-container>
 		</div>
-		<div class="card size-2" *ngIf="projects[1]; else loading">
-			<div class="image-container">
-				<img [src]="'assets/projects/banner/mini/'+projects[1].project.imageUrl" [alt]="'Imagem do projeto ' + projects[1].project.name" />
-			</div>
-			<div class="buttons-container">
-				<div class="buttons-division buttons-top">
-					<app-button 
-					[text]="'Assistir Prévia'"
-					[icon]="'play_circle_outline'" 
-					(click)="openDialog(projects[1].project.name, projects[1].videoUrl)"></app-button>
-					<app-button 
-					[text]="''"
-					[redirectTo]="'/portfolio/project'"
-					[redirectParam]="projects[1].id"
-					[icon]="'call_made'"
-					[styleType]="1"></app-button>
+		<div class="card size-2">
+			<ng-container *ngIf="projects[1]; else loading">
+				<div class="image-container">
+					<img [src]="'assets/projects/banner/mini/'+projects[1].project.imageUrl" [alt]="'Imagem do projeto ' + projects[1].project.name" />
 				</div>
-				<div class="buttons-division buttons-bottom">
-					<p>Projeto <span>{{ projects[1].project.name }}</span></p>
+				<div class="buttons-container">
+					<div class="buttons-division buttons-top">
+						<app-button 
+						[text]="'Assistir Prévia'"
+						[icon]="'play_circle_outline'" 
+						(click)="openDialog(projects[1].project.name, projects[1].videoUrl)"></app-button>
+						<app-button 
+						[text]="''"
+						[redirectTo]="'/portfolio/project'"
+						[redirectParam]="projects[1].id"
+						[icon]="'call_made'"
+						[styleType]="1"></app-button>
+					</div>
+					<div class="buttons-division buttons-bottom">
+						<p>Projeto <span>{{ projects[1].project.name }}</span></p>
+					</div>
 				</div>
-			</div>
+			</ng-container>
 		</div>
-		<div class="card size-3" *ngIf="projects[2]; else loading2">
-			<div class="image-container">
-				<img [src]="'assets/projects/banner/mini/'+projects[2].project.imageUrl" [alt]="'Imagem do projeto ' + projects[2].project.name" />
-			</div>
-			<div class="buttons-container">
-				<div class="buttons-division buttons-top">
-					<app-button 
-					[text]="'Assistir Prévia'"
-					[icon]="'play_circle_outline'" 
-					(click)="openDialog(projects[2].project.name, projects[2].videoUrl)"></app-button>
-					<app-button 
-					[text]="''"
-					[redirectTo]="'/portfolio/project'"
-					[redirectParam]="projects[2].id"
-					[icon]="'call_made'"
-					[styleType]="1"></app-button>
+		<div class="card size-3">
+			<ng-container *ngIf="projects[2]; else loading2">
+				<div class="image-container">
+					<img [src]="'assets/projects/banner/mini/'+projects[2].project.imageUrl" [alt]="'Imagem do projeto ' + projects[2].project.name" />
 				</div>
-				<div class="buttons-division buttons-bottom">
-					<p>Projeto <span>{{ projects[2].project.name }}</span></p>
+				<div class="buttons-container">
+					<div class="buttons-division buttons-top">
+						<app-button 
+						[text]="'Assistir Prévia'"
+						[icon]="'play_circle_outline'" 
+						(click)="openDialog(projects[2].project.name, projects[2].videoUrl)"></app-button>
+						<app-button 
+						[text]="''"
+						[redirectTo]="'/portfolio/project'"
+						[redirectParam]="projects[2].id"
+						[icon]="'call_made'"
+						[styleType]="1"></app-button>
+					</div>
+					<div class="buttons-division buttons-bottom">
+						<p>Projeto <span>{{ projects[2].project.name }}</span></p>
+					</div>
 				</div>
-			</div>
+			</ng-container>
 		</div>
 	</div>
-	<ng-template #loading>
-		<p-skeleton width="25vw" height="50vh" borderRadius="30px" />
-	</ng-template>
-	<ng-template #loading2>
-		<p-skeleton width="40vw" height="50vh" borderRadius="30px" />
-	</ng-template>
 </app-base-container>
+
+<ng-template #loading>
+	<p-skeleton width="100rem" height="100rem" borderRadius="30px" />
+</ng-template>
+
+<ng-template #loading2>
+	<p-skeleton width="100rem" height="100rem" borderRadius="30px" />
+</ng-template>

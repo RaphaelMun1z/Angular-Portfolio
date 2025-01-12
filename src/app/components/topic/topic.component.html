@@ -1,0 +1,36 @@
+<div class="section-container" 
+    [ngClass]="{'t-2': topicData && topicData.t2}" 
+    id="personalPresentation_">
+    <div class="child topic-container">
+        <ng-container *ngIf="topicData !== undefined else loadingTitle">
+            <h1 *ngIf="topicData.title">
+                <i class="material-icons" *ngIf="topicData.icon">
+                    {{ topicData.icon }}
+                </i>{{ topicData.title }}
+            </h1>
+        </ng-container>
+    </div>
+    <div class="child content-container">
+        <ng-container *ngIf="topicData !== undefined else loadingParagraphs">
+            <ng-container *ngIf="topicData.p1s">
+                <p class="p-1" *ngFor="let p1 of topicData.p1s" [innerHTML]="p1"></p>
+            </ng-container>
+            <ng-container *ngIf="topicData.p2s">
+                <p class="p-2" *ngFor="let p2 of topicData.p2s" [innerHTML]="p2"></p>
+            </ng-container>
+        </ng-container>
+        <ng-content></ng-content>
+    </div>
+</div>
+
+<ng-template #loadingTitle>
+    <p-skeleton width="400px" height="6rem" styleClass="mb-2" />
+</ng-template>
+
+<ng-template #loadingParagraphs>
+    <p-skeleton width="100%" height="1.7rem" styleClass="mb-2" />
+    <p-skeleton width="82%" height="1.7rem" styleClass="mb-2" />
+    <p-skeleton width="91%" height="1.7rem" styleClass="mb-2" />
+    <p-skeleton width="84%" height="1.7rem" styleClass="mb-2" />
+    <p-skeleton width="89%" height="1.7rem" styleClass="mb-2" />
+</ng-template>

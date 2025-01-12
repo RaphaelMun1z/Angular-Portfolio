@@ -1,15 +1,33 @@
-import { Component } from '@angular/core';
-import { SectionContactDetailsComponent } from "../../components/section-contact-details/section-contact-details.component";
-import { SectionTitleComponent } from "../../components/section-title/section-title.component";
-import { BaseContainerComponent } from "../../components/base-container/base-container.component";
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
+import { SectionContactComponent } from "../../components/section-contact/section-contact.component";
 
 @Component({
     selector: 'app-contact',
     standalone: true,
-    imports: [SectionContactDetailsComponent, SectionTitleComponent, BaseContainerComponent],
+    imports: [SectionContactComponent],
     templateUrl: './contact.component.html',
     styleUrls: ["./contact.component.scss", "./contact-responsive.component.scss"]
 })
-export class ContactPageComponent {
-    
+
+export class ContactPageComponent implements AfterViewInit {
+    constructor(private el: ElementRef) { }
+
+    ngAfterViewInit() {
+        const elementos = this.el.nativeElement.querySelectorAll('.animated');
+        
+        elementos.forEach((elemento: HTMLElement) => {
+            gsap.from(elemento, {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: elemento,
+                    start: 'top 80%',
+                    end: 'top 20%',
+                    scrub: false,
+                    once: true
+                }
+            });
+        });
+    }
 }

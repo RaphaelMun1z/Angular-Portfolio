@@ -5,8 +5,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './portfolio-projects-header.component.html',
-  styleUrl: './portfolio-projects-header.component.scss'
+  styleUrls: ["./portfolio-projects-header.component.scss", "./portfolio-projects-header-responsive.component.scss"]
 })
+
 export class PortfolioProjectsHeaderComponent {
 
 }

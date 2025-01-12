@@ -2,7 +2,6 @@
 	<app-section-title [text]="'Minhas'" [emphasis]="'habilidades'"></app-section-title>
 	<app-carousel 
 	*ngIf="skills.length > 0"
-	class="carousel"
 	[navigation]="false"
 	[spaceBetween]="15">
 	<swiper-slide *ngFor="let skillGroup of skills">

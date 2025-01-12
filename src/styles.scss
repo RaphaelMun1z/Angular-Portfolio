@@ -4,8 +4,15 @@
 @import '../node_modules/primeng/resources/themes/lara-light-blue/theme.css';
 
 :root{
-	scrollbar-color: #53E953 aliceblue !important;
+	scrollbar-color: rgba(83, 233, 83, 1) rgba(240, 248, 255, 1) !important;
 	scrollbar-width: thin !important;
+	--border-radius: 30px;
+	--mobile-border-radius: 20px;
+	--green-color: rgba(83, 233, 83, 1);
+	--dark-gray: rgba(34, 34, 34, 1);
+	--light-gray: rgba(123, 119, 119, 0.6);
+	--bg-color: rgba(240, 248, 255, 1);
+	--border-color: rgba(17, 17, 17, 0.2196078431);
 }
 
 *{
@@ -16,14 +23,19 @@
 	font-family: "Raleway", serif;
 }
 
-h2{
+body{
+	background-color: var(--bg-color);
+	overflow-x: hidden;
+	width: 100vw;
+	scroll-behavior: smooth;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
 	line-height: normal !important;
 }
 
-body{
-	background-color: aliceblue;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
+.mat-typography p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
 }
 
 .page-container{
@@ -38,4 +50,14 @@ body{
 	.page-section{
 		width: 100% !important;
 	}
+}
+
+hr{
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin: 7vh auto;
+    height: 3px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.6);
 }

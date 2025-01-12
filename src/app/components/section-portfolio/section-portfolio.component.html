@@ -1,0 +1,14 @@
+<app-base-container>
+    <app-section-title [text]="'Cada projeto, um marco em'" [emphasis]="'inovação e qualidade'"></app-section-title>
+    <app-portfolio-projects-header></app-portfolio-projects-header>
+    <hr>
+    <div class="projects-container" *ngIf="projects">
+        <app-portfolio-project-card 
+        *ngFor="let project of projects"
+        [id]="project.id"
+        [name]="project.name" 
+        [stack]="project.stack"
+        [proposal]="project.proposal" 
+        [imageUrl]="project.imageUrl"></app-portfolio-project-card>
+    </div>
+</app-base-container>

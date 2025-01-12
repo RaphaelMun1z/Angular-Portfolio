@@ -8,10 +8,10 @@
         </div>
         <div class="nav-container" *ngIf="isOpen || !isMobile">
             <ul>
-                <li pRipple [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</li>
-                <li pRipple [routerLink]="['/about']" [routerLinkActive]="['active']">Sobre</li>
-                <li pRipple [routerLink]="['/portfolio']" [routerLinkActive]="['active']">Portfólio</li>
-                <li pRipple [routerLink]="['/contact']" [routerLinkActive]="['active']">Contato</li>
+                <li (click)="toggleMenu()" pRipple [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</li>
+                <li (click)="toggleMenu()" pRipple [routerLink]="['/about']" [routerLinkActive]="['active']">Sobre</li>
+                <li (click)="toggleMenu()" pRipple [routerLink]="['/portfolio']" [routerLinkActive]="['active']">Portfólio</li>
+                <li (click)="toggleMenu()" pRipple [routerLink]="['/contact']" [routerLinkActive]="['active']">Contato</li>
             </ul>
             <div class="profile-container">
                 <button id="freelancer" pRipple [routerLink]="['/about']" [fragment]="'freelancer_'">

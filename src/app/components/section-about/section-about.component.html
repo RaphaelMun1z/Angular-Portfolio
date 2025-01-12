@@ -1,0 +1,34 @@
+<app-base-container>
+    <app-section-title [text]="'Transformo desafios tecnológicos em'" [emphasis]="'soluções inovadoras'"></app-section-title>
+    <app-about-header></app-about-header>
+    <hr>
+    <app-topic
+    [topicData]="{
+        title: 'Apresentação Pessoal',
+        p1s: ['Me chamo Raphael Muniz, sou estudante de Sistemas de Informação na Universidade Federal de Uberlândia e desenvolvedor full stack - minha principal stack é Angular e Spring - com proficiência no backend.'],
+        p2s: ['Entre minhas principais características estão o autodidatismo, a capacidade de resolução de problemas, o trabalho em equipe e a flexibilidade.', 'Minha missão no mundo da tecnologia da informação é solucionar problemas, com ênfase nos desafios que envolvem projetos complexos, os quais demandam conhecimento em desenvolvimento de sistemas escaláveis e performáticos.']
+    }"></app-topic>
+    <hr>
+    <app-topic
+    [topicData]="{
+        title: 'Experiência e Especialização',
+        p1s: ['Iniciei meus estudos na área de Sistemas de Informação em 2020, quando ingressei no Instituto Federal de São Paulo, onde cursei o Ensino Médio Técnico (Técnico em Informática). Durante esse período, tive meu primeiro contato com programação e, movido pela curiosidade, comecei a estudar também de forma autônoma, explorando tecnologias que atendiam às necessidades momentâneas para desenvolver os sistemas que eu desejava criar. Desde então, não limitei meu aprendizado ao âmbito acadêmico.'],
+        p2s: ['Por volta de 2022, decidi me especializar na carreira full stack, começando com a stack React e NodeJs. Com essas tecnologias, desenvolvi inúmeros projetos, que estão disponíveis no meu portfólio. Em 2024, migrei para tecnologias mais robustas, como Spring (Java) e Angular (TypeScript), por serem ferramentas mais adequadas às minhas novas propostas de projetos, que demandam tipagem forte, escalabilidade e organização.', 'Também possuo conhecimento em bancos de dados SQL e NoSQL, como PostgreSQL, MySQL e MongoDB. Além disso, tenho experiência com versionamento utilizando Git, containerização com Docker e serviços em nuvem, como o Azure.'],
+        t2: true
+    }"></app-topic>
+    <hr>
+    <app-topic
+    [topicData]="{
+        title: 'Valores e Metodologia de Trabalho',
+        p1s: ['Meu trabalho é guiado por valores como ética, inovação e compromisso com a excelência. Acredito que cada projeto é único e, por isso, priorizo a escuta ativa e o planejamento detalhado para atender às necessidades específicas de cada cliente.'],
+        p2s: ['Minha metodologia de trabalho envolve análise, desenvolvimento iterativo e testes rigorosos, garantindo soluções funcionais e de alta qualidade. Mais do que códigos, entrego resultados que fazem sentido para os objetivos de cada negócio.']
+    }"></app-topic>
+    <hr>
+    <app-topic
+    [topicData]="{
+        title: 'Freelancer',
+        p1s: ['Em breve.'],
+        t2: true
+    }">
+    <img src="assets/merco-logo.jpeg" alt="Logo Merco" id="image"></app-topic>
+</app-base-container>

@@ -1,0 +1,95 @@
+.section-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    gap: 0 2vw;
+    
+    &.t-2{
+        flex-direction: row-reverse;
+        
+        .topic-container{
+            justify-content: flex-end;
+            
+            h1{
+                text-align: right;
+            }
+        }
+    }
+    
+    .child{
+        position: relative;
+        display: flex;
+        width: 50%;
+        height: 100%;
+        
+        &.topic-container{
+            height: auto;
+            
+            h1{
+                font-size: max(4vw, 45px);
+                padding-right: 5vw;
+                width: min-content;
+                line-height: normal;
+                font-weight: 700;
+                
+                i{
+                    font-size:max(4vw, 45px) !important;
+                }
+            }
+        }
+        
+        &.content-container{
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 2vh 0;
+            
+            ::ng-deep #image{
+                width: 50%;
+            }
+            
+            p{
+                width: 100%;
+                font-size: 1.2rem;
+                text-align: justify;
+                
+                &.p-1{
+                    color: #111111;
+                    padding: 0 !important;
+                    font-weight: 600;
+                }
+                
+                &.p-2{
+                    color: grey;
+                    padding: 0 !important;
+                    font-weight: 500;
+                }
+            }
+            
+            ::ng-deep ul{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                list-style: none !important;
+                gap: 1vh;
+                
+                li{
+                    display: flex;
+                    width: fit-content;
+                    height: fit-content;
+                    gap: 1vw;
+                    align-items: center;
+                    list-style: none;
+                    
+                    p{
+                        text-transform: capitalize;
+                        color: grey;
+                        font-weight: 500;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

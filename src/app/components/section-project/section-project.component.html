@@ -1,0 +1,69 @@
+<app-base-container>
+    <app-section-title [text]="'Projeto'" [emphasis]="project.name !== undefined ? project.name : 'carregando...'"></app-section-title>
+    <div class="container">
+        <app-project-header [imagePath]="project.imageUrl"></app-project-header>
+        <app-topic [topicData]="project.proposal ? {
+            title: 'Proposta',
+            icon: 'lightbulb_outline',
+            p1s: [project.proposal]
+        } : undefined"></app-topic>
+        <hr>
+        <app-topic [topicData]="project.description ? {
+            title: 'Descrição',
+            icon: 'description',
+            p1s: [project.description],
+            t2: true
+        } : undefined"></app-topic>
+        <hr>
+        <app-topic [topicData]="{
+            title: 'Stack',
+            icon: 'all_inbox'
+        }">
+        <ul *ngIf="project.stack !== undefined else loadingstack">
+            <li *ngFor="let tech of project.stack">
+                <app-icon [name]="tech" [size]="'50px'"></app-icon>
+                <p>{{ tech }}</p>
+            </li>
+        </ul></app-topic>
+        <hr>
+        <app-topic [topicData]="{
+            title: 'Links',
+            icon: 'link',
+            t2: true
+        }">
+        <ul>
+            <li *ngIf="project.repositoryUrl !== undefined else loadinglink">
+                <app-button 
+                [text]="'Repositório GitHub'"
+                [icon]="'folder_open'"
+                [redirectToExtern]="'https://github.com/RaphaelMun1z/'+project.repositoryUrl"></app-button>
+            </li>
+            <li *ngIf="project.projectUrl !== undefined else loadinglink">
+                <app-button 
+                [text]="'Acessar Projeto'"
+                [icon]="'open_in_new'"
+                [redirectToExtern]="'https://github.com/RaphaelMun1z/'+project.projectUrl"></app-button>
+            </li>
+        </ul></app-topic>
+        <app-recommended-projects [relatedProjects]="relatedProjects"></app-recommended-projects>
+    </div>
+</app-base-container>
+
+<ng-template #loadingstack>
+    <div [style]="{'display': 'flex', 'align-items': 'center'}">
+        <p-skeleton size="4rem" styleClass="mr-2" />
+        <p-skeleton width="500px" height="2rem" styleClass="mb-2" />
+    </div>
+    <div [style]="{'display': 'flex', 'align-items': 'center'}">
+        <p-skeleton size="4rem" styleClass="mr-2" />
+        <p-skeleton width="500px" height="2rem" styleClass="mb-2" />
+    </div>
+    <div [style]="{'display': 'flex', 'align-items': 'center'}">
+        <p-skeleton size="4rem" styleClass="mr-2" />
+        <p-skeleton width="500px" height="2rem" styleClass="mb-2" />
+    </div>
+</ng-template>
+
+<ng-template #loadinglink>
+    <p-skeleton height="3.5rem" width="250px" styleClass="mb-2" borderRadius="30px" />
+</ng-template>

@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, CUSTOM_ELEMENTS_SCHEMA, Input } from '@angular/core';
 import { SectionTitleComponent } from "../section-title/section-title.component";
 import { CarouselComponent } from "../carousel/carousel.component";
 import { CommonModule } from '@angular/common';
@@ -24,9 +24,24 @@ interface Project {
     imports: [SectionTitleComponent, CarouselComponent, CommonModule, SkeletonModule, ProjectCardResumeComponent],
     templateUrl: './recommended-projects.component.html',
     styleUrl: './recommended-projects.component.scss',
-    schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    changeDetection: ChangeDetectionStrategy.Default
 })
 
 export class RecommendedProjectsComponent{
     @Input() relatedProjects : Project[] = [];
+
+    get breakpoints() {
+        return {
+            320: { 
+                slidesPerView: 1
+            },
+            768: { 
+                slidesPerView: 1
+            },
+            1024: { 
+                slidesPerView: 2.5
+            },
+        };
+    }
 }
