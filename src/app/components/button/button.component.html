@@ -1,4 +1,9 @@
-<button class="btn" [ngClass]="{'style-1': styleType === 1, 'style-2': styleType === 2, 'style-3': styleType === 3}" pRipple [routerLink]="redirectTo ? (redirectParam ? [redirectTo, redirectParam] : [redirectTo]) : null">
+<button 
+(click)="redirectToExtern ? redirect() : ''" 
+class="btn" 
+pRipple
+[ngClass]="{'style-1': styleType === 1, 'style-2': styleType === 2, 'style-3': styleType === 3}" 
+[routerLink]="redirectTo ? (redirectParam ? [redirectTo, redirectParam] : [redirectTo]) : null">
     {{ text }}
     <i class="material-icons">{{ icon }}</i>
 </button>

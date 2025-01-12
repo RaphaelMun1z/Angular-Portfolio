@@ -1,15 +1,15 @@
 <div class="carousel" [ngClass]="{'shadow-left': withShadowLeft}">
 	<swiper-container
-	[loop]="loop"
 	[slidesPerView]="slidesPerView"
-	[speed]="speed"
-	autoplay="false"
 	[navigation]="navigation"
 	[pagination]="pagination"
 	[grabCursor]="grabCursor"
 	[breakpoints]="breakpoints"
-	[centeredSlides]="centeredSlides"
 	[spaceBetween]="spaceBetween"
+	[centeredSlides]="centeredSlides"
+	[loop]="loop"
+	[speed]="speed"
+	autoplay="true"
 	class="swiper-container"
 	>
 	<ng-content></ng-content>

@@ -33,4 +33,12 @@ export class NavBarComponent implements OnInit{
     private checkScreenSize(): void {
         this.isMobile = window.matchMedia('(max-width: 768px)').matches;
     }
+
+    redirectTo(site: string){
+        if(site === "github"){
+            window.open("https://github.com/RaphaelMun1z", "_blank");
+        }else if(site === "linkedin"){
+            window.open("https://www.linkedin.com/in/raphael-muniz-7119911a2/", "_blank");
+        }
+    }
 }

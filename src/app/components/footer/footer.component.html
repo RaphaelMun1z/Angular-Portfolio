@@ -8,21 +8,25 @@
 			<nav>
 				<ul>
 					<p>Home</p>
-					<li>Introdução</li>
-					<li>Destaques</li>
-					<li>Habilidades</li>
+					<li [routerLink]="['/']" [fragment]="'introduction_'">Introdução</li>
+					<li [routerLink]="['/']" [fragment]="'recent_'">Projetos Recentes</li>
+					<li [routerLink]="['/']" [fragment]="'skills_'">Habilidades</li>
 				</ul>
 				<ul>
 					<p>Sobre</p>
-					<li>Apresentação</li>
-					<li>Especialização</li>
-					<li>Valores</li>
+					<li [routerLink]="['/about']" [fragment]="'personalPresentation_'">Apresentação</li>
+					<li [routerLink]="['/about']" [fragment]="'specialization_'">Especialização</li>
+					<li [routerLink]="['/about']" [fragment]="'valuesWorkMethodology_'">Valores</li>
 				</ul>
 				<ul>
 					<p>Portfólio</p>
-					<li>Projetos</li>
-					<li>Github</li>
-					<li>Linkedin</li>
+					<li [routerLink]="['/portfolio']">Projetos</li>
+					<li>
+						<button (click)="redirectTo('github')">Github</button>
+					</li>
+					<li>
+						<button (click)="redirectTo('linkedin')">Linkedin</button>
+					</li>
 				</ul>
 			</nav>
 		</div>

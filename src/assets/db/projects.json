@@ -53,8 +53,8 @@
         "id": "6",
         "name": "BuzzFeed",
         "stack": ["angular"],
-        "proposal": "",
-        "description": "",
+        "proposal": "&emsp;A motivação para desenvolver o 'BuzzFeed' foi explorar e consolidar minhas habilidades em Angular enquanto recriava um sistema que combina interatividade e design atrativo. Este projeto não apenas representa um exercício de aprendizado técnico, mas também reflete meu interesse em compreender como experiências digitais podem ser otimizadas para o entretenimento e engajamento dos usuários.",
+        "description": "&emsp;O 'BuzzFeed' é um projeto inspirado na plataforma original, desenvolvido com foco em recriar sua interface e funcionalidades principais. Utilizando tecnologias modernas como Angular, este projeto oferece quizzes interativos e conteúdo dinâmico, permitindo uma experiência de usuário envolvente e divertida.",
         "repositoryUrl": "Angular-Buzz-feed",
         "projectUrl": "",
         "imageUrl": "BannerBuzzFeed.png"
@@ -63,8 +63,8 @@
         "id": "7",
         "name": "Hope Handover",
         "stack": ["nodejs", "react"],
-        "proposal": "",
-        "description": "",
+        "proposal": "&emsp;A motivação para desenvolver o 'Hope Handover' nasceu da vontade de criar um impacto social positivo através da tecnologia, aliada à necessidade de desenvolver um projeto de conclusão de curso (TCC) que fosse relevante e desafiador. Este sistema foi pensado para simplificar e organizar o processo de doações, conectando doadores e necessitados de forma eficiente. Com o uso de React, NodeJs e MySQL, o 'Hope Handover' representa não apenas um marco acadêmico, mas também uma demonstração de como soluções tecnológicas podem ser aplicadas para causas que fazem diferença na vida das pessoas.",
+        "description": "&emsp;Hope Handover é um sistema de doação desenvolvido como trabalho de conclusão de curso (TCC) durante o ensino médio técnico. Este projeto, criado com ReactJS e NodeJs, faz uso do banco de dados MySQL para gerenciar as doações.",
         "repositoryUrl": "React-HopeHandover-frontend",
         "projectUrl": "",
         "imageUrl": "BannerHopeHandover.png"
@@ -73,8 +73,8 @@
         "id": "8",
         "name": "Movies",
         "stack": ["react"],
-        "proposal": "",
-        "description": "",
+        "proposal": "&emsp;A motivação para criar o 'Movies' surgiu do meu interesse pessoal por cinema e do desejo de construir uma plataforma interativa que aproveitasse uma API robusta como a do TMDB (The Movie Database). Este projeto foi desenvolvido com o objetivo de aprimorar minhas habilidades em integração de APIs, gerenciamento de estados no React e criação de interfaces intuitivas.",
+        "description": "&emsp;Desenvolvido com React e alimentado pela API do TMDB (The Movie Database), o projeto Movies oferece uma plataforma para os amantes de filmes explorarem uma vasta coleção de informações sobre seus filmes favoritos. Os usuários podem pesquisar filmes por seus nomes e visualizar detalhes como sinopse, classificação e data de lançamento.",
         "repositoryUrl": "React-Movies-frontend",
         "projectUrl": "",
         "imageUrl": "BannerMovies.png"
@@ -113,8 +113,8 @@
         "id": "12",
         "name": "Portfólio",
         "stack": ["angular"],
-        "proposal": "",
-        "description": "",
+        "proposal": "&emsp;A proposta deste projeto é proporcionar uma vitrine online eficiente e atraente das minhas habilidades e projetos. O portfólio serve tanto como uma ferramenta de marketing pessoal quanto um meio de mostrar a qualidade do meu trabalho, destacando a versatilidade e as tecnologias que domino.",
+        "description": "&emsp;O projeto 'Portfólio' tem como objetivo apresentar publicamente minhas habilidades e experiência como desenvolvedor full stack. Através de uma plataforma web personalizada, os visitantes podem conhecer os detalhes dos projetos que desenvolvi, explorar minhas competências técnicas e acompanhar meu progresso como profissional de tecnologia.",
         "repositoryUrl": "Angular-Portfolio",
         "projectUrl": "",
         "imageUrl": "BannerPortfólio.png"

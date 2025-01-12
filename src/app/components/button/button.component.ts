@@ -10,10 +10,15 @@ import { RippleModule } from 'primeng/ripple';
     templateUrl: './button.component.html',
     styleUrls: ["./button.component.scss", "./button-responsive.component.scss"]
 })
-export class ButtonComponent {
+export class ButtonComponent{
     @Input() text! : string;
     @Input() icon! : string;
     @Input() redirectTo! : string;
+    @Input() redirectToExtern! : string;
     @Input() redirectParam! : string;
     @Input() styleType = 0;
+
+    redirect(): void {
+        window.open(this.redirectToExtern, "_blank");
+    }
 }

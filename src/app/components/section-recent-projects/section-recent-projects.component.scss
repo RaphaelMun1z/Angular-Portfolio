@@ -71,7 +71,7 @@
             
             @keyframes zoomMove {
                 0% {
-                    transform: scale(2) translate(15vw, 25vh);  
+                    transform: scale(2) translate(15vw, 30vh);  
                 }
                 16% {
                     transform: scale(2.2) translate(10vw, 12.5vh); 
@@ -83,10 +83,10 @@
                     transform: scale(.5) translate(0, 0);
                 }
                 64% {
-                    transform: scale(2.2) translate(-35vh, 25vh); 
+                    transform: scale(2.2) translate(-35vh, 30vh); 
                 }
                 100%{
-                    transform: scale(2) translate(15vw, 25vh); 
+                    transform: scale(2) translate(15vw, 30vh); 
                 }
             }
         }

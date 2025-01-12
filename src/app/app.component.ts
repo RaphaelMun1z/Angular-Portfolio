@@ -4,7 +4,6 @@ import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { CommonModule } from '@angular/common';
-import { transitionAnimation } from './components/animations/transition'
 
 @Component({
     selector: 'app-root',
@@ -12,7 +11,7 @@ import { transitionAnimation } from './components/animations/transition'
     imports: [RouterOutlet, CommonModule, NavBarComponent, FooterComponent],
     templateUrl: './app.component.html',
     styleUrls: ["./app.component.scss", "./app-responsive.component.scss"],
-    animations: [transitionAnimation]
+    animations: []
 })
 
 export class AppComponent implements OnInit {

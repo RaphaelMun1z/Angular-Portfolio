@@ -1,0 +1,139 @@
+[
+    {
+        "frontend": [
+            {
+                "id": "1",
+                "name": "Padrões de design",
+                "icon": "account_balance"
+            },
+            {
+                "id": "2",
+                "name": "Gerenciamento de estado",
+                "icon": "settings_suggest"
+            },
+            {
+                "id": "3",
+                "name": "Protocolo HTTP",
+                "icon": "http"
+            },
+            {
+                "id": "4",
+                "name": "Autenticação",
+                "icon": "security"
+            },
+            {
+                "id": "5",
+                "name": "SEO",
+                "icon": "search"
+            },
+            {
+                "id": "6",
+                "name": "Testes unitários",
+                "icon": "biotech"
+            },
+            {
+                "id": "7",
+                "name": "SASS",
+                "icon": "css"
+            },
+            {
+                "id": "8",
+                "name": "Responsividade",
+                "icon": "phonelink"
+            },
+            {
+                "id": "9",
+                "name": "Controle de versão",
+                "icon": "share"
+            }
+        ]
+    },
+    {
+        "backend": [
+            {
+                "id": "1",
+                "name": "Spring Security",
+                "icon": "lock_outline"
+            },
+            {
+                "id": "2",
+                "name": "Hibernate (ORM)",
+                "icon": "account_tree"
+            },
+            {
+                "id": "3",
+                "name": "Spring Data",
+                "icon": "web_stories"
+            },
+            {
+                "id": "4",
+                "name": "Microsserviços",
+                "icon": "miscellaneous_services"
+            },
+            {
+                "id": "5",
+                "name": "Scheduling",
+                "icon": "schedule"
+            },
+            {
+                "id": "6",
+                "name": "Multithreading",
+                "icon": "memory"
+            },
+            {
+                "id": "7",
+                "name": "Testes unitários",
+                "icon": "biotech"
+            },
+            {
+                "id": "8",
+                "name": "Testes de integração",
+                "icon": "timeline"
+            },
+            {
+                "id": "9",
+                "name": "Controle de versão",
+                "icon": "share"
+            }
+        ]
+    },
+    {
+        "general": [
+            {
+                "id": "1",
+                "name": "Azure",
+                "icon": "cloud"
+            },
+            {
+                "id": "2",
+                "name": "Banco de dados SQL",
+                "icon": "table_chart"
+            },
+            {
+                "id": "3",
+                "name": "Banco de dados NoSQL",
+                "icon": "data_array"
+            },
+            {
+                "id": "4",
+                "name": "ORM",
+                "icon": "data_object"
+            },
+            {
+                "id": "5",
+                "name": "DevOps",
+                "icon": "map"
+            },
+            {
+                "id": "6",
+                "name": "CI/CD - Integração Contínua e Deploy Contínuo",
+                "icon": "auto_mode"
+            },
+            {
+                "id": "7",
+                "name": "Docker",
+                "icon": "inbox"
+            }
+        ]
+    }
+]

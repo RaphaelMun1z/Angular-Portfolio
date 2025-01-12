@@ -50,13 +50,13 @@
                             <app-button 
                             [text]="'Repositório GitHub'"
                             [icon]="'folder_open'"
-                            [redirectTo]="'https://github.com/RaphaelMun1z/'+project.repositoryUrl"></app-button>
+                            [redirectToExtern]="'https://github.com/RaphaelMun1z/'+project.repositoryUrl"></app-button>
                         </li>
                         <li *ngIf="project.projectUrl !== undefined else loadinglink">
                             <app-button 
                             [text]="'Acessar Projeto'"
                             [icon]="'open_in_new'"
-                            [redirectTo]="'https://github.com/RaphaelMun1z/'+project.projectUrl"></app-button>
+                            [redirectToExtern]="'https://github.com/RaphaelMun1z/'+project.projectUrl"></app-button>
                         </li>
                     </ul>
                 </div>

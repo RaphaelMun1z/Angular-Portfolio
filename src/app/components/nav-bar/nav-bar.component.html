@@ -4,7 +4,7 @@
             <img src="/assets/icon/icon-2.png" alt="Ícone">
         </div>
         <div class="mobile-button-container" *ngIf="isMobile">
-            <i class="material-icons" (click)="toggleMenu()">{{ isMobile && isOpen ? 'menu_open' : 'menu' }}</i>
+            <button class="material-icons" (click)="toggleMenu()">{{ isMobile && isOpen ? 'menu_open' : 'menu' }}</button>
         </div>
         <div class="nav-container" *ngIf="isOpen || !isMobile">
             <ul>
@@ -19,12 +19,12 @@
                     <i class="material-icons">link</i>
                 </button>
                 <div class="social">
-                    <button pRipple>
+                    <button pRipple (click)="redirectTo('github')">
                         <span class="material-icons">
                             <app-icon class="icon" [name]="'github'"></app-icon>
                         </span>
                     </button>
-                    <button pRipple>
+                    <button pRipple (click)="redirectTo('linkedin')">
                         <span class="material-icons">
                             <app-icon class="icon" [name]="'linkedin'"></app-icon>
                         </span>
