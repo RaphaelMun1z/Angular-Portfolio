@@ -3,31 +3,39 @@
         "frontend": [
             {
                 "projectName": "Netflix",
-                "path": "exemplo.png"
+                "path": "netflix-1.png"
             },
             {
                 "projectName": "Netflix",
-                "path": "exemplo.png"
+                "path": "netflix-2.png"
             },
             {
                 "projectName": "Netflix",
-                "path": "exemplo.png"
+                "path": "netflix-3.png"
+            },
+            {
+                "projectName": "Netflix",
+                "path": "netflix-4.png"
             }
         ]
     },
     {
         "backend": [
             {
-                "projectName": "Coffee XP",
-                "path": "exemplo.png"
+                "projectName": "Blog",
+                "path": "blog-1.png"
             },
             {
-                "projectName": "Portfolio",
-                "path": "exemplo.png"
+                "projectName": "Blog",
+                "path": "blog-2.png"
             },
             {
-                "projectName": "Reactgram",
-                "path": "exemplo.png"
+                "projectName": "Blog",
+                "path": "blog-3.png"
+            },
+            {
+                "projectName": "Blog",
+                "path": "blog-4.png"
             }
         ]
     }

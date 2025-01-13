@@ -2,7 +2,7 @@
     .grid-container {
         grid-template-columns: repeat(1, 1fr) !important; 
         grid-template-rows: auto !important; 
-
+        
         .item{
             border-radius: var(--mobile-border-radius) !important;
         }
@@ -11,12 +11,14 @@
             grid-column: 1 / 2 !important; 
             grid-row: 3 / 4 !important;    
             background-color: #fff;
+            pointer-events: none !important;
         }
         
         .large-item-2 {
             grid-column: 1 / 2 !important; 
             grid-row: 6 / 7 !important;   
             background-color: #fff;
+            pointer-events: none !important;
         }
         
         .card-1{
@@ -33,6 +35,38 @@
         
         .card-6{
             background-color: #fff;
+        }
+    }
+    
+    swiper-slide {
+        &.swiper-slide-active{
+            img{
+                animation: zoomMoveMobile 10s ease-in-out infinite !important;
+            }
+        }
+    }
+    
+    @keyframes zoomMoveMobile {
+        0% {
+            transform: scale(2) translate(-35vw, 15vh);  
+        }
+        20% {
+            transform: scale(2.2) translate(35vw, 15vh); 
+        }
+        40% {
+            transform: scale(2.2) translate(35vw, 0vh); 
+        }
+        60% {
+            transform: scale(2.2) translate(0vw, -2vh);
+        }
+        70% {
+            transform: scale(2.2) translate(-35vw, 0vh); 
+        }
+        80% {
+            transform: scale(.5) translate(0vw, 0vh);
+        }   
+        100%{
+            transform: scale(2) translate(-35vw, 15vh); 
         }
     }
 }
