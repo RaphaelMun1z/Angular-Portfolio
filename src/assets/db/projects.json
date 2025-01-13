@@ -6,7 +6,7 @@
         "proposal": "&emsp;O 'Dealership' foi concebido para resolver uma necessidade clara no mercado regional: a ausência de soluções eficazes e específicas para a gestão de concessionárias. A motivação por trás do projeto veio da carência de softwares robustos e escaláveis que atendam a esse nicho com qualidade. O sistema não apenas preenche essa lacuna, mas também se destaca pela combinação de alto desempenho, organização e tecnologia de ponta.<br><br>&emsp;Ao oferecer funcionalidades que abrangem desde o gerenciamento de estoques e vendas até a classificação detalhada de veículos, o 'Dealership' se torna um aliado essencial para concessionárias que desejam otimizar seus processos e melhorar a experiência do cliente. A utilização de Spring Framework assegura a escalabilidade necessária para empresas que planejam expandir, permitindo que o software cresça junto com o negócio.<br><br>&emsp;A proposta do 'Dealership' vai além da simples gestão operacional. O sistema foi projetado para oferecer uma solução integrada, que conecta diferentes áreas de uma organização e permite uma visão unificada das operações, garantindo maior controle e eficiência. Além disso, o foco em segurança, com a implementação de autenticação JWT, e a adoção de tecnologias modernas como PostgreSQL e Angular tornam o sistema uma escolha confiável e duradoura para empresas do setor.<br><br>&emsp;Desenvolvido para se adaptar às necessidades específicas de cada cliente, o 'Dealership' é a solução ideal para concessionárias que buscam modernizar suas operações e garantir um diferencial competitivo no mercado.",
         "description": "&emsp;O 'Dealership' é um sistema completo e escalável, projetado para atender às necessidades de concessionárias de diferentes portes, desde pequenas empresas até grandes redes. Desenvolvido com o Spring Framework, o sistema reflete uma solução robusta e eficiente para organizações que precisam gerenciar suas operações de maneira integrada e organizada.<br><br>&emsp;Entre as principais funcionalidades, o 'Dealership' oferece o gerenciamento de funcionários, vendas, contratos, agendamentos, clientes e estoque, além de permitir a classificação e o detalhamento de veículos. O sistema utiliza conceitos de arquitetura em camadas e implementa técnicas de alto desempenho, como multithreading e paginação, para garantir operações rápidas e confiáveis.<br><br>&emsp;Sua API RESTful foi projetada para garantir facilidade de integração, enquanto a autenticação baseada em JSON Web Token (JWT) assegura um nível elevado de segurança. A solução também conta com um serviço de envio de e-mails integrado, ampliando as possibilidades de comunicação interna e externa. Para atender às demandas de um setor dinâmico, o sistema permite o gerenciamento de múltiplas unidades de uma mesma organização, otimizando processos e garantindo uma visão consolidada das operações.<br><br>&emsp;O 'Dealership' utiliza o banco de dados PostgreSQL como base para armazenar dados de forma eficiente e segura. Em breve, contará com uma interface web desenvolvida com Angular, proporcionando aos usuários uma experiência moderna e intuitiva.",
         "repositoryUrl": "Spring-Dealership",
-        "projectUrl": "Soon",
+        "projectUrl": "",
         "imageUrl": "BannerDealership.png"
     },
     {
@@ -16,7 +16,7 @@
         "proposal": "&emsp;A motivação para criar o 'LeaseInsight' surgiu de experiências pessoais envolvendo um proprietário que enfrentava dificuldades na administração de um grande volume de imóveis de forma autônoma, devido à falta de ferramentas adequadas para controle eficiente. Diante disso, o sistema foi concebido para oferecer uma solução moderna que simplifica a gestão de contratos, pagamentos e relações com inquilinos, centralizando informações e automatizando processos de maneira intuitiva. Com foco em organização e eficácia, o 'LeaseInsight' busca reduzir erros manuais, economizar tempo e proporcionar maior tranquilidade para administradores e proprietários, estabelecendo um novo padrão de gestão imobiliária.",
         "description": "&emsp;LeaseInsight é um software desenvolvido em Java Spring para a administração de locação de imóveis. Este projeto visa simplificar a gestão de propriedades, inquilinos, contratos de aluguel e pagamentos, proporcionando uma solução eficiente e organizada para a administração imobiliária.",
         "repositoryUrl": "Spring-LeaseInsight",
-        "projectUrl": "Soon",
+        "projectUrl": "",
         "imageUrl": "BannerLeaseInsight.png"
     },
     {
@@ -26,7 +26,7 @@
         "proposal": "&emsp;A motivação para criar o 'Netflix' foi o desejo de aprimorar minhas habilidades como desenvolvedor frontend, explorando conceitos avançados de React e boas práticas na construção de interfaces web. Este projeto não apenas demonstra meu conhecimento em desenvolvimento de componentes reutilizáveis e estilização moderna, mas também reflete meu compromisso em buscar aperfeiçoamento constante e compreender a complexidade de interfaces de usuário dinâmicas e responsivas.",
         "description": "&emsp;O 'Netflix' é um projeto que reproduz a interface do site da Netflix, desenvolvido com React. Este projeto foca na criação de uma experiência visual e interativa que se assemelha à plataforma original, priorizando a organização de componentes, estilização responsiva e interatividade do usuário. Embora não inclua funcionalidades de backend, o 'Netflix' apresenta um design fiel ao modelo original, ideal para fins de aprendizado e demonstração de habilidades frontend.",
         "repositoryUrl": "React-Netflix-frontend",
-        "projectUrl": "Soon",
+        "projectUrl": "",
         "imageUrl": "BannerNetflix.png"
     },
     {
@@ -36,7 +36,7 @@
         "proposal": "&emsp;A motivação para criar o 'ReactGram' foi o desejo de aperfeiçoar minhas habilidades no desenvolvimento de aplicações fullstack, explorando com mais profundidade aspectos avançados de integração entre frontend e backend. Este projeto serviu como uma oportunidade para refinar minhas competências em React e NodeJs, abordando desafios mais complexos e implementando soluções escaláveis e de alta qualidade. O 'ReactGram' reflete meu compromisso com a evolução contínua como desenvolvedor e minha dedicação em criar aplicações modernas e eficientes.",
         "description": "&emsp;O 'ReactGram' é um projeto inspirado no Instagram, desenvolvido com React e NodeJs. Este projeto fullstack recria funcionalidades essenciais de uma rede social de compartilhamento de fotos, permitindo uma experiência interativa e moderna para o usuário. O 'ReactGram' foi projetado com foco em boas práticas de desenvolvimento, integração eficiente entre frontend e backend, e implementação de recursos responsivos e escaláveis.",
         "repositoryUrl": "React-ReactGram-frontend",
-        "projectUrl": "Soon",
+        "projectUrl": "",
         "imageUrl": "BannerReactGram.png"
     },
     {

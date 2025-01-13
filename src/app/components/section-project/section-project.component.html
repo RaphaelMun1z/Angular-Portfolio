@@ -40,6 +40,7 @@
             </li>
             <li *ngIf="project.projectUrl !== undefined else loadinglink">
                 <app-button 
+                *ngIf="project.projectUrl !== ''"
                 [text]="'Acessar Projeto'"
                 [icon]="'open_in_new'"
                 [redirectToExtern]="'https://github.com/RaphaelMun1z/'+project.projectUrl"></app-button>
