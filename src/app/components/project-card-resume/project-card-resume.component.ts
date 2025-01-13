@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { IconComponent } from '../icon/icon.component';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
@@ -10,7 +10,8 @@ import { TruncatePipe } from '../../pipes/truncate.pipe';
     standalone: true,
     imports: [IconComponent, CommonModule, RippleModule, ButtonComponent, TruncatePipe],
     templateUrl: './project-card-resume.component.html',
-    styleUrl: './project-card-resume.component.scss'
+    styleUrl: './project-card-resume.component.scss',
+    changeDetection: ChangeDetectionStrategy.Default
 })
 
 export class ProjectCardResumeComponent {

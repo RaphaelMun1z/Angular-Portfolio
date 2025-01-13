@@ -6,10 +6,12 @@
             width: 100% !important;
             height: 30vh !important;
             flex: inherit !important;
+            border-radius: var(--mobile-border-radius) !important;
         }
         
         .buttons-container{
             padding: 2vh !important;
+            border-radius: var(--mobile-border-radius) !important;
         }
     } 
 

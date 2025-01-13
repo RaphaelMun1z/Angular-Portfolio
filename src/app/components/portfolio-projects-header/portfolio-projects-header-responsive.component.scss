@@ -3,5 +3,24 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 5vh;
+        
+        .item{
+            h5{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                
+                span{
+                    width: fit-content !important;
+                    aspect-ratio: 1/1 !important;
+                    gap: .5vh .5vh !important;
+                }
+            }
+
+            p{
+                width: 100% !important;
+                max-width: fit-content !important;
+            }
+        }
     }
 }

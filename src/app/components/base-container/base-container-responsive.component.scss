@@ -1,7 +1,7 @@
 @media only screen and (max-width: 768px) {
     .main-container{
         &.hero{
-            height: calc(97.2vh);
+            height: fit-content !important;
             margin-top: 0 !important;
         }
     }

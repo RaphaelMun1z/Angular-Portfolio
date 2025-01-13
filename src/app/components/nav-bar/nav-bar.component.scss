@@ -129,7 +129,7 @@ header{
                     position: relative;
                     display: flex;
                     gap: 0 .5vw;
-                    border-radius: 30px;
+                    border-radius: var(--border-radius) !important;
                     width: fit-content;
                     align-items: center;
                     justify-content: center;

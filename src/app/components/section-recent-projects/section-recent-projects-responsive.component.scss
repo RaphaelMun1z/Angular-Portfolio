@@ -2,6 +2,10 @@
     .grid-container {
         grid-template-columns: repeat(1, 1fr) !important; 
         grid-template-rows: auto !important; 
+
+        .item{
+            border-radius: var(--mobile-border-radius) !important;
+        }
         
         .large-item-1 {
             grid-column: 1 / 2 !important; 
